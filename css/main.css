@@ -28,25 +28,19 @@ header {
     width: 100%;
 }
 
-a {
+nav {
+    padding-right: 7vw;
+    margin-left: 1rem;
+    align-self: center;
+}
+
+nav > a {
     text-decoration: none;
     color: initial;
-    padding-left: 1rem;
-}
-
-.header-btns {
-    padding-right: 7%;
-    align-self: center;
-    cursor: pointer;
-}
-
-.header-btn {
-    border: none;
-    background-color: var(--main-yellow);
     font-size: 1.3rem;
     margin-right: 3rem;
+    cursor: pointer;
 }
-
 
 
 /* ekstra1.html */
@@ -71,7 +65,6 @@ a {
 }
 
 .letsgo {
-
     color: white;
 }
 
