@@ -1,27 +1,153 @@
 :root {
     --main-yellow: rgb(248, 215, 72);
+    --secondary: black;
+    --third: white;
 }
 
 .flex {
     display: flex;
 }
 
-.grid {
-    display: grid;
+.center-flex {
+    margin: 0;
+    justify-content: center;
 }
 
-button {
+.center-text {
+    text-align: center;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
+
+a {
     cursor: pointer;
+    text-decoration: none;
+}
+
+.button {
+    color: var(--third);
+    background-color: var(--secondary);
+    border-radius: 7px;
+    height: 2rem;
+    width: 6rem;
+    font-size: 2rem;
 }
 
 body {
     margin: 0;
 }
 
+main {
+    margin: 7rem 10rem 0 10rem;
+}
+
+p {
+    color: var(--secondary);
+    font-size: 1.3rem;
+}
+
+.ikon {
+    background-color: var(--secondary);
+    height: 140px;
+    width: 140px;
+    margin: auto;
+}
+
+.border-radius {
+    border-radius: 7px;
+}
+
+.box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 0px 15px;
+}
+
+.border {
+    border-bottom: solid var(--secondary) 3px;
+    margin: 3rem 0 3rem 0;
+}
 
 /* index.html */
 
-<
+.tittel-bilde {
+    background-image: url(/img/hoved-index.jpeg);
+    width: 100%;
+    height: 62rem;
+    color: white;
+    border-bottom: solid 3px black;
+}
+
+.tittel-bilde h1 {
+    margin: -5rem 0 0 0;
+    padding: 0 0 0 15rem;
+    font-size: 9rem;
+    opacity: 0;
+    animation: opacity 1s forwards, slideIn 1s;
+    animation-delay: 2.2s;
+}
+
+.tittel-bilde h2 {
+    font-size: 3rem;
+    margin: 0 0 0 35rem;
+    opacity: 0;
+    animation: opacity forwards;
+    animation-delay: 3s;
+}
+
+.tittel-bilde p {
+    font-size: 9rem;
+    opacity: 0;
+    animation: opacity forwards;
+    animation-delay: .5s;
+}
+
+.tittel-bilde div {
+    font-size: 9rem;
+    padding: 0 0 0 20rem;
+    animation: opacity-none;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.index-header {
+    margin-top: -70px;
+    position: sticky, -webkit-sticky;
+    position: -webkit-sticky;
+    top: 30px;
+}
+
+header a {
+    font-size: 2rem;
+    margin: auto;
+    color: var(--secondary);
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+
+main {
+    height: 1000px;
+}
+
+main p {
+    width: 60%;
+}
+
+.section-beliggenhet {
+    margin-left: 7rem;
+}
+
+.beliggenhet-info {
+    width: 100%;
+}
+
+
+.veibeskrivelse-knapper {
+    width: 50%;
+    margin: auto;
+}
+
 /* ekstra1.html */
 
 
@@ -65,4 +191,38 @@ body {
 
 .linjeBtn2 {
     margin: 0 3rem 0 3rem;
+}
+
+
+/* Animasjoner */
+
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity-none {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
