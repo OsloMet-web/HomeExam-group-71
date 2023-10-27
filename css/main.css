@@ -19,7 +19,7 @@ body {
 }
 
 
-/* home.html */
+/* index.html */
 
 
 header {
@@ -28,9 +28,16 @@ header {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: initial;
+    padding-left: 1rem;
+}
+
 .header-btns {
     padding-right: 7%;
     align-self: center;
+    cursor: pointer;
 }
 
 .header-btn {
