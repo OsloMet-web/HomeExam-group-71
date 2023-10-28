@@ -1,7 +1,7 @@
 :root {
-    --main-yellow: rgb(248, 215, 72);
-    --secondary: black;
-    --third: white;
+    --main: rgba(245, 245, 245, 0.82);
+    --secondary: rgb(204, 204, 204);
+    --third: black;
 }
 
 .flex {
@@ -22,21 +22,29 @@
 }
 
 a {
-    cursor: pointer;
     text-decoration: none;
 }
 
 .button {
-    color: var(--third);
-    background-color: var(--secondary);
+    color: var(--secondary);
+    background-color: var(--main);
+    border: solid var(--secondary);
     border-radius: 7px;
-    height: 2rem;
-    width: 6rem;
+    height: 2.5rem;
+    width: 7rem;
     font-size: 2rem;
+    font-weight: bolder;
+    transition: all .2s;
+}
+
+.button:hover {
+    background-color: var(--secondary);
+    color: var(--third);
 }
 
 body {
     margin: 0;
+    background-color: var(--main);
 }
 
 main {
@@ -44,7 +52,7 @@ main {
 }
 
 p {
-    color: var(--secondary);
+    color: var(--third);
     font-size: 1.3rem;
 }
 
@@ -67,6 +75,36 @@ p {
     border-bottom: solid var(--secondary) 3px;
     margin: 3rem 0 3rem 0;
 }
+
+/* Footer */
+
+footer {
+    background-color: var(--secondary);
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+footer section {
+    width: 30%;
+}
+
+footer section div {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+footer section div a {
+    margin: 0 0 0 1rem;
+}
+
+.postadresse-footer p {
+    text-align: end;
+    margin: 0 0 .6rem 0;
+}
+
+footer .footer-logo {
+    height: 200px;
+}
+
 
 /* index.html */
 
@@ -138,10 +176,18 @@ main p {
     margin-left: 7rem;
 }
 
+.section-beliggenhet h3 {
+    font-size: 2rem;
+}
+
 .beliggenhet-info {
     width: 100%;
 }
 
+.veibeskrivelse-header {
+    font-size: 2rem;
+    margin-top: 4rem;
+}
 
 .veibeskrivelse-knapper {
     width: 50%;
