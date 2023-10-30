@@ -98,13 +98,14 @@ header a {
     text-decoration: none;
     background-color: var(--main);
     width: 25%;
-    transition: all .4s;
+    transition: font-weight 3s;
 }
- header a:hover {
+
+header a:hover {
     background-color: var(--secondary);
-    font-weight: 800;
+    font-weight: 600;
     color: var(--text)
- }
+}
 
 /* Footer */
 
@@ -282,4 +283,105 @@ main p {
     to {
         transform: translateX(0);
     }
+
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(200px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(220px);
+    }
+}
+
+@keyframes dragUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-235px);
+    }
+}
+
+
+/* Opener */
+
+.opener {
+    color: black;
+    font-size: 6rem;
+    margin-top: 19rem;
+    margin-bottom: 19rem;
+    animation: opacity-none .3s;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+}
+
+.opener-background {
+    opacity: 0;
+    width: 100%;
+    height: 56em;
+    position: absolute;
+    top: 0;
+    animation: opacity 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.opener-left {
+    /* animation: slideDown .9s;
+    animation-delay: .6s;
+    animation-fill-mode: forwards;
+    */
+    animation: slideDown .9s .6s 1 alternate forwards;
+}
+
+.opener-border {
+    margin: 1rem 1.6rem 1rem 1.6rem;
+    width: 3px;
+    background-color: black;
+}
+
+.opener-logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 500px;
+    opacity: 0;
+    animation: opacity .5s 2s alternate forwards, dragUp 1s 2.5s alternate forwards;
+}
+
+.opener1 {
+    opacity: 0;
+    animation: slideUp .3s, opacity .1s;
+    animation-fill-mode: forwards;
+
+}
+
+.opener2 {
+    opacity: 0;
+    animation: slideUp .3s, opacity .1s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+
+}
+
+.opener3 {
+    opacity: 0;
+    animation: slideUp .3s, opacity .1s;
+    animation-delay: .4s;
+    animation-fill-mode: forwards;
 }
