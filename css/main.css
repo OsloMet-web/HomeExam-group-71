@@ -1,9 +1,10 @@
 :root {
     --isabelline: #edede9ff;
     --timberwolf: #d6ccc2ff;
-    --main: #f5ebe0ff;
+    --main: rgba(245, 235, 224, 0.781);
     --champagne-pink: #e3d5caff;
     --secondary: #d5bdafff;
+    --text: #000;
 }
 
 body {
@@ -79,6 +80,32 @@ a {
     margin: 3rem 0 3rem 0;
 }
 
+/* Header */
+header {
+    margin-top: -70px;
+    top: 0px;
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: var(--main);
+    height: 75px;
+}
+
+header a {
+    font-size: 2rem;
+    margin: auto;
+    color: var(--text);
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    background-color: var(--main);
+    width: 25%;
+    transition: all .4s;
+}
+ header a:hover {
+    background-color: var(--secondary);
+    font-weight: 800;
+    color: var(--text)
+ }
+
 /* Footer */
 
 footer {
@@ -110,6 +137,11 @@ footer .footer-logo {
 
 
 /* index.html */
+
+main p {
+    width: 60%;
+    text-align: justify;
+}
 
 .tittel-bilde {
     background-image: url(/img/hoved-index.jpeg);
@@ -149,26 +181,6 @@ footer .footer-logo {
     animation: opacity-none;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-}
-
-.index-header {
-    margin-top: -70px;
-    position: sticky, -webkit-sticky;
-    position: -webkit-sticky;
-    top: 30px;
-}
-
-header a {
-    font-size: 2rem;
-    margin: auto;
-    color: var(--secondary);
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
-}
-
-main p {
-    width: 60%;
-    text-align: justify;
 }
 
 .section-beliggenhet {
