@@ -5,6 +5,7 @@
     --champagne-pink: #e3d5caff;
     --secondary: #d5bdafff;
     --text: #000;
+    --footer: rgb(251,249,244);
 }
 
 body {
@@ -14,6 +15,7 @@ body {
 
 main {
     margin: 7rem 10rem 0 10rem;
+    justify-content: center;
 }
 
 p {
@@ -31,8 +33,8 @@ a {
 }
 
 .center-flex {
-    margin: 0;
     justify-content: center;
+    margin: 0;
 }
 
 .center-text {
@@ -96,21 +98,38 @@ header a {
     color: var(--text);
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
+    text-transform: uppercase;
     background-color: var(--main);
     width: 25%;
     transition: all .4s;
 }
+
  header a:hover {
     background-color: var(--secondary);
+    padding: 15px;
     font-weight: 800;
-    color: var(--text)
+    color: var(--text);
+    cursor: pointer;
+ }
+
+ .logo {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    height: 10rem;
+    width: 10rem;
+ }
+
+ .active {
+   font-weight: 600;
  }
 
 /* Footer */
 
 footer {
-    background-color: var(--secondary);
+    background-color: var(--footer);
     padding: 2rem 3rem 2rem 3rem;
+    margin-bottom: -20px;
 }
 
 footer section {
@@ -205,49 +224,37 @@ main p {
     margin: auto;
 }
 
-/* ekstra1.html */
+/* canteen.html */
 
 
 .opening {
-    background-color: rgb(8, 154, 211);
+    background-color: var(--main);
     width: 100%;
-    height: 48rem;
+    height: 400px;
     text-align: center;
     border-bottom: solid black 5px;
+    position: relative;
 }
 
-.oslometLogo {
-    margin-top: 12rem;
-    height: 350px;
+.opening > h1 {
+    margin-top: -20px;
+    padding-top: 90px;
+    text-transform: uppercase;
+    font-size: 5rem;
 }
 
-.main {
-    background-color: blue;
-    height: 2500px;
+.scale {
+    margin-top: -50px;
+    height: 20rem;
+    margin-right: 20px;
+    border-radius: 10px;
 }
 
-.letsgo {
-    color: white;
-}
-
-.infoLinje {
-    align-self: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-
-.infobtns {
-    margin: auto;
-}
-
-.linjeBtns {
-    align-self: center;
-    font-size: 32px;
-}
-
-.linjeBtn2 {
-    margin: 0 3rem 0 3rem;
+.line {
+    margin: 20px 40px 20px 0px;
+    background-color: #000;
+    height: 200px;
+    width: 5px;
 }
 
 
