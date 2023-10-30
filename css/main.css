@@ -1,7 +1,9 @@
 :root {
-    --main: rgba(245, 245, 245, 0.82);
-    --secondary: rgb(204, 204, 204);
-    --third: black;
+    --isabelline: #edede9ff;
+    --timberwolf: #d6ccc2ff;
+    --main: #f5ebe0ff;
+    --champagne-pink: #e3d5caff;
+    --secondary: #d5bdafff;
 }
 
 body {
@@ -14,7 +16,6 @@ main {
 }
 
 p {
-    color: var(--third);
     font-size: 1.3rem;
 }
 
