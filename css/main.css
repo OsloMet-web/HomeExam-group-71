@@ -4,6 +4,26 @@
     --third: black;
 }
 
+body {
+    margin: 0;
+    background-color: var(--main);
+}
+
+main {
+    margin: 7rem 10rem 0 10rem;
+}
+
+p {
+    color: var(--third);
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Generelle klasser */
 .flex {
     display: flex;
 }
@@ -21,10 +41,6 @@
     justify-content: space-around;
 }
 
-a {
-    text-decoration: none;
-}
-
 .button {
     color: var(--secondary);
     background-color: var(--main);
@@ -40,20 +56,6 @@ a {
 .button:hover {
     background-color: var(--secondary);
     color: var(--third);
-}
-
-body {
-    margin: 0;
-    background-color: var(--main);
-}
-
-main {
-    margin: 7rem 10rem 0 10rem;
-}
-
-p {
-    color: var(--third);
-    font-size: 1.3rem;
 }
 
 .ikon {
@@ -162,7 +164,6 @@ header a {
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
 }
-
 
 main {
     height: 1000px;
