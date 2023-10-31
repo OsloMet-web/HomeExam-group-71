@@ -322,8 +322,7 @@ main p {
 .opener {
     color: black;
     font-size: 6rem;
-    margin-top: 14rem;
-    margin-bottom: 22rem;
+    margin: 14rem 4rem 22rem 0rem;
     animation: opacity-none .3s;
     animation-delay: 1.6s;
     animation-fill-mode: forwards;
@@ -341,10 +340,6 @@ main p {
 }
 
 .opener-left {
-    /* animation: slideDown .9s;
-    animation-delay: .6s;
-    animation-fill-mode: forwards;
-    */
     animation: slideDown .9s .6s 1 alternate forwards;
 }
 
