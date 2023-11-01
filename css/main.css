@@ -15,7 +15,6 @@ body {
 
 main {
     margin: 7rem 10rem 0 10rem;
-    justify-content: center;
 }
 
 p {
@@ -225,7 +224,18 @@ main p {
 }
 
 /* canteen.html */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 5rem;
+}
 
+h2 {
+    background-color: aliceblue;
+    text-align: center;
+    
+}
 
 .opening {
     background-color: var(--main);
@@ -243,18 +253,67 @@ main p {
     font-size: 5rem;
 }
 
-.scale {
+picture {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.toppics {
     margin-top: -50px;
     height: 20rem;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+picture > img {
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 0px 15px;
+    margin-top: -50px;
+    height: 10rem;
     margin-right: 20px;
     border-radius: 10px;
 }
 
+picture > p {
+    padding-right: 10rem;
+}
+
 .line {
-    margin: 20px 40px 20px 0px;
+    position: absolute;
+    margin: 20px 0;
     background-color: #000;
     height: 200px;
     width: 5px;
+   
+}
+
+article > section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 90vw;
+    background-color: rgb(116, 197, 252);
+    
+    margin-bottom: 3rem;
+}
+
+.firstbox {
+    background-color: aquamarine;
+    padding: 0 25vw;
+}
+
+
+.secondbox {
+    margin-left: 0vw;
+
+}
+
+
+.text {
+    width: 30vw;
+    text-align: justify;
+    
+    
 }
 
 
