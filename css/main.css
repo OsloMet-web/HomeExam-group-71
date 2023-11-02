@@ -225,7 +225,10 @@ main p {
 }
 
 /* canteen.html */
-
+.grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
 
 .opening {
     background-color: var(--main);
