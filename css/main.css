@@ -31,12 +31,17 @@ a {
 }
 
 .center-flex {
+  display: flex;
   justify-content: center;
-  margin: 0;
 }
 
 .center-text {
   text-align: center;
+}
+
+.center-align {
+  display: flex;
+  align-items: center;
 }
 
 .flex-space-around {
@@ -225,15 +230,18 @@ main p {
 .main-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr) 20rem;
+  grid-template-rows: 1fr 20rem 1fr 20rem;
   row-gap: 1rem;
 }
 
 .article-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr 10rem 1fr;
+  height: auto;
+  row-gap: 60px;
 }
+
+
 
 h2 {
   background-color: aliceblue;
@@ -256,57 +264,31 @@ h2 {
   font-size: 5rem;
 }
 
-picture {
-  grid-column: 1 / 4;
-  grid-row: 4;
-}
 
 .toppics {
-  display: flex;
-  justify-content: center;
   grid-column: 1 / 4;
   grid-row: 1;
 }
 
 .toppics > img {
   height: 20rem;
-  margin-right: 30px;
   border-radius: 10px;
 }
 
-picture > img {
-  box-shadow: rgba(0, 0, 0, 0.35) 5px 0px 15px;
-  height: 10rem;
-  margin-right: 20px;
-  border-radius: 10px;
+.middle-img {
+  margin: 0 30px;
 }
 
-picture > p {
-  padding-right: 10rem;
-}
-
-.line1 {
+.line {
   display: flex;
   justify-content: center;
   margin: auto;
   border: 3px solid #000;
   height: 275px;
-  grid-row: 1;
-  grid-column: 2;
-}
-
-.line2 {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  border: 3px solid #000;
-  height: 275px;
-  grid-row: 2;
   grid-column: 2;
 }
 
 .box1 {
-  background-color: aquamarine;
   grid-column: 1;
   grid-row: 1;
 }
@@ -316,15 +298,12 @@ picture > p {
 }
 
 .box3 {
-  display: flex;
-  justify-content: center;
   grid-column: 1;
   grid-row: 2;
 }
 
 .box4 {
-  display: flex;
-  justify-content: center;
+
   grid-column: 3;
   grid-row: 2;
 }
@@ -342,6 +321,22 @@ picture > p {
 .text {
   width: 30vw;
   text-align: justify;
+}
+
+.bottompics {
+  grid-column: 1 / 4;
+  grid-row: 4;
+}
+
+.bottompics > img {
+  box-shadow: rgba(0, 0, 0, 0.35) 5px 0px 15px;
+  height: 10rem;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.bottompics > p {
+  padding-right: 10rem;
 }
 
 /* Animasjoner */
