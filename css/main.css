@@ -42,9 +42,8 @@ a {
   text-align: center;
 }
 
-.center-align {
-  display: flex;
-  align-items: center;
+.flex-space-between {
+  justify-content: space-between;
 }
 
 .flex-space-around {
@@ -88,13 +87,27 @@ a {
   margin: 3rem 0 3rem 0;
 }
 
+.border-right {
+  border-right: solid var(--text) 3px;
+}
+
+.border-left {
+  border-left: solid var(--text) 3px;
+}
+
+.info-container {
+  margin-bottom: 5rem;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 /* Header */
 header {
-  margin-top: -70px;
   top: 0px;
   position: sticky;
   position: -webkit-sticky;
-  background-color: var(--main);
   height: 75px;
 }
 
@@ -102,32 +115,14 @@ header a {
   font-size: 2rem;
   margin: auto;
   color: var(--text);
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
-  text-transform: uppercase;
-  background-color: var(--main);
   width: 25%;
-  transition: all 0.4s;
 }
 
 header a:hover {
-  background-color: var(--secondary);
-  padding: 15px;
-  font-weight: 800;
-  color: var(--text);
-  cursor: pointer;
-}
-
-.logo {
-  position: absolute;
-  top: 60px;
-  left: 60px;
-  height: 10rem;
-  width: 10rem;
-}
-
-.active {
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--text)
 }
 
 /* Footer */
@@ -162,71 +157,31 @@ footer .footer-logo {
 
 /* index.html */
 
-main p {
-  width: 60%;
-  text-align: justify;
+.header-index {
+  margin-top: -6rem;
 }
 
-.tittel-bilde {
-  background-image: url(/img/hoved-index.jpeg);
-  width: 100%;
-  height: 62rem;
-  color: white;
-  border-bottom: solid 3px black;
+.index-h2 {
+  width: 40rem;
+  padding: 0 6rem 0 0;
+  margin-right: 6rem;
+  font-size: 1.5rem;
 }
 
-.tittel-bilde h1 {
-  margin: -5rem 0 0 0;
-  padding: 0 0 0 15rem;
-  font-size: 9rem;
-  opacity: 0;
-  animation: opacity 1s forwards, slideIn 1s;
-  animation-delay: 2.2s;
+.index-h3 {
+  font-size: 1.5rem;
+  padding-left: 6rem;
+  margin-left: 6rem;
 }
 
-.tittel-bilde h2 {
-  font-size: 3rem;
-  margin: 0 0 0 35rem;
-  opacity: 0;
-  animation: opacity forwards;
-  animation-delay: 3s;
+.info-container img {
+  height: 350px;
 }
 
-.tittel-bilde p {
-  font-size: 9rem;
-  opacity: 0;
-  animation: opacity forwards;
-  animation-delay: 0.5s;
-}
-
-.tittel-bilde div {
-  font-size: 9rem;
-  padding: 0 0 0 20rem;
-  animation: opacity-none;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-}
-
-.section-beliggenhet {
-  margin-left: 7rem;
-}
-
-.section-beliggenhet h3 {
-  font-size: 2rem;
-}
-
-.beliggenhet-info {
-  width: 100%;
-}
-
-.veibeskrivelse-header {
-  font-size: 2rem;
-  margin-top: 4rem;
-}
-
-.veibeskrivelse-knapper {
-  width: 50%;
-  margin: auto;
+.p-veibeskrivelse {
+  padding: 0 1rem 0 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 /* canteen.html */
@@ -364,4 +319,100 @@ h2 {
   to {
     transform: translateX(0);
   }
+
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(200px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(220px);
+  }
+}
+
+@keyframes dragUp {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-160px);
+  }
+}
+
+
+/* Opener */
+
+.opener {
+  color: black;
+  font-size: 6rem;
+  margin: 14rem 4rem 22rem 0rem;
+  animation: opacity-none .3s;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+}
+
+.opener-background {
+  opacity: 0;
+  width: 100%;
+  height: 54em;
+  position: absolute;
+  top: 0;
+  animation: opacity 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.opener-left {
+  animation: slideDown .9s .6s 1 alternate forwards;
+}
+
+.opener-border {
+  margin: 1rem 1.6rem 1rem 1.6rem;
+  width: 3px;
+  background-color: black;
+}
+
+.opener-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 500px;
+  opacity: 0;
+  animation: opacity .8s 2s alternate forwards, dragUp 1s 2.5s alternate forwards;
+}
+
+.opener1 {
+  opacity: 0;
+  animation: slideUp .3s, opacity .1s;
+  animation-fill-mode: forwards;
+
+}
+
+.opener2 {
+  opacity: 0;
+  animation: slideUp .3s, opacity .1s;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+
+}
+
+.opener3 {
+  opacity: 0;
+  animation: slideUp .3s, opacity .1s;
+  animation-delay: .4s;
+  animation-fill-mode: forwards;
 }
