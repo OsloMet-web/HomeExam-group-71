@@ -12,7 +12,7 @@ body {
   margin: 0;
   background-color: var(--main);
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -197,8 +197,8 @@ footer .footer-logo {
   margin-top: -20rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 20rem 1fr 20rem;
-  row-gap: 1rem;
+  grid-template-rows: 1fr 20rem 1fr 1fr;
+  row-gap: 2rem;
 }
 
 .article-container {
@@ -209,7 +209,6 @@ footer .footer-logo {
 }
 
 h2 {
-  background-color: aliceblue;
   text-align: center;
 }
 
@@ -239,6 +238,7 @@ h2 {
 .toppics {
   grid-column: 1 / 4;
   grid-row: 1;
+  margin-bottom: 5em;
 }
 
 .toppics > img {
@@ -247,12 +247,13 @@ h2 {
 }
 
 .middle-img {
-  margin: 0 30px;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .line {
-  display: flex;
-  justify-content: center;
+  justify-self: center;
+  align-self: center;
   margin: auto;
   border: 3px solid #000;
   height: 275px;
@@ -294,16 +295,39 @@ h2 {
   grid-row: 4;
 }
 
-.bottompics > img {
+.bottompics img {
   box-shadow: rgba(0, 0, 0, 0.35) 5px 0px 15px;
   height: 7rem;
-  margin-right: 20px;
   border-radius: 10px;
 }
 
-.bottompics > p {
-  padding-right: 10rem;
+.bottompics p {
+  padding-left: 1em;
 }
+
+@media (max-width: 1055px) {
+  body {
+    background-color: aqua;
+  }
+
+  .line {
+
+    display: none;
+  }
+
+  .middle-img {
+    display: none;
+  }
+
+  .toppics > img {
+    height: 20rem;
+    border-radius: 10px;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+@media (max-width: 600px) {}
 
 /* Animasjoner */
 
