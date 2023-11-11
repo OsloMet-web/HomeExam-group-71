@@ -17,7 +17,7 @@ body {
 }
 
 main {
-    margin: 7rem 10rem 0 10rem;
+    margin: 7rem 7rem 0 7rem;
 }
 
 p {
@@ -338,6 +338,14 @@ footer a:hover {
         border-radius: 10px;
         margin-left: 1em;
         margin-right: 1em;
+    }
+
+    .bottompics {
+        flex-direction: column;
+    }
+
+    .bottompics > div {
+        margin-bottom: 1em;
     }
 }
 
