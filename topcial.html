@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +11,7 @@
 </head>
 
 <body>
-    <div class wrapper>
+    <div class="wrapper">
         <div class="left-col">
             <img src="img/oslomet-logo-black.svg" alt="Oslomet logo" class="logo">
 
@@ -27,19 +28,52 @@
                 <button class="topical-button" type="button">LEARN MORE</button>
                 </div>
         </div>
-    <div>
         <div class="right-col">
             <div class="slider">
-                <img src= img/oslomet-logo-black.svg alt "img/oslomet-logo-black">
+                <img src="img/oslomet-logo-black.svg" id="Slide" alt="">
             </div>
             <div class="slider-content">
-                <h2> uuu</h2>
-                <p>hhhh</p>
+                <h2>Hvordan jobber en dataingeniør</h2>
+                <hr>
+            <p>HEIIIIIII</p>
+            <div class="controller">
+                <img src="img/oslomet-logo-black.svg" id="backbtn" alt="Back button">
+                <div class="vertical-line"></div>
+                <img src="img/oslomet-logo-black.svg" id="forwardbtn" alt="Forward button">
+            </div>
             </div>
     </div>
     </div>
 </div>
   
+<script>
+    var Slide = document.getElementById("Slide");
+    var Back = document.getElementById("BackBtn");
+    var NextBtn = document.getElementById("NextBtn");
+
+    var slideimages = new Array(
+        "/img/oslomet-logo-black.svg",
+        "/img/hoved-index.jpeg",
+        "/img/opener.webp",
+        "/img/phil-aicken-ry_yTIzNj-M-unsplash.jpg",
+    );
+
+    let i = 0;
+
+    NextBtn.onclick = function(){
+        if(i > 3){
+                Slide.src = slideimages[i+1] 
+            i++;
+        }
+    }
+
+    Backbtn.onclick = function(){
+        if(i > 0){
+                Slide.src = slideimages[i+1] 
+            i++;
+        }
+    }
+</script>
 
 </body>
 
