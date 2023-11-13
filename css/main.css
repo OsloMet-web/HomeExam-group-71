@@ -1,11 +1,11 @@
 :root {
     --isabelline: #edede9ff;
     --timberwolf: #d6ccc2ff;
-    --main: rgba(245, 235, 224, 0.781);
+    --main: rgb(245, 235, 224);
     --champagne-pink: #e3d5caff;
     --secondary: #d5bdafff;
     --text: #000;
-    --footer: rgb(251, 249, 244);
+    --subheader-size: 2rem;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 }
 
 main {
-    margin: 7rem 7rem 0 7rem;
+    margin: 3rem 10rem 0 10rem;
 }
 
 p {
@@ -109,24 +109,22 @@ a {
 
 /* Header */
 header {
-    height: 800px;
-}
-
-header > section {
-    position: scroll;
-}
-
-header > nav {
+    top: 0;
+    opacity: 0;
     position: sticky;
     position: -webkit-sticky;
-
+    height: 75px;
+    background-color: var(--main);
+    animation: opacity .5s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    border-bottom: black 3px solid;
 }
 
 header a {
     font-size: 2rem;
     margin: auto;
     color: var(--text);
-    font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     text-decoration: none;
     width: 25%;
@@ -189,16 +187,20 @@ footer a:hover {
 }
 
 .index-h2 {
-    width: 40rem;
-    padding: 0 6rem 0 0;
+    width: 60rem;
+    padding: 0 4rem 0 0;
     margin-right: 6rem;
-    font-size: 1.5rem;
+    font-size: var(--subheader-size);
 }
 
 .index-h3 {
-    font-size: 1.5rem;
+    font-size: var(--subheader-size);
     padding-left: 6rem;
     margin-left: 6rem;
+}
+
+.index-h4 {
+    font-size: var(--subheader-size);
 }
 
 .info-container img {
@@ -488,6 +490,7 @@ footer a:hover {
     margin: 0 auto;
     width: 500px;
     opacity: 0;
+    filter: drop-shadow(2px 2px 2px black);
     animation: opacity .8s 2s alternate forwards, dragUp 1s 2.5s alternate forwards;
 }
 
