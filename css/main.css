@@ -212,6 +212,20 @@ footer a:hover {
 }
 
 /* canteen.html */
+.opening > h1 {
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.opening > img {
+    position: absolute;
+    align-self: center;
+    left: 10rem;
+    height: 100px;
+    width: 100px;
+}
+
 .main-container {
     margin-top: -20rem;
     display: grid;
@@ -225,6 +239,7 @@ footer a:hover {
     grid-template-columns: 1fr 10rem 1fr;
     height: auto;
     row-gap: 60px;
+    justify-items: center;
 }
 
 
@@ -235,34 +250,6 @@ footer a:hover {
     border-bottom: solid black 5px;
     position: relative;
     justify-content: center;
-}
-
-.oslometLogo {
-    margin-top: 12rem;
-    height: 350px;
-}
-
-.main {
-    background-color: rgb(0, 0, 255);
-    height: 2500px;
-}
-
-.letsgo {
-    color: white;
-}
-
-.infoLinje {
-    align-self: center;
-    text-transform: uppercase;
-    font-size: 5rem;
-}
-
-.opening > img {
-    position: absolute;
-    align-self: center;
-    left: 10rem;
-    height: 100px;
-    width: 100px;
 }
 
 .toppics {
@@ -305,6 +292,7 @@ footer a:hover {
     grid-column: 1;
     grid-row: 2;
     max-width: 21rem;
+
 }
 
 .box4 {
@@ -357,6 +345,7 @@ footer a:hover {
     }
 }
 
+/* Ned til iphone 5 ser bra ut hvertfall */
 @media (max-width: 850px) {
     .opening > img {
         display: none;
