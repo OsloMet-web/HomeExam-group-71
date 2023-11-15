@@ -345,7 +345,7 @@ footer a:hover {
     }
 }
 
-/* Ned til iphone 5 ser bra ut hvertfall */
+/* Ned til iphone 5 */
 @media (max-width: 850px) {
     .opening > img {
         display: none;
