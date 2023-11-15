@@ -3,27 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale box-shadow=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css" />
     <title>Canteen</title>
-    <link rel="icon" href="img/oslomet-logo-black.svg">
+    <link rel="icon" href="img/favico.ico">
 </head>
 
 <body>
-    <div class="opening">
-        <img src="img/oslomet-logo-black.svg" class="logo" alt="oslomet-logo">
-        <h1>Canteen</h1>
-    </div>
+    <!-- Header Start -->
     <header>
-
+        <section class="opening flex">
+            <img src="img/oslomet-logo-black.svg" alt="oslomet-logo">
+            <h1>Canteen</h1>
+        </section>
         <nav class="flex center-text">
-            <a class="border-radius" href="index.html">home</a>
-            <a class="border-radius">topic</a>
-            <a class="border-radius">accessibility</a>
-            <a class="border-radius active">canteen</a>
+            <a class="border-radius" href="index-mal.html">home</a>
+            <a class="border-radius" href="topcial.html">topic</a>
+            <a class="border-radius" href="accessibility.html">accessibility</a>
+            <a class="border-radius active" href="#">canteen</a>
         </nav>
     </header>
-
+    <!-- Header Slutt -->
     <main class="main-container">
 
         <picture class="toppics center-flex">
@@ -35,10 +35,10 @@
         <article>
             <section class="article-container">
                 <div class="box1">
-                    <h2>Vår mat</h2>
+                    <h2 class="center-text">Vår mat</h2>
                 </div>
                 <div class="line center-aligm"></div>
-                <div class="box2 center-flex">
+                <div class="box2 center-flex text-justify">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis velit
                         voluptatibus
                         animi assumenda
@@ -47,7 +47,10 @@
                         est
                         pariatur, in expedita.</p>
                 </div>
-                <div class="box3 center-flex">
+                <div class="box4">
+                    <h2 class="center-text">Vår mat</h2>
+                </div>
+                <div class="box3 center-flex text-justify">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis velit
                         voluptatibus
                         animi assumenda
@@ -57,25 +60,28 @@
                         pariatur, in expedita.</p>
                 </div>
                 <div class="line"></div>
-                <div class="box4">
-                    <h2>Vår mat</h2>
-                </div>
             </section>
         </article>
-        <section class="crew">
-            <h2>Hvem er vi?</h2>
-            <picture class="bottompics flex">
-                <img src="img/canteen/kokk.jpg" alt="Kokk">
-                <p><strong>Kokk</strong><br> Gunnar Gunnarsen</p>
-                <!--Photo by <a href="https://unsplash.com/@rccf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Rc Cf</a> on <a href="https://unsplash.com/photos/man-in-white-button-up-shirt-and-black-vest-FMh5o5m5N9E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
-                <img src="img/canteen/kokk.jpg" alt="Kokk">
-                <p><strong>Kokk</strong><br>Gunnar Gunnarsen</p>
-                <!--Photo by <a href="https://unsplash.com/@rccf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Rc Cf</a> on <a href="https://unsplash.com/photos/man-in-white-button-up-shirt-and-black-vest-FMh5o5m5N9E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
-                <img src="img/canteen/kokk.jpg" alt="Kokk">
-                <p><strong>Kokk</strong><br> Gunnar Gunnarsen</p>
-                <!--Photo by <a href="https://unsplash.com/@rccf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Rc Cf</a> on <a href="https://unsplash.com/photos/man-in-white-button-up-shirt-and-black-vest-FMh5o5m5N9E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
+        <aside class="crew">
+            <h2 class="center-text">Hvem er vi?</h2>
+            <picture class="bottompics flex flex-space-between">
+                <div class="flex">
+                    <img src="img/canteen/kokk.jpg" alt="Kokk">
+                    <p><strong>Kokk</strong><br> Gunnar Gunnarsen</p>
+                    <!--Photo by Rc Cf on "https://unsplash.com/photos/man-in-white-button-up-shirt-and-black-vest-FMh5o5m5N9E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" Unsplash-->
+                </div>
+                <div class="flex">
+                    <img src="img/canteen/kokk.jpg" alt="Kokk">
+                    <p><strong>Kokk</strong><br>Gunnar Gunnarsen</p>
+                    <!--Photo by Rc Cf on "https://unsplash.com/photos/man-in-white-button-up-shirt-and-black-vest-FMh5o5m5N9E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" Unsplash-->
+                </div>
+                <div class="flex">
+                    <img src="img/canteen/kokk.jpg" alt="Kokk">
+                    <p><strong>Kokk</strong><br> Gunnar Gunnarsen</p>
+                    <!--Photo by Rc Cf on "https://unsplash.com/photos/man-in-white-button-up-shirt-and-black-vest-FMh5o5m5N9E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" Unsplash-->
+                </div>
             </picture>
-        </section>
+        </aside>
     </main>
 
     <footer class="flex flex-space-around">
