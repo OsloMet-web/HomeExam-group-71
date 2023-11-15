@@ -273,8 +273,8 @@ footer a:hover {
     justify-self: center;
     align-self: center;
     margin: auto;
-    border: 3px solid #000;
-    height: 275px;
+    border-right: 3px solid #000;
+    height: 15rem;
     grid-column: 2;
 }
 
@@ -329,6 +329,10 @@ footer a:hover {
         display: none;
     }
 
+    .line {
+        display: none;
+    }
+
     .toppics > img {
         height: 20rem;
         border-radius: 10px;
@@ -367,7 +371,6 @@ footer a:hover {
     }
 
     .line {
-
         display: none;
     }
 
