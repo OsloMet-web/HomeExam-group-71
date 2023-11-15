@@ -538,10 +538,93 @@ https://www.youtube.com/watch?v=Rtf42_Bp-Fo&list=PLjwm_8O3suyOwElnplQ3quKEHsOuHy
 
 /* Topical 2 */
 
-/* Animasjoner */
+.header1{
+    position: relative;
+    overflow: hidden;
+}
 
+  .body1 {
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  @media (hover: none){
+    .articles__content{
+      pointer-events: none;
+    }
+  }
+  .articles{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
+  .articles--scroll >*{
+    scroll-snap-align: start;
+  }
+  .articles__container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+  }
+ 
 
-
+  /*Digital illustrasjon laget ved hjelp av Midjourney AI, (Axelsen, 2022)*/
+ 
+  
+  .articles__container--img2{
+    background-image: url("/img/hoved-index.jpeg");
+  /*Digital illustrasjon laget ved hjelp av Midjourney AI, (Axelsen, 2022)*/
+  }
+  .articles__content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+  }
+  
+  .articles__header{
+    font-size: 4rem;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.8);
+  }
+  .articles__text{
+    max-width: 80ch;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  .articles__link{
+    color: white;
+    text-decoration: none;
+  }
+  .articles__link:hover{
+    color: var(--clr-rød__hover);
+  }
+  
+  .referanser{
+    background-color: rgb(0, 0, 0, 0.9);
+    padding: 3ch;
+    border-radius: 10px;
+    max-width: 80ch;
+    color: white;
+  }
+  .referanser__header{
+    color: white;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  .referanser__list{
+    color: white;
+  }
+  .referanser__list p{
+    color: inherit;
+  }
 
 /* Animasjoner */
 
