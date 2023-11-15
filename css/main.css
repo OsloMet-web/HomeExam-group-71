@@ -538,25 +538,20 @@ https://www.youtube.com/watch?v=Rtf42_Bp-Fo&list=PLjwm_8O3suyOwElnplQ3quKEHsOuHy
 
 /* Topical 2 */
 
-.header1{
-    position: relative;
-    overflow: hidden;
-}
 
-  .body1 {
+  .main1{
     overflow: hidden;
-    height: 100vh;
+    margin: 0;
+    margin-top: -20rem;
+    scroll-snap-align: start;
   }
-  
-  @media (hover: none){
-    .articles__content{
-      pointer-events: none;
-    }
-  }
+
   .articles{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    scroll-snap-align: start;
   }
+
   .articles--scroll >*{
     scroll-snap-align: start;
   }
@@ -568,15 +563,12 @@ https://www.youtube.com/watch?v=Rtf42_Bp-Fo&list=PLjwm_8O3suyOwElnplQ3quKEHsOuHy
     background-size:cover;
     background-position:center;
   }
- 
 
-  /*Digital illustrasjon laget ved hjelp av Midjourney AI, (Axelsen, 2022)*/
- 
-  
-  .articles__container--img2{
+  .articles__container--img1{
     background-image: url("/img/hoved-index.jpeg");
   /*Digital illustrasjon laget ved hjelp av Midjourney AI, (Axelsen, 2022)*/
   }
+  
   .articles__content{
     height: 100vh;
     display: flex;
@@ -625,7 +617,6 @@ https://www.youtube.com/watch?v=Rtf42_Bp-Fo&list=PLjwm_8O3suyOwElnplQ3quKEHsOuHy
   .referanser__list p{
     color: inherit;
   }
-
 /* Animasjoner */
 
 @keyframes opacity {
