@@ -537,10 +537,14 @@ https://www.youtube.com/watch?v=Rtf42_Bp-Fo&list=PLjwm_8O3suyOwElnplQ3quKEHsOuHy
 }
 
 /* Topical 2 */
-
-
+body{
+    overflow: hidden;
+    height: 120vh;
+    scroll-snap-align: start;
+}
   .main1{
-    overflow-y: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
     margin: 0;
     margin-top: -20rem;
     scroll-snap-align: start;
@@ -617,6 +621,26 @@ https://www.youtube.com/watch?v=Rtf42_Bp-Fo&list=PLjwm_8O3suyOwElnplQ3quKEHsOuHy
   .referanser__list p{
     color: inherit;
   }
+
+/* Topical 3 */
+.topical-main{
+    margin: 0;
+}
+.topical-article{
+    background-image: url("/img/hoved-index.jpeg");
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    background-size:cover;
+    background-position:center;
+}
+.topical-container{
+
+}
+
+
+
+
 
 /* Animasjoner */
 
