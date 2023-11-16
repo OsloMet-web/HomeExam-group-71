@@ -1,7 +1,7 @@
 :root {
     --isabelline: #edede9ff;
     --timberwolf: #d6ccc2ff;
-    --main: rgba(245, 235, 224, 0.781);
+    --main: rgb(245, 235, 224);
     --champagne-pink: #e3d5caff;
     --secondary: #d5bdafff;
     --text: #000;
@@ -108,28 +108,31 @@ a {
 }
 
 /* Header */
-header {
-    height: 800px;
-}
 
 header > section {
     position: scroll;
 }
 
-header > nav {
-    position: sticky;
-    position: -webkit-sticky;
 
-}
-
-header a {
+nav a {
     font-size: 2rem;
-    margin: auto;
     color: var(--text);
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     text-decoration: none;
     width: 25%;
+    z-index: 1;
+    border-radius: 7px;
+    padding-top: .7rem;
+    height: 3rem;
+}
+
+nav {
+    text-align: center;
+}
+
+nav .activea {
+    background-color: var(--main);
 }
 
 header a:hover {
@@ -182,6 +185,10 @@ footer a:hover {
     transform: scale(1.2);
 }
 
+footer a:active {
+    transform: scale(1);
+}
+
 /* index.html */
 
 .header-index {
@@ -203,6 +210,10 @@ footer a:hover {
 
 .info-container img {
     height: 350px;
+}
+
+.info-left {
+    flex-direction: row-reverse;
 }
 
 .p-veibeskrivelse {
@@ -482,6 +493,8 @@ footer a:hover {
 
 .opener-left {
     animation: slideDown .9s .6s 1 alternate forwards;
+    font-size: 6rem;
+    margin: 0;
 }
 
 .opener-border {
@@ -504,7 +517,6 @@ footer a:hover {
     opacity: 0;
     animation: slideUp .3s, opacity .1s;
     animation-fill-mode: forwards;
-
 }
 
 .opener2 {
@@ -512,7 +524,6 @@ footer a:hover {
     animation: slideUp .3s, opacity .1s;
     animation-delay: .2s;
     animation-fill-mode: forwards;
-
 }
 
 .opener3 {
@@ -520,6 +531,12 @@ footer a:hover {
     animation: slideUp .3s, opacity .1s;
     animation-delay: .4s;
     animation-fill-mode: forwards;
+}
+
+.opener-li {
+    margin: 0 0 0 -2rem;
+    list-style-type: none;
+    font-size: 6rem;
 }
 
 /* accessibility */
