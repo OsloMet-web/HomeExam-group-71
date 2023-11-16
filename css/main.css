@@ -540,7 +540,7 @@ https://www.youtube.com/watch?v=Rtf42_Bp-Fo&list=PLjwm_8O3suyOwElnplQ3quKEHsOuHy
 
 
   .main1{
-    overflow: hidden;
+    overflow-y: hidden;
     margin: 0;
     margin-top: -20rem;
     scroll-snap-align: start;
@@ -549,7 +549,7 @@ https://www.youtube.com/watch?v=Rtf42_Bp-Fo&list=PLjwm_8O3suyOwElnplQ3quKEHsOuHy
   .articles{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    scroll-snap-align: start;
+    height: 100vh;
   }
 
   .articles--scroll >*{
@@ -617,6 +617,7 @@ https://www.youtube.com/watch?v=Rtf42_Bp-Fo&list=PLjwm_8O3suyOwElnplQ3quKEHsOuHy
   .referanser__list p{
     color: inherit;
   }
+
 /* Animasjoner */
 
 @keyframes opacity {
