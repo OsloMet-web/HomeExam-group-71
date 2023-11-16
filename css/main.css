@@ -1,11 +1,13 @@
 :root {
     --isabelline: #edede9ff;
     --timberwolf: #d6ccc2ff;
-    --main: rgba(245, 235, 224, 0.781);
+    --main: rgb(245, 235, 224);
     --champagne-pink: #e3d5caff;
     --secondary: #d5bdafff;
     --text: #000;
     --footer: rgb(251, 249, 244);
+    --menu-open: url("../img/icons/menu-open.svg");
+    --menu-close: url("../img/icons/menu-close.svg");
 }
 
 body {
@@ -109,33 +111,131 @@ a {
 
 /* Header */
 header {
-    height: 800px;
+    height: 25rem;
 }
 
 header > section {
     position: scroll;
 }
 
-header > nav {
-    position: sticky;
-    position: -webkit-sticky;
 
-}
-
-header a {
+nav a {
     font-size: 2rem;
-    margin: auto;
     color: var(--text);
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     text-decoration: none;
     width: 25%;
+    z-index: 1;
+    border-radius: 7px;
+    padding-top: .7rem;
+    height: 3rem;
+    transition: all 0.5s;
 }
+
+nav {
+    text-align: center;
+}
+
+nav .active {
+    font-weight: 800;
+}
+
+
 
 header a:hover {
     font-weight: 700;
     color: var(--text)
 }
+
+/* Dropdown-menu */
+#drp-menu-toggle {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .drp-menu-toggle-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 40px;
+        margin-left: 0;
+        position: relative;
+    }
+
+    .menu-icon {
+        display: block;
+        background-image: var(--menu-open);
+        background-size: cover;
+        position: absolute;
+        left: 5px;
+        top: 2px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        transition: all .5s;
+    }
+
+    .menu-icon:hover {
+        height: 42px;
+        width: 42px;
+    }
+
+    .menu > a {
+        margin-left: 0.5em;
+        overflow: hidden;
+        font-size: smaller;
+        background-color: var(--main);
+        transition: none;
+    }
+
+    #drp-menu-toggle ~ .menu a {
+        height: 0px;
+        width: 0px;
+        visibility: hidden;
+    }
+
+    #drp-menu-toggle:checked ~ .menu-icon {
+        display: block;
+        background-image: var(--menu-close);
+        background-size: cover;
+
+    }
+
+    #drp-menu-toggle:checked ~ .menu {
+        flex-direction: column;
+        position: sticky;
+        justify-content: left;
+        margin-top: 31px;
+        margin-left: 40px;
+        background-color: var(--main);
+        border: 2px solid #000;
+        border-radius: 10px;
+        height: 7em;
+        width: 7.5em;
+    }
+
+
+
+    #drp-menu-toggle:checked ~ .menu a {
+        height: 1rem;
+        margin: 0px;
+        padding-top: 0.7rem;
+        padding-right: 8em;
+        padding-left: .1em;
+        height: 1.4rem;
+        visibility: visible;
+        transition: all .5s;
+    }
+
+    #drp-menu-toggle:checked ~ .menu a {
+        margin-left: 0.5em;
+        overflow: hidden;
+        font-size: smaller;
+        height: 1em;
+    }
+}
+
 
 /* Footer */
 
@@ -182,6 +282,10 @@ footer a:hover {
     transform: scale(1.2);
 }
 
+footer a:active {
+    transform: scale(1);
+}
+
 /* index.html */
 
 .header-index {
@@ -205,6 +309,10 @@ footer a:hover {
     height: 350px;
 }
 
+.info-left {
+    flex-direction: row-reverse;
+}
+
 .p-veibeskrivelse {
     padding: 0 1rem 0 1rem;
     margin-left: 1rem;
@@ -212,6 +320,16 @@ footer a:hover {
 }
 
 /* canteen.html */
+.opening {
+    background-color: var(--main);
+    height: 20em;
+    border-bottom: solid black 5px;
+    position: relative;
+    justify-content: center;
+    background-image: url("../img/canteen/kokk.jpg");
+    background-size: cover;
+}
+
 .opening > h1 {
     align-self: center;
     text-transform: uppercase;
@@ -242,20 +360,10 @@ footer a:hover {
     justify-items: center;
 }
 
-
-.opening {
-    background-color: var(--main);
-    width: 100%;
-    height: 25em;
-    border-bottom: solid black 5px;
-    position: relative;
-    justify-content: center;
-}
-
 .toppics {
     grid-column: 1 / 4;
     grid-row: 1;
-    margin-top: 5em;
+    margin-top: 21em;
     margin-bottom: 5em;
 }
 
@@ -273,8 +381,8 @@ footer a:hover {
     justify-self: center;
     align-self: center;
     margin: auto;
-    border: 3px solid #000;
-    height: 275px;
+    border-right: 3px solid #000;
+    height: 15rem;
     grid-column: 2;
 }
 
@@ -286,13 +394,14 @@ footer a:hover {
 .box2 {
     grid-column: 3;
     max-width: 21rem;
+    min-width: 15.5rem;
 }
 
 .box3 {
     grid-column: 1;
     grid-row: 2;
     max-width: 21rem;
-
+    min-width: 15.5rem;
 }
 
 .box4 {
@@ -324,7 +433,15 @@ footer a:hover {
 }
 
 @media (max-width: 1055px) {
+    .opening > img {
+        display: none;
+    }
+
     .middle-img {
+        display: none;
+    }
+
+    .line {
         display: none;
     }
 
@@ -345,10 +462,10 @@ footer a:hover {
     }
 }
 
-/* Ned til iphone 5 ser bra ut hvertfall */
+/* Ned til iphone 5 */
 @media (max-width: 850px) {
-    .opening > img {
-        display: none;
+    .opening > h1 {
+        text-align: center;
     }
 
     main {
@@ -366,7 +483,6 @@ footer a:hover {
     }
 
     .line {
-
         display: none;
     }
 
@@ -730,6 +846,8 @@ body{
 
 .opener-left {
     animation: slideDown .9s .6s 1 alternate forwards;
+    font-size: 6rem;
+    margin: 0;
 }
 
 .opener-border {
@@ -752,7 +870,6 @@ body{
     opacity: 0;
     animation: slideUp .3s, opacity .1s;
     animation-fill-mode: forwards;
-
 }
 
 .opener2 {
@@ -760,7 +877,6 @@ body{
     animation: slideUp .3s, opacity .1s;
     animation-delay: .2s;
     animation-fill-mode: forwards;
-
 }
 
 .opener3 {
@@ -768,6 +884,12 @@ body{
     animation: slideUp .3s, opacity .1s;
     animation-delay: .4s;
     animation-fill-mode: forwards;
+}
+
+.opener-li {
+    margin: 0 0 0 -2rem;
+    list-style-type: none;
+    font-size: 6rem;
 }
 
 /* accessibility */
