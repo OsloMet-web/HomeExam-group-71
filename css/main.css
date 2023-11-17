@@ -517,3 +517,19 @@ footer a:hover {
 }
 
 /* accessibility */
+
+.testAcc {
+    display: grid;
+    grid-row: 4;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.testAcc > img {
+    height: 20rem;
+    border-radius: 10px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
