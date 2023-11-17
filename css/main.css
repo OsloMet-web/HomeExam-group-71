@@ -345,7 +345,7 @@ footer a:active {
     border-bottom: solid black 5px;
     position: relative;
     justify-content: center;
-    background-image: url("../img/canteen/kokk.jpg");
+    background-image: url("../img/kantine/kokk.jpg");
     background-size: cover;
 }
 
@@ -410,6 +410,9 @@ footer a:active {
 .box1 {
     grid-column: 1;
     grid-row: 1;
+    max-width: 21rem;
+    min-width: 15.5rem;
+    align-self: center;
 }
 
 .box2 {
@@ -439,7 +442,6 @@ footer a:active {
 .box2 > h3,
 .box3 > h3,
 .box3 > p {
-
     text-align: center;
 }
 
@@ -512,15 +514,20 @@ footer a:active {
         margin: 0 2rem;
     }
 
+    .main-container {
+        row-gap: 1rem;
+    }
+
     .article-container {
         display: flex;
         flex-direction: column;
-
+        row-gap: 1rem;
     }
 
-    .article-container h2 {
-        margin: 0;
+    .box4 h2 {
+        margin: 2rem 0 0 0;
     }
+
 
     .line {
         display: none;
@@ -539,6 +546,7 @@ footer a:active {
     .toppics > img:nth-child(3) {
         height: 15rem;
         margin: 0;
+        margin-top: -5rem;
     }
 
 
