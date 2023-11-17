@@ -160,9 +160,6 @@ header a:hover {
 }
 
 @media (max-width: 900px) {
-    header {
-        height: 20rem;
-    }
 
     .drp-menu-toggle-container {
         display: flex;
@@ -310,6 +307,10 @@ footer a:active {
 /* index.html */
 .index-start {
     height: fit-content;
+}
+
+.index-main {
+    margin: 2rem 10% 10% 10%;
 }
 
 .index-h2 {
@@ -501,13 +502,6 @@ footer a:active {
 
 /* accessibility */
 
-.testAcc {
-    display: grid;
-    grid-row: 4;
-    margin-top: 3em;
-    margin-bottom: 3em;
-}
-
 .access-logo {
     position: absolute;
     align-self: center;
@@ -524,11 +518,24 @@ footer a:active {
     margin-bottom: 0;
 }
 
-.testAcc>img {
-    height: 20rem;
-    border-radius: 10px;
-    margin-left: 1em;
-    margin-right: 1em;
+.access-subheader1 {
+    margin-top: 0;
+    margin-bottom: 23rem;
+}
+
+.access-subheader2 {
+    margin-top: 0;
+    margin-bottom: 8rem;
+}
+
+.access-subheader3 {
+    margin-top: 0;
+    margin-bottom: 11rem;
+}
+
+.access-subheader4 {
+    margin-top: 0;
+
 }
 
 .access-box {
