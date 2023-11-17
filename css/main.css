@@ -210,6 +210,7 @@ header a:hover {
         border-radius: 10px;
         height: 7em;
         width: 7.5em;
+        z-index: 1;
     }
 
 
@@ -223,6 +224,7 @@ header a:hover {
         height: 1.4rem;
         visibility: visible;
         transition: all .5s;
+        z-index: 2;
     }
 
     #drp-menu-toggle:checked ~ .menu a {
@@ -570,7 +572,8 @@ footer a:active {
     .toppics > img:nth-child(3) {
         height: 15rem;
         margin: 0;
-        margin-top: -5rem;
+        margin-top: -4rem;
+        position: absolute;
     }
 
     .border-left {
@@ -710,10 +713,12 @@ footer a:active {
     flex-direction: column;
     align-content: left;
 }
+
 #referanser h2 {
     margin: 0;
     text-align: left;
 }
+
 #referanser p {
     border: 0;
     margin: 0;
