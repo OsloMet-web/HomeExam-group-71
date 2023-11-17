@@ -110,11 +110,8 @@ a {
 }
 
 /* Header */
-header {
-    height: 25rem;
-}
 
-header > section {
+header>section {
     position: scroll;
 }
 
@@ -181,7 +178,7 @@ header a:hover {
         width: 42px;
     }
 
-    .menu > a {
+    .menu>a {
         margin-left: 0.5em;
         overflow: hidden;
         font-size: smaller;
@@ -189,20 +186,20 @@ header a:hover {
         transition: none;
     }
 
-    #drp-menu-toggle ~ .menu a {
+    #drp-menu-toggle~.menu a {
         height: 0px;
         width: 0px;
         visibility: hidden;
     }
 
-    #drp-menu-toggle:checked ~ .menu-icon {
+    #drp-menu-toggle:checked~.menu-icon {
         display: block;
         background-image: var(--menu-close);
         background-size: cover;
 
     }
 
-    #drp-menu-toggle:checked ~ .menu {
+    #drp-menu-toggle:checked~.menu {
         flex-direction: column;
         position: sticky;
         justify-content: left;
@@ -217,7 +214,7 @@ header a:hover {
 
 
 
-    #drp-menu-toggle:checked ~ .menu a {
+    #drp-menu-toggle:checked~.menu a {
         height: 1rem;
         margin: 0px;
         padding-top: 0.7rem;
@@ -228,7 +225,7 @@ header a:hover {
         transition: all .5s;
     }
 
-    #drp-menu-toggle:checked ~ .menu a {
+    #drp-menu-toggle:checked~.menu a {
         margin-left: 0.5em;
         overflow: hidden;
         font-size: smaller;
@@ -287,7 +284,7 @@ footer a:active {
 }
 
 @media (max-width: 850px) {
-    footer > section {
+    footer>section {
         flex-direction: column;
 
         align-items: center;
@@ -311,10 +308,6 @@ footer a:active {
 /* index.html */
 .index-start {
     height: fit-content;
-}
-
-.header-index {
-    margin-top: -6rem;
 }
 
 .index-h2 {
@@ -355,13 +348,13 @@ footer a:active {
     background-size: cover;
 }
 
-.opening > h1 {
+.opening>h1 {
     align-self: center;
     text-transform: uppercase;
     font-size: 5rem;
 }
 
-.opening > img {
+.opening>img {
     position: absolute;
     align-self: center;
     left: 10rem;
@@ -392,7 +385,7 @@ footer a:active {
     margin-bottom: 5em;
 }
 
-.toppics > img {
+.toppics>img {
     height: 20rem;
     border-radius: 10px;
 }
@@ -458,7 +451,7 @@ footer a:active {
 }
 
 @media (max-width: 1055px) {
-    .opening > img {
+    .opening>img {
         display: none;
     }
 
@@ -470,7 +463,7 @@ footer a:active {
         display: none;
     }
 
-    .toppics > img {
+    .toppics>img {
         height: 20rem;
         border-radius: 10px;
         margin-left: 1em;
@@ -481,7 +474,7 @@ footer a:active {
         flex-direction: column;
     }
 
-    .bottompics > div {
+    .bottompics>div {
         margin-bottom: 1em;
         justify-content: center;
     }
@@ -489,7 +482,7 @@ footer a:active {
 
 /* Ned til iphone 5 */
 @media (max-width: 850px) {
-    .opening > h1 {
+    .opening>h1 {
         text-align: center;
     }
 
@@ -517,11 +510,11 @@ footer a:active {
         margin: 0 auto;
     }
 
-    .toppics > img:nth-child(1) {
+    .toppics>img:nth-child(1) {
         display: none;
     }
 
-    .toppics > img:nth-child(3) {
+    .toppics>img:nth-child(3) {
         height: 15rem;
         margin: 0;
     }
@@ -531,7 +524,7 @@ footer a:active {
 
 /* Topical */
 
-.topical-body{
+.topical-body {
     background-image: url("/img/opener.webp");
     background-size: cover;
     background-repeat: no-repeat;
@@ -539,19 +532,25 @@ footer a:active {
     /* Bakgrunnsbilde hentet fra .... */
 }
 
-.topical-body > main{
+.header-topical {
+    height: 26rem;
+}
+
+.topical-body>main {
     margin: 0;
     margin-top: -25rem;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
-.topical-article{
+
+.topical-article {
     scroll-snap-type: y mandatory;
     scroll-snap-align: start;
     overflow-y: scroll;
     height: 100vh;
 }
-.topical-article-content{
+
+.topical-article-content {
     height: 100vh;
     padding: 2rem;
     display: flex;
@@ -559,24 +558,25 @@ footer a:active {
     align-items: center;
     scroll-snap-align: start;
 }
-.topical-article-content > h1{
-  font-size: 4rem;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  border-radius: 10px;
-  background-color: rgb(0, 0, 0, 0.8);
-  /* Styling av overskrifter*/
+
+.topical-article-content>h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.8);
+    /* Styling av overskrifter*/
 }
 
-.topical-article-content > p{
-  font-size: 2rem;
-  color: white;
-  padding: 2rem;
-  text-align: center;
-  border-radius: 10px;
-  background-color: rgb(0, 0, 0, 0.8);
-  /* Styling av tekst*/
+.topical-article-content>p {
+    font-size: 2rem;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.8);
+    /* Styling av tekst*/
 }
 
 
