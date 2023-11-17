@@ -374,22 +374,22 @@ footer a:active {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr calc(2fr - 20rem) 1fr;
-    row-gap: 2rem;
+    row-gap: 5rem;
 }
 
 .article-container {
     display: grid;
     grid-template-columns: 1fr 10rem 1fr;
     height: auto;
-    row-gap: 60px;
+    row-gap: 10rem;
     justify-items: center;
 }
 
 .toppics {
     grid-column: 1 / 4;
     grid-row: 1;
-    margin-top: 21em;
-    margin-bottom: 5em;
+    margin-top: 25rem;
+    margin-bottom: 5rem;
 }
 
 .toppics > img {
@@ -402,12 +402,14 @@ footer a:active {
     margin-right: 2em;
 }
 
+
+
 .line {
     justify-self: center;
     align-self: center;
     margin: auto;
     border-right: 3px solid #000;
-    height: 15rem;
+    height: 100%;
     grid-column: 2;
 }
 
@@ -432,6 +434,25 @@ footer a:active {
 .box4 {
     grid-column: 3;
     grid-row: 2;
+}
+
+.box2,
+.box3 {
+    flex-direction: column;
+    align-self: center;
+}
+
+.box2 > h3,
+.box3 > h3,
+.box3 > p {
+
+    text-align: center;
+}
+
+.box2 > p {
+    align-self: center;
+    justify-self: center;
+    text-align: justify;
 }
 
 .crew {
@@ -531,7 +552,7 @@ footer a:active {
 
 /* Topical */
 
-.topical-body{
+.topical-body {
     background-image: url("/img/opener.webp");
     background-size: cover;
     background-repeat: no-repeat;
@@ -539,19 +560,21 @@ footer a:active {
     /* Bakgrunnsbilde hentet fra .... */
 }
 
-.topical-body > main{
+.topical-body > main {
     margin: 0;
     margin-top: -25rem;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
-.topical-article{
+
+.topical-article {
     scroll-snap-type: y mandatory;
     scroll-snap-align: start;
     overflow-y: scroll;
     height: 100vh;
 }
-.topical-article-content{
+
+.topical-article-content {
     height: 100vh;
     padding: 2rem;
     display: flex;
@@ -559,24 +582,25 @@ footer a:active {
     align-items: center;
     scroll-snap-align: start;
 }
-.topical-article-content > h1{
-  font-size: 4rem;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  border-radius: 10px;
-  background-color: rgb(0, 0, 0, 0.8);
-  /* Styling av overskrifter*/
+
+.topical-article-content > h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.8);
+    /* Styling av overskrifter*/
 }
 
-.topical-article-content > p{
-  font-size: 2rem;
-  color: white;
-  padding: 2rem;
-  text-align: center;
-  border-radius: 10px;
-  background-color: rgb(0, 0, 0, 0.8);
-  /* Styling av tekst*/
+.topical-article-content > p {
+    font-size: 2rem;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.8);
+    /* Styling av tekst*/
 }
 
 
