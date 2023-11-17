@@ -19,7 +19,7 @@ body {
 }
 
 main {
-    margin: 7rem 7rem 0 7rem;
+    margin: 7rem 10rem 0 10rem;
 }
 
 p {
@@ -42,6 +42,10 @@ a {
 
 .center-text {
     text-align: center;
+}
+
+.subheader {
+    font-size: 2rem;
 }
 
 .end-text {
@@ -314,11 +318,9 @@ footer a:active {
     width: 40rem;
     padding: 0 6rem 0 0;
     margin-right: 6rem;
-    font-size: 1.5rem;
 }
 
 .index-h3 {
-    font-size: 1.5rem;
     padding-left: 6rem;
     margin-left: 6rem;
 }
