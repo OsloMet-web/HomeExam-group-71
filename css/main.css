@@ -707,7 +707,8 @@ footer a:active {
 }
 
 .topical-article p {
-    font-size: 2rem;
+    display: auto;
+    font-size: 3vh;
     color: white;
     padding: 2rem;
     border-radius: 10px;
@@ -716,15 +717,13 @@ footer a:active {
 }
 
 #referanser {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-
+    size: inherit;
 }
 
 #referanser h2 {
     margin: 0;
+    padding: 0;
+    padding-top: 1rem;
     text-align: left;
     font-size: 2rem;
     background-color: initial;
@@ -739,15 +738,21 @@ footer a:active {
 #referanser li {
     color: #fff;
     font-size: 1.5rem;
+    padding: 0;
 }
 
 #referanser p {
-    border: 0;
-    margin: 0;
+    font-size: small;
     background-color: initial;
-    font-size: 1.5rem;
 }
 
+#referanser a {
+    color: #fff;
+}
+
+#referanser a:hover {
+    color: #7bafd6;
+}
 
 @media (max-width: 900px) {
     .menu-icon-white {
