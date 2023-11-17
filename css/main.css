@@ -27,6 +27,10 @@ p {
     font-size: 1.3rem;
 }
 
+b {
+    font-size: 1.3rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -115,7 +119,8 @@ a {
 }
 
 /* Header */
-header > section {
+
+header>section {
     position: scroll;
 }
 
@@ -180,7 +185,7 @@ header a:hover {
         width: 42px;
     }
 
-    .menu > a {
+    .menu>a {
         margin-left: 0.5em;
         overflow: hidden;
         font-size: smaller;
@@ -188,13 +193,13 @@ header a:hover {
         transition: none;
     }
 
-    #drp-menu-toggle ~ .menu a {
+    #drp-menu-toggle~.menu a {
         height: 0px;
         width: 0px;
         visibility: hidden;
     }
 
-    #drp-menu-toggle:checked ~ .menu {
+    #drp-menu-toggle:checked~.menu {
         flex-direction: column;
         position: absolute;
         justify-content: left;
@@ -210,7 +215,7 @@ header a:hover {
 
 
 
-    #drp-menu-toggle:checked ~ .menu a {
+    #drp-menu-toggle:checked~.menu a {
         height: 1rem;
         margin: 0px;
         padding-top: 0.7rem;
@@ -222,7 +227,7 @@ header a:hover {
         z-index: 2;
     }
 
-    #drp-menu-toggle:checked ~ .menu a {
+    #drp-menu-toggle:checked~.menu a {
         margin-left: 0.5em;
         overflow: hidden;
         font-size: smaller;
@@ -281,7 +286,7 @@ footer a:active {
 }
 
 @media (max-width: 850px) {
-    footer > section {
+    footer>section {
         flex-direction: column;
 
         align-items: center;
@@ -365,13 +370,13 @@ footer a:active {
     background-size: cover;
 }
 
-.opening > h1 {
+.opening>h1 {
     align-self: center;
     text-transform: uppercase;
     font-size: 5rem;
 }
 
-.opening > img {
+.opening>img {
     position: absolute;
     align-self: center;
     left: 10rem;
@@ -406,7 +411,7 @@ footer a:active {
     justify-content: center;
 }
 
-.toppics > img {
+.toppics>img {
     height: 20rem;
     border-radius: 10px;
 }
@@ -458,14 +463,14 @@ footer a:active {
 }
 
 
-.box2 > h3,
-.box3 > h3,
-.box3 > p {
+.box2>h3,
+.box3>h3,
+.box3>p {
 
     text-align: center;
 }
 
-.box2 > p {
+.box2>p {
     align-self: center;
     justify-self: center;
     text-align: justify;
@@ -495,7 +500,7 @@ footer a:active {
 }
 
 @media (max-width: 1055px) {
-    .opening > img {
+    .opening>img {
         display: none;
     }
 
@@ -523,15 +528,15 @@ footer a:active {
         flex-direction: column;
     }
 
-    .bottompics > div {
+    .bottompics>div {
         margin-bottom: 1em;
         justify-content: center;
     }
 }
 
 /* Ned til iphone 5 */
-@media (max-width: 900px) {
-    .opening > h1 {
+@media (max-width: 850px) {
+    .opening>h1 {
         text-align: center;
     }
 
@@ -571,11 +576,11 @@ footer a:active {
         min-width: 15.313rem;
     }
 
-    .toppics > img:nth-child(1) {
+    .toppics>img:nth-child(1) {
         display: none;
     }
 
-    .toppics > img:nth-child(3) {
+    .toppics>img:nth-child(3) {
         height: 15rem;
         margin: 0;
         margin-top: -2rem;
@@ -669,7 +674,7 @@ footer a:active {
     color: white;
 }
 
-.topical-body > main {
+.topical-body>main {
     margin: 0;
     margin-top: -25rem;
     overflow-y: scroll;
@@ -677,7 +682,7 @@ footer a:active {
     height: 100vh;
 }
 
-.topical-article > section {
+.topical-article>section {
     height: 100vh;
     padding: 2rem;
     display: flex;
@@ -763,11 +768,11 @@ footer a:active {
         transition: all .5s;
     }
 
-    .topical-body #drp-menu-toggle:checked ~ .menu {
+    .topical-body #drp-menu-toggle:checked~.menu {
         background-color: rgb(104, 210, 242);
     }
 
-    .topical-body #drp-menu-toggle:checked ~ .menu a {
+    .topical-body #drp-menu-toggle:checked~.menu a {
         background-color: rgb(104, 210, 242);
     }
 }
@@ -916,9 +921,84 @@ footer a:active {
     margin-bottom: 3em;
 }
 
-.testAcc > img {
+.access-logo {
+    position: absolute;
+    align-self: center;
+    top: 9rem;
+    left: 10rem;
+    height: 100px;
+    width: 100px;
+}
+
+.access-header {
+    font-size: 5rem;
+    padding: 6rem 0 6rem 0;
+    border-bottom: solid black 3px;
+    margin-bottom: 0;
+}
+
+.testAcc>img {
     height: 20rem;
     border-radius: 10px;
     margin-left: 1em;
     margin-right: 1em;
+}
+
+.access-box {
+    width: 30rem;
+}
+
+.access-text {
+    margin: 0 0 2rem 0;
+}
+
+.access-border {
+    border: solid black 2px;
+    margin: 5px 2rem 1rem 2rem;
+}
+
+.access-img {
+    width: 15rem;
+    height: 15rem;
+    margin-right: 4rem;
+}
+
+.access-box h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.access-container {
+    margin-bottom: 3rem;
+}
+
+.vaart-team {
+    width: 50%;
+    line-height: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 4rem;
+}
+
+.vaart-team-line2 {
+    margin-top: 6rem;
+    margin-bottom: -3rem;
+}
+
+.vaart-team-img-container {
+    flex-direction: column;
+}
+
+.vaart-team .navn {
+    margin: 0;
+    font-weight: bold;
+}
+
+.vaart-team-container {
+    margin-bottom: 1rem;
+}
+
+.vaart-team-img {
+    height: 9rem;
+    margin: 0 2rem 4rem 2rem;
 }
