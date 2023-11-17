@@ -651,11 +651,12 @@ footer a:active {
 
 .topical-body {
     background-image: url("/img/topical/joey-kyber-45FJgZMXCK8-unsplash-3.jpg");
+    /* Bakgrunnsbilde hentet fra unsplash.com 
+    https://unsplash.com/photos/timelapse-photo-of-highway-during-golden-hour-45FJgZMXCK8*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    /* Bakgrunnsbilde hentet fra .... */
 }
 
 .topical-body .border-radius {
