@@ -642,7 +642,7 @@ footer a:active {
 }
 
 /* Topical */
-.header-topical{
+.header-topical {
     height: 26rem;
 }
 
@@ -801,9 +801,7 @@ footer a:active {
 /* Opener */
 
 .opener {
-    color: black;
-    font-size: 6rem;
-    margin: 14rem 4rem 22rem 0rem;
+    margin: 11vw 4rem 20vw 0;
     animation: opacity-none .3s;
     animation-delay: 1.6s;
     animation-fill-mode: forwards;
@@ -812,7 +810,7 @@ footer a:active {
 .opener-background {
     opacity: 0;
     width: 100%;
-    height: 54em;
+    height: 54vw;
     position: absolute;
     top: 0;
     animation: opacity 1s;
@@ -823,7 +821,7 @@ footer a:active {
 
 .opener-left {
     animation: slideDown .9s .6s 1 alternate forwards;
-    font-size: 6rem;
+    font-size: 7vw;
     margin: 0;
 }
 
@@ -838,7 +836,7 @@ footer a:active {
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 500px;
+    width: 32vw;
     opacity: 0;
     animation: opacity .8s 2s alternate forwards, dragUp 1s 2.5s alternate forwards;
 }
@@ -866,7 +864,7 @@ footer a:active {
 .opener-li {
     margin: 0 0 0 -2rem;
     list-style-type: none;
-    font-size: 6rem;
+    font-size: 7vw;
 }
 
 /* accessibility */
@@ -878,11 +876,9 @@ footer a:active {
     margin-bottom: 3em;
 }
 
-.testAcc > img {
+.testAcc>img {
     height: 20rem;
     border-radius: 10px;
     margin-left: 1em;
     margin-right: 1em;
 }
-
-
