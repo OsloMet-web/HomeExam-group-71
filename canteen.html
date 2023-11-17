@@ -14,13 +14,20 @@
     <header>
         <section class="opening flex">
             <img src="img/oslomet-logo-black.svg" alt="oslomet-logo">
-            <h1>Canteen</h1>
+            <h1>Olaf spiseri</h1>
         </section>
-        <nav class="flex center-text">
-            <a class="border-radius" href="index-mal.html">home</a>
-            <a class="border-radius" href="topcial.html">topic</a>
-            <a class="border-radius" href="accessibility.html">accessibility</a>
-            <a class="border-radius active" href="#">canteen</a>
+        <nav>
+            <input id="drp-menu-toggle" type="checkbox">
+            <label class="drp-menu-toggle-container" for="drp-menu-toggle">
+                <div class="menu-icon"></div>
+            </label>
+
+            <div class="menu flex center-flex">
+                <a class="border-radius" href="index.html">home</a>
+                <a class="border-radius" href="topical.html">topic</a>
+                <a class="border-radius" href="accessibility.html">accessibility</a>
+                <a class="border-radius active" href="#">canteen</a>
+            </div>
         </nav>
     </header>
     <!-- Header Slutt -->
@@ -28,16 +35,18 @@
 
         <picture class="toppics center-flex">
             <img src="img/canteen/kantinelangbor.jpg" alt="Langbor i kantineområde">
+            <!-- Av Lexie Barnhorn https://unsplash.com/photos/group-of-people-eating-inside-cafeteria-rWjd8kNuT7Q -->
             <img class="middle-img" src="img/canteen/salatbar.jpg" alt="salatbar">
+            <!-- Av Jonathan Borba fra https://unsplash.com/photos/stainless-steel-bowls-5E0d3lfoC1w -->
             <img src="img/canteen/rundbord.jpg" alt="rundbord i kantineområde">
-            <!-- Bildene er hentet fra "https://unsplash.com" -->
+            <!-- Av Wade Austin Ellis fra https://unsplash.com/photos/people-sitting-on-restaurant-chairs-4YApsoSaNKA -->
         </picture>
         <article>
             <section class="article-container">
                 <div class="box1">
                     <h2 class="center-text">Vår mat</h2>
                 </div>
-                <div class="line center-aligm"></div>
+                <div class="line"></div>
                 <div class="box2 center-flex text-justify">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis velit
                         voluptatibus
@@ -45,12 +54,12 @@
                         possimus doloribus distinctio suscipit molestiae sequi ea sint temporibus fuga neque iste
                         delectus
                         est
-                        pariatur, in expedita.</p>
+                        pariatur, in expedita. lor</p>
                 </div>
                 <div class="box4">
                     <h2 class="center-text">Vår mat</h2>
                 </div>
-                <div class="box3 center-flex text-justify">
+                <div class="box3 text-justify">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis velit
                         voluptatibus
                         animi assumenda
@@ -64,7 +73,7 @@
         </article>
         <aside class="crew">
             <h2 class="center-text">Hvem er vi?</h2>
-            <picture class="bottompics flex flex-space-between">
+            <picture class="bottompics flex flex-space-between flex-space-around">
                 <div class="flex">
                     <img src="img/canteen/kokk.jpg" alt="Kokk">
                     <p><strong>Kokk</strong><br> Gunnar Gunnarsen</p>
@@ -84,33 +93,33 @@
         </aside>
     </main>
 
-    <footer class="flex flex-space-around">
-        <section>
-            <div class="flex">
-                <img src="/img/oslomet-logo-black.svg" alt="Oslomet-logo" />
-                <a href="">Facebook</a>
+    <footer>
+        <section class="flex center-flex">
+            <div class="footer-container">
+                <div class="flex center-flex">
+                    <a href="https://www.facebook.com/oslomet/"><img
+                            src="img/footer/734386_facebook_media_online_social_icon.png" alt="Facebook-logo"
+                            class="footer-social-logo"></a>
+                    <a href="https://twitter.com/oslomet"><img
+                            src="img/footer/734367_media_online_social_twitter_icon.png" alt="twitter-logo"
+                            class="footer-social-logo" /></a>
+                    <a href="https://no.linkedin.com/school/oslomet/"><img
+                            src="img/footer/734393_in_linked_media_online_social_icon.png" alt="linkedin-logo"
+                            class="footer-social-logo" /></a>
+                    <a href="https://www.instagram.com/oslomet/?hl=nb"><img
+                            src="img/footer/734395_instagram_media_online_photo_social_icon.png" alt="instagram-logo"
+                            class="footer-social-logo" /></a>
+
+                </div>
+                <p class="center-text footer-contact"><strong>Våre sosiale medier<br>KONTAKT OSS</strong><br>Tlf.: 67 23
+                    50 00</p>
             </div>
-            <div class="flex">
-                <img src="/img/oslomet-logo-black.svg" alt="Oslomet-logo" />
-                <a href="">Twitter</a>
-            </div>
-            <div class="flex">
-                <img src="/img/oslomet-logo-black.svg" alt="Oslomet-logo" />
-                <a href="">LinkedIn</a>
-            </div>
-            <div class="flex">
-                <img src="/img/oslomet-logo-black.svg" alt="Oslomet-logo" />
-                <a href="">Instagram</a>
-            </div>
-        </section>
-        <img src="/img/oslomet-logo-black.svg" alt="OsloMet-logo" class="footer-logo" />
-        <section class="postadresse-footer">
-            <p>OSLO METROPOLITAN UNIVERSITY</p>
-            <P>STORBYUNIVERSITETET</P>
-            <P>Postboks 4, ST. Olavs plass</P>
-            <p>0130 Oslo</p>
-            <p>Tlf.: 67 23 50 00</p>
-            <p>Kontakt oss</p>
+            <img src="img/oslomet-logo-black.svg" alt="Oslo-met-logo" class="footer-logo" />
+            <p class="end-text footer-adress footer-container">OSLO METROPOLITAN
+                UNIVERSITY<br>STORBYUNIVERSITETET<br>Postboks 4, ST.
+                Olavs
+                plass<br>0130 Oslo
+            </p>
         </section>
     </footer>
 </body>
