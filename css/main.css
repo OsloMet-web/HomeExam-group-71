@@ -21,7 +21,7 @@ body {
 }
 
 main {
-    margin: 7rem 7rem 0 7rem;
+    margin: 2rem 10rem 0 10rem;
 }
 
 p {
@@ -44,6 +44,10 @@ a {
 
 .center-text {
     text-align: center;
+}
+
+.subheader {
+    font-size: 2rem;
 }
 
 .end-text {
@@ -113,7 +117,7 @@ a {
 
 /* Header */
 
-header > section {
+header>section {
     position: scroll;
 }
 
@@ -180,7 +184,7 @@ header a:hover {
         width: 42px;
     }
 
-    .menu > a {
+    .menu>a {
         margin-left: 0.5em;
         overflow: hidden;
         font-size: smaller;
@@ -188,13 +192,13 @@ header a:hover {
         transition: none;
     }
 
-    #drp-menu-toggle ~ .menu a {
+    #drp-menu-toggle~.menu a {
         height: 0px;
         width: 0px;
         visibility: hidden;
     }
 
-    #drp-menu-toggle:checked ~ .menu {
+    #drp-menu-toggle:checked~.menu {
         flex-direction: column;
         position: sticky;
         position: -webkit-sticky;
@@ -210,7 +214,7 @@ header a:hover {
 
 
 
-    #drp-menu-toggle:checked ~ .menu a {
+    #drp-menu-toggle:checked~.menu a {
         height: 1rem;
         margin: 0px;
         padding-top: 0.7rem;
@@ -221,7 +225,7 @@ header a:hover {
         transition: all .5s;
     }
 
-    #drp-menu-toggle:checked ~ .menu a {
+    #drp-menu-toggle:checked~.menu a {
         margin-left: 0.5em;
         overflow: hidden;
         font-size: smaller;
@@ -280,7 +284,7 @@ footer a:active {
 }
 
 @media (max-width: 850px) {
-    footer > section {
+    footer>section {
         flex-direction: column;
 
         align-items: center;
@@ -310,17 +314,15 @@ footer a:active {
     width: 40rem;
     padding: 0 6rem 0 0;
     margin-right: 6rem;
-    font-size: 1.5rem;
 }
 
 .index-h3 {
-    font-size: 1.5rem;
     padding-left: 6rem;
     margin-left: 6rem;
 }
 
 .info-container img {
-    height: 350px;
+    height: 20vw;
 }
 
 .info-left {
@@ -331,6 +333,27 @@ footer a:active {
     padding: 0 1rem 0 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+.googlemaps {
+    border: 0;
+    width: 20vw;
+    height: 20vw;
+}
+
+.mobile-logo {
+    display: none;
+    margin: 3rem auto 12rem;
+    width: 8rem;
+}
+
+.mobile-opener-background {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
 }
 
 /* canteen.html */
@@ -344,13 +367,13 @@ footer a:active {
     background-size: cover;
 }
 
-.opening > h1 {
+.opening>h1 {
     align-self: center;
     text-transform: uppercase;
     font-size: 5rem;
 }
 
-.opening > img {
+.opening>img {
     position: absolute;
     align-self: center;
     left: 10rem;
@@ -381,7 +404,7 @@ footer a:active {
     margin-bottom: 5rem;
 }
 
-.toppics > img {
+.toppics>img {
     height: 20rem;
     border-radius: 10px;
 }
@@ -432,13 +455,15 @@ footer a:active {
     align-self: center;
 }
 
-.box2 > h3,
-.box3 > h3,
-.box3 > p {
+
+.box2>h3,
+.box3>h3,
+.box3>p {
+
     text-align: center;
 }
 
-.box2 > p {
+.box2>p {
     align-self: center;
     justify-self: center;
     text-align: justify;
@@ -468,7 +493,7 @@ footer a:active {
 }
 
 @media (max-width: 1055px) {
-    .opening > img {
+    .opening>img {
         display: none;
     }
 
@@ -480,7 +505,7 @@ footer a:active {
         display: none;
     }
 
-    .toppics > img {
+    .toppics>img {
         height: 20rem;
         border-radius: 10px;
         margin-left: 1em;
@@ -491,7 +516,7 @@ footer a:active {
         flex-direction: column;
     }
 
-    .bottompics > div {
+    .bottompics>div {
         margin-bottom: 1em;
         justify-content: center;
     }
@@ -499,7 +524,7 @@ footer a:active {
 
 /* Ned til iphone 5 */
 @media (max-width: 850px) {
-    .opening > h1 {
+    .opening>h1 {
         text-align: center;
     }
 
@@ -538,14 +563,79 @@ footer a:active {
         min-width: 15.313rem;
     }
 
-    .toppics > img:nth-child(1) {
+    .toppics>img:nth-child(1) {
         display: none;
     }
 
-    .toppics > img:nth-child(3) {
+    .toppics>img:nth-child(3) {
         height: 15rem;
         margin: 0;
         margin-top: -5rem;
+    }
+
+    .border-left {
+        border: 0;
+    }
+
+    .border-right {
+        border: 0;
+    }
+
+    .footer-container div {
+        flex-direction: row;
+
+    }
+
+    .info-container img {
+        margin: 0 auto 2rem auto;
+        height: 65vw;
+        width: 50%;
+    }
+
+    .info-container {
+        justify-content: center;
+    }
+
+    .subheader {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .index-bilde-2 {
+        display: none;
+    }
+
+    .index-opening {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+
+    .mobile-cleanup {
+        display: none;
+    }
+
+    .googlemaps {
+        margin: auto;
+        width: 10rem;
+        height: 10rem;
+        margin: 2rem auto 0rem auto;
+    }
+
+    .subheader {
+        font-size: 1.6rem;
+    }
+
+    .mobile-flex-col {
+        flex-direction: column;
+    }
+
+    .mobile-opener-background {
+        display: block;
     }
 
 
@@ -565,11 +655,11 @@ footer a:active {
     /* Bakgrunnsbilde hentet fra .... */
 }
 
-.topical-body .border-radius{
+.topical-body .border-radius {
     color: white;
 }
 
-.topical-body > main {
+.topical-body>main {
     margin: 0;
     margin-top: -25rem;
     overflow-y: scroll;
@@ -577,14 +667,14 @@ footer a:active {
     height: 100vh;
 }
 
-.topical-article > section {
+.topical-article>section {
     height: 100vh;
     padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
-} 
+}
 
 .topical-article h1 {
     font-size: 4rem;
@@ -615,12 +705,12 @@ footer a:active {
     /* Styling av tekst*/
 }
 
-#referanser-list{
+#referanser-list {
     border: 0;
 }
 
 @media (max-width: 900px) {
-.menu-icon-white{
+    .menu-icon-white {
         display: block;
         background-image: var(--menu-open-white);
         background-size: cover;
@@ -633,13 +723,13 @@ footer a:active {
         transition: all .5s;
     }
 
-.topical-body #drp-menu-toggle:checked ~ .menu{
- background-color: rgb(104, 210, 242);
-}
+    .topical-body #drp-menu-toggle:checked~.menu {
+        background-color: rgb(104, 210, 242);
+    }
 
-.topical-body #drp-menu-toggle:checked ~ .menu a{
-    background-color: rgb(104, 210, 242);
-   }
+    .topical-body #drp-menu-toggle:checked~.menu a {
+        background-color: rgb(104, 210, 242);
+    }
 }
 
 
@@ -693,7 +783,7 @@ footer a:active {
     }
 
     100% {
-        transform: translateY(220px);
+        transform: translateY(16vw);
     }
 }
 
@@ -703,7 +793,7 @@ footer a:active {
     }
 
     to {
-        transform: translateY(-160px);
+        transform: translateY(-8vw);
     }
 }
 
@@ -728,6 +818,7 @@ footer a:active {
     animation: opacity 1s;
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
+    object-fit: cover;
 }
 
 .opener-left {
