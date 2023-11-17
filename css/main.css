@@ -538,6 +538,9 @@ footer a:active {
 }
 
 /* Topical */
+.header-topical{
+    height: 26rem;
+}
 
 .topical-body {
     background-image: url("/img/topical/joey-kyber-45FJgZMXCK8-unsplash-3.jpg");
