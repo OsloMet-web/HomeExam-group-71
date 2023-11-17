@@ -19,7 +19,7 @@ body {
 }
 
 main {
-    margin: 7rem 10rem 0 10rem;
+    margin: 2rem 10rem 0 10rem;
 }
 
 p {
@@ -326,7 +326,7 @@ footer a:active {
 }
 
 .info-container img {
-    height: 350px;
+    height: 20vw;
 }
 
 .info-left {
@@ -337,6 +337,19 @@ footer a:active {
     padding: 0 1rem 0 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+.googlemaps {
+    border: 0;
+    width: 20vw;
+    height: 20vw;
+}
+
+.mobile-logo {
+    display: none;
+    margin: auto;
+    width: 10rem;
+    padding: 3rem 0 3rem;
 }
 
 /* canteen.html */
@@ -521,8 +534,69 @@ footer a:active {
         margin: 0;
     }
 
+    .flex {
+        flex-direction: column;
+    }
 
+    .border-left {
+        border: 0;
+    }
+
+    .border-right {
+        border: 0;
+    }
+
+    .footer-container div {
+        flex-direction: row;
+
+    }
+
+    .info-container img {
+        margin: 0 auto 2rem auto;
+        height: 65vw;
+        width: 50%;
+    }
+
+    .info-container {
+        justify-content: center;
+    }
+
+    .subheader {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .index-bilde-2 {
+        display: none;
+    }
+
+    .index-opening {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+
+    .mobile-cleanup {
+        display: none;
+    }
+
+    .googlemaps {
+        margin: auto;
+        width: 10rem;
+        height: 10rem;
+        margin: 2rem auto 0rem auto;
+    }
+
+    .subheader {
+        font-size: 1.6rem;
+    }
 }
+
+
 
 /* Topical */
 
@@ -632,7 +706,7 @@ footer a:active {
     }
 
     100% {
-        transform: translateY(220px);
+        transform: translateY(16vw);
     }
 }
 
@@ -642,7 +716,7 @@ footer a:active {
     }
 
     to {
-        transform: translateY(-160px);
+        transform: translateY(-8vw);
     }
 }
 
@@ -650,9 +724,7 @@ footer a:active {
 /* Opener */
 
 .opener {
-    color: black;
-    font-size: 6rem;
-    margin: 14rem 4rem 22rem 0rem;
+    margin: 11vw 4rem 20vw 0rem;
     animation: opacity-none .3s;
     animation-delay: 1.6s;
     animation-fill-mode: forwards;
@@ -660,8 +732,8 @@ footer a:active {
 
 .opener-background {
     opacity: 0;
+    height: 54vw;
     width: 100%;
-    height: 54em;
     position: absolute;
     top: 0;
     animation: opacity 1s;
@@ -671,7 +743,7 @@ footer a:active {
 
 .opener-left {
     animation: slideDown .9s .6s 1 alternate forwards;
-    font-size: 6rem;
+    font-size: 7vw;
     margin: 0;
 }
 
@@ -686,7 +758,7 @@ footer a:active {
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 500px;
+    width: 32vw;
     opacity: 0;
     animation: opacity .8s 2s alternate forwards, dragUp 1s 2.5s alternate forwards;
 }
@@ -714,7 +786,7 @@ footer a:active {
 .opener-li {
     margin: 0 0 0 -2rem;
     list-style-type: none;
-    font-size: 6rem;
+    font-size: 7vw;
 }
 
 /* accessibility */
