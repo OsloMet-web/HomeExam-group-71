@@ -404,6 +404,7 @@ footer a:active {
     grid-row: 1;
     margin-top: 25rem;
     margin-bottom: 5rem;
+    justify-content: center;
 }
 
 .toppics > img {
@@ -542,6 +543,7 @@ footer a:active {
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
+        margin-top: 6rem;
     }
 
     .box1 {
