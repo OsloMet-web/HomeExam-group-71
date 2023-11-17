@@ -21,7 +21,7 @@ body {
 }
 
 main {
-    margin: 7rem 7rem 0 7rem;
+    margin: 2rem 10rem 0 10rem;
 }
 
 p {
@@ -44,6 +44,10 @@ a {
 
 .center-text {
     text-align: center;
+}
+
+.subheader {
+    font-size: 2rem;
 }
 
 .end-text {
@@ -206,6 +210,7 @@ header a:hover {
         border-radius: 10px;
         height: 7em;
         width: 7.5em;
+        z-index: 1;
     }
 
 
@@ -219,6 +224,7 @@ header a:hover {
         height: 1.4rem;
         visibility: visible;
         transition: all .5s;
+        z-index: 2;
     }
 
     #drp-menu-toggle:checked ~ .menu a {
@@ -310,17 +316,15 @@ footer a:active {
     width: 40rem;
     padding: 0 6rem 0 0;
     margin-right: 6rem;
-    font-size: 1.5rem;
 }
 
 .index-h3 {
-    font-size: 1.5rem;
     padding-left: 6rem;
     margin-left: 6rem;
 }
 
 .info-container img {
-    height: 350px;
+    height: 20vw;
 }
 
 .info-left {
@@ -333,6 +337,27 @@ footer a:active {
     margin-right: 1rem;
 }
 
+.googlemaps {
+    border: 0;
+    width: 20vw;
+    height: 20vw;
+}
+
+.mobile-logo {
+    display: none;
+    margin: 3rem auto 12rem;
+    width: 8rem;
+}
+
+.mobile-opener-background {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+}
+
 /* canteen.html */
 .opening {
     background-color: var(--main);
@@ -340,7 +365,7 @@ footer a:active {
     border-bottom: solid black 5px;
     position: relative;
     justify-content: center;
-    background-image: url("../img/kantine/kokk.jpg");
+    background-image: url("../img/kantine/kokk.webp");
     background-size: cover;
 }
 
@@ -432,9 +457,11 @@ footer a:active {
     align-self: center;
 }
 
+
 .box2 > h3,
 .box3 > h3,
 .box3 > p {
+
     text-align: center;
 }
 
@@ -545,14 +572,80 @@ footer a:active {
     .toppics > img:nth-child(3) {
         height: 15rem;
         margin: 0;
-        margin-top: -5rem;
+        margin-top: -4rem;
+        position: absolute;
+    }
+
+    .border-left {
+        border: 0;
+    }
+
+    .border-right {
+        border: 0;
+    }
+
+    .footer-container div {
+        flex-direction: row;
+
+    }
+
+    .info-container img {
+        margin: 0 auto 2rem auto;
+        height: 65vw;
+        width: 50%;
+    }
+
+    .info-container {
+        justify-content: center;
+    }
+
+    .subheader {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .index-bilde-2 {
+        display: none;
+    }
+
+    .index-opening {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+
+    .mobile-cleanup {
+        display: none;
+    }
+
+    .googlemaps {
+        margin: auto;
+        width: 10rem;
+        height: 10rem;
+        margin: 2rem auto 0rem auto;
+    }
+
+    .subheader {
+        font-size: 1.6rem;
+    }
+
+    .mobile-flex-col {
+        flex-direction: column;
+    }
+
+    .mobile-opener-background {
+        display: block;
     }
 
 
 }
 
 /* Topical */
-.header-topical{
+.header-topical {
     height: 26rem;
 }
 
@@ -565,7 +658,7 @@ footer a:active {
     /* Bakgrunnsbilde hentet fra .... */
 }
 
-.topical-body .border-radius{
+.topical-body .border-radius {
     color: white;
 }
 
@@ -584,7 +677,7 @@ footer a:active {
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
-} 
+}
 
 .topical-article h1 {
     font-size: 4rem;
@@ -615,12 +708,25 @@ footer a:active {
     /* Styling av tekst*/
 }
 
-#referanser-list{
-    border: 0;
+#referanser {
+    display: flex;
+    flex-direction: column;
+    align-content: left;
 }
 
+#referanser h2 {
+    margin: 0;
+    text-align: left;
+}
+
+#referanser p {
+    border: 0;
+    margin: 0;
+}
+
+
 @media (max-width: 900px) {
-.menu-icon-white{
+    .menu-icon-white {
         display: block;
         background-image: var(--menu-open-white);
         background-size: cover;
@@ -633,13 +739,13 @@ footer a:active {
         transition: all .5s;
     }
 
-.topical-body #drp-menu-toggle:checked ~ .menu{
- background-color: rgb(104, 210, 242);
-}
+    .topical-body #drp-menu-toggle:checked ~ .menu {
+        background-color: rgb(104, 210, 242);
+    }
 
-.topical-body #drp-menu-toggle:checked ~ .menu a{
-    background-color: rgb(104, 210, 242);
-   }
+    .topical-body #drp-menu-toggle:checked ~ .menu a {
+        background-color: rgb(104, 210, 242);
+    }
 }
 
 
@@ -693,7 +799,7 @@ footer a:active {
     }
 
     100% {
-        transform: translateY(220px);
+        transform: translateY(16vw);
     }
 }
 
@@ -703,7 +809,7 @@ footer a:active {
     }
 
     to {
-        transform: translateY(-160px);
+        transform: translateY(-8vw);
     }
 }
 
@@ -711,9 +817,7 @@ footer a:active {
 /* Opener */
 
 .opener {
-    color: black;
-    font-size: 6rem;
-    margin: 14rem 4rem 22rem 0rem;
+    margin: 11vw 4rem 20vw 0;
     animation: opacity-none .3s;
     animation-delay: 1.6s;
     animation-fill-mode: forwards;
@@ -722,17 +826,18 @@ footer a:active {
 .opener-background {
     opacity: 0;
     width: 100%;
-    height: 54em;
+    height: 54vw;
     position: absolute;
     top: 0;
     animation: opacity 1s;
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
+    object-fit: cover;
 }
 
 .opener-left {
     animation: slideDown .9s .6s 1 alternate forwards;
-    font-size: 6rem;
+    font-size: 7vw;
     margin: 0;
 }
 
@@ -747,7 +852,7 @@ footer a:active {
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 500px;
+    width: 32vw;
     opacity: 0;
     animation: opacity .8s 2s alternate forwards, dragUp 1s 2.5s alternate forwards;
 }
@@ -775,7 +880,7 @@ footer a:active {
 .opener-li {
     margin: 0 0 0 -2rem;
     list-style-type: none;
-    font-size: 6rem;
+    font-size: 7vw;
 }
 
 /* accessibility */
@@ -793,5 +898,3 @@ footer a:active {
     margin-left: 1em;
     margin-right: 1em;
 }
-
-

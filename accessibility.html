@@ -13,14 +13,22 @@
     <!-- Header Start -->
     <header>
         <section class="opening flex">
-            <img class="oslometLogo" src="img/oslomet-logo-black.svg" alt="oslomet-logo">
+            <img src="img/oslomet-logo-black.svg" alt="oslomet-logo">
             <h1>Accessibility</h1>
         </section>
-        <nav class="flex center-text">
-            <a class="border-radius" href="index-mal.html">home</a>
-            <a class="border-radius " href="kantine.html">kantine</a>
-            <a class="border-radius active" href="accessibility.html">accessibility</a>
-            <a class="border-radius" href="topcial.html">topic</a>
+        <nav>
+            <input id="drp-menu-toggle" type="checkbox">
+            <label class="drp-menu-toggle-container" for="drp-menu-toggle">
+                <div class="menu-icon"></div>
+            </label>
+
+            <div class="menu flex center-flex">
+                <a class="border-radius" href="index.html">home</a>
+                <a class="border-radius" href="canteen.html">kantine</a>
+                <a class="border-radius active" href="#">accessibility</a>
+                <a class="border-radius" href="topical.html">aktuelt</a>
+
+            </div>
         </nav>
     </header>
     <!-- Header Slutt -->
@@ -75,21 +83,21 @@
         <h2 class="center-text">Accessibility test</h2>
         <picture class="testAcc center-flex">
             <div class="bilde1">
-                <img src="img/Accessibility/banchero.jpg" alt="Banchero">
+                <img src="img/accessibility/banchero.jpg" alt="Banchero">
                 <h2>home</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur dolore hic expedita ipsam unde,
                     laboriosam voluptatum amet et illo nam in dolorum quos distinctio magni corrupti saepe
                     exercitationem impedit obcaecati.</p>
             </div>
             <div class="bilde2">
-                <img src="img/Accessibility/megan fox.jpg" alt="Megan fox">
+                <img src="img/accessibility/megan fox.jpg" alt="Megan fox">
                 <h2>topic</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quia quasi incidunt delectus tempore,
                     sint earum eos vel praesentium officia voluptatibus recusandae dicta asperiores ipsum eveniet
                     voluptatum. Suscipit, explicabo corrupti.</p>
             </div>
             <div class="bilde3">
-                <img src="img/Accessibility/CR7.jpg" alt="CR7">
+                <img src="img/accessibility/CR7.jpg" alt="CR7">
                 <h2>Canteen</h2>
                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque officia dolor esse sed odit qui
                     debitis quasi ipsa,
@@ -101,35 +109,35 @@
 
     </main>
 
-    <footer class="flex flex-space-around">
-        <section>
-            <div class="flex">
-                <img src="/img/oslomet-logo-black.svg" alt="Oslomet-logo" />
-                <a href="">Facebook</a>
+    <footer>
+        <section class="flex center-flex">
+            <div class="footer-container">
+                <div class="flex center-flex">
+                    <a href="https://www.facebook.com/oslomet/"><img
+                            src="img/header-footer/734386_facebook_media_online_social_icon.png" alt="Facebook-logo"
+                            class="footer-social-logo"></a>
+                    <a href="https://twitter.com/oslomet"><img
+                            src="img/header-footer/734367_media_online_social_twitter_icon.png" alt="twitter-logo"
+                            class="footer-social-logo" /></a>
+                    <a href="https://no.linkedin.com/school/oslomet/"><img
+                            src="img/header-footer/734393_in_linked_media_online_social_icon.png" alt="linkedin-logo"
+                            class="footer-social-logo" /></a>
+                    <a href="https://www.instagram.com/oslomet/?hl=nb"><img
+                            src="img/header-footer/734395_instagram_media_online_photo_social_icon.png"
+                            alt="instagram-logo" class="footer-social-logo" /></a>
+
+                </div>
+                <p class="center-text footer-contact"><strong>Våre sosiale medier<br>KONTAKT OSS</strong><br>Tlf.: 67 23
+                    50 00</p>
             </div>
-            <div class="flex">
-                <img src="/img/oslomet-logo-black.svg" alt="Oslomet-logo" />
-                <a href="">Twitter</a>
-            </div>
-            <div class="flex">
-                <img src="/img/oslomet-logo-black.svg" alt="Oslomet-logo" />
-                <a href="">LinkedIn</a>
-            </div>
-            <div class="flex">
-                <img src="/img/oslomet-logo-black.svg" alt="Oslomet-logo" />
-                <a href="">Instagram</a>
-            </div>
-        </section>
-        <img src="/img/oslomet-logo-black.svg" alt="OsloMet-logo" class="footer-logo" />
-        <section class="postadresse-footer">
-            <p>OSLO METROPOLITAN UNIVERSITY</p>
-            <P>STORBYUNIVERSITETET</P>
-            <P>Postboks 4, ST. Olavs plass</P>
-            <p>0130 Oslo</p>
-            <p>Tlf.: 67 23 50 00</p>
-            <p>Kontakt oss</p>
+            <img src="img/oslomet-logo-black.svg" alt="Oslo-met-logo" class="footer-logo" />
+            <p class="end-text footer-adress footer-container">OSLO METROPOLITAN
+                UNIVERSITY<br>STORBYUNIVERSITETET<br>Postboks 4, ST.
+                Olavs
+                plass<br>0130 Oslo
+            </p>
         </section>
     </footer>
-
-
 </body>
+
+</html>
