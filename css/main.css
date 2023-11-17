@@ -117,7 +117,7 @@ a {
 
 /* Header */
 
-header > section {
+header>section {
     position: scroll;
 }
 
@@ -156,23 +156,21 @@ header a:hover {
     display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
+    header {
+        height: 20rem;
+    }
+
     .drp-menu-toggle-container {
         display: flex;
         flex-direction: column;
-        height: auto;
-        width: 40px;
         margin-left: 0;
-        position: relative;
+        position: absolute;
     }
 
     .menu-icon {
-        display: block;
         background-image: var(--menu-open);
         background-size: cover;
-        position: absolute;
-        left: 5px;
-        top: 2px;
         height: 40px;
         width: 40px;
         cursor: pointer;
@@ -184,7 +182,7 @@ header a:hover {
         width: 42px;
     }
 
-    .menu > a {
+    .menu>a {
         margin-left: 0.5em;
         overflow: hidden;
         font-size: smaller;
@@ -192,16 +190,15 @@ header a:hover {
         transition: none;
     }
 
-    #drp-menu-toggle ~ .menu a {
+    #drp-menu-toggle~.menu a {
         height: 0px;
         width: 0px;
         visibility: hidden;
     }
 
-    #drp-menu-toggle:checked ~ .menu {
+    #drp-menu-toggle:checked~.menu {
         flex-direction: column;
-        position: sticky;
-        position: -webkit-sticky;
+        position: absolute;
         justify-content: left;
         margin-top: 31px;
         margin-left: 40px;
@@ -215,7 +212,7 @@ header a:hover {
 
 
 
-    #drp-menu-toggle:checked ~ .menu a {
+    #drp-menu-toggle:checked~.menu a {
         height: 1rem;
         margin: 0px;
         padding-top: 0.7rem;
@@ -227,7 +224,7 @@ header a:hover {
         z-index: 2;
     }
 
-    #drp-menu-toggle:checked ~ .menu a {
+    #drp-menu-toggle:checked~.menu a {
         margin-left: 0.5em;
         overflow: hidden;
         font-size: smaller;
@@ -286,7 +283,7 @@ footer a:active {
 }
 
 @media (max-width: 850px) {
-    footer > section {
+    footer>section {
         flex-direction: column;
 
         align-items: center;
@@ -354,8 +351,9 @@ footer a:active {
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 30%;
+    height: 33%;
     object-fit: cover;
+    border-bottom: solid black 3px;
 }
 
 /* canteen.html */
@@ -369,13 +367,13 @@ footer a:active {
     background-size: cover;
 }
 
-.opening > h1 {
+.opening>h1 {
     align-self: center;
     text-transform: uppercase;
     font-size: 5rem;
 }
 
-.opening > img {
+.opening>img {
     position: absolute;
     align-self: center;
     left: 10rem;
@@ -406,7 +404,7 @@ footer a:active {
     margin-bottom: 5rem;
 }
 
-.toppics > img {
+.toppics>img {
     height: 20rem;
     border-radius: 10px;
 }
@@ -458,14 +456,14 @@ footer a:active {
 }
 
 
-.box2 > h3,
-.box3 > h3,
-.box3 > p {
+.box2>h3,
+.box3>h3,
+.box3>p {
 
     text-align: center;
 }
 
-.box2 > p {
+.box2>p {
     align-self: center;
     justify-self: center;
     text-align: justify;
@@ -495,7 +493,7 @@ footer a:active {
 }
 
 @media (max-width: 1055px) {
-    .opening > img {
+    .opening>img {
         display: none;
     }
 
@@ -507,7 +505,7 @@ footer a:active {
         display: none;
     }
 
-    .toppics > img {
+    .toppics>img {
         height: 20rem;
         border-radius: 10px;
         margin-left: 1em;
@@ -518,7 +516,7 @@ footer a:active {
         flex-direction: column;
     }
 
-    .bottompics > div {
+    .bottompics>div {
         margin-bottom: 1em;
         justify-content: center;
     }
@@ -526,7 +524,7 @@ footer a:active {
 
 /* Ned til iphone 5 */
 @media (max-width: 850px) {
-    .opening > h1 {
+    .opening>h1 {
         text-align: center;
     }
 
@@ -565,11 +563,11 @@ footer a:active {
         min-width: 15.313rem;
     }
 
-    .toppics > img:nth-child(1) {
+    .toppics>img:nth-child(1) {
         display: none;
     }
 
-    .toppics > img:nth-child(3) {
+    .toppics>img:nth-child(3) {
         height: 15rem;
         margin: 0;
         margin-top: -4rem;
@@ -662,7 +660,7 @@ footer a:active {
     color: white;
 }
 
-.topical-body > main {
+.topical-body>main {
     margin: 0;
     margin-top: -25rem;
     overflow-y: scroll;
@@ -670,7 +668,7 @@ footer a:active {
     height: 100vh;
 }
 
-.topical-article > section {
+.topical-article>section {
     height: 100vh;
     padding: 2rem;
     display: flex;
@@ -739,11 +737,11 @@ footer a:active {
         transition: all .5s;
     }
 
-    .topical-body #drp-menu-toggle:checked ~ .menu {
+    .topical-body #drp-menu-toggle:checked~.menu {
         background-color: rgb(104, 210, 242);
     }
 
-    .topical-body #drp-menu-toggle:checked ~ .menu a {
+    .topical-body #drp-menu-toggle:checked~.menu a {
         background-color: rgb(104, 210, 242);
     }
 }
@@ -892,7 +890,7 @@ footer a:active {
     margin-bottom: 3em;
 }
 
-.testAcc > img {
+.testAcc>img {
     height: 20rem;
     border-radius: 10px;
     margin-left: 1em;
