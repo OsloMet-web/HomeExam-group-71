@@ -192,16 +192,10 @@ header a:hover {
         visibility: hidden;
     }
 
-    #drp-menu-toggle:checked ~ .menu-icon {
-        display: block;
-        background-image: var(--menu-close);
-        background-size: cover;
-
-    }
-
     #drp-menu-toggle:checked ~ .menu {
         flex-direction: column;
         position: sticky;
+        position: -webkit-sticky;
         justify-content: left;
         margin-top: 31px;
         margin-left: 40px;
