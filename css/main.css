@@ -705,9 +705,20 @@ footer a:active {
     /* Styling av tekst*/
 }
 
-#referanser-list {
-    border: 0;
+#referanser {
+    display: flex;
+    flex-direction: column;
+    align-content: left;
 }
+#referanser h2 {
+    margin: 0;
+    text-align: left;
+}
+#referanser p {
+    border: 0;
+    margin: 0;
+}
+
 
 @media (max-width: 900px) {
     .menu-icon-white {
