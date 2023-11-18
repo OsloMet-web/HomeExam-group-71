@@ -518,25 +518,22 @@ footer a:active {
     margin-bottom: 0;
 }
 
-.access-subheader1 {
+.access-subheader {
     margin-top: 0;
-    margin-bottom: 23rem;
 }
 
-.access-subheader2 {
-    margin-top: 0;
-    margin-bottom: 8rem;
+.access-info1 {
+    height: 28rem;
 }
 
-.access-subheader3 {
-    margin-top: 0;
-    margin-bottom: 11rem;
+.access-info2 {
+    height: 12rem;
 }
 
-.access-subheader4 {
-    margin-top: 0;
-
+.access-info3 {
+    height: 15rem;
 }
+
 
 .access-box {
     width: 30rem;
@@ -601,6 +598,15 @@ footer a:active {
 
 .access-mobile-box {
     display: none;
+    margin: auto;
+}
+
+.vaart-team-mobile {
+    display: none
+}
+
+.vaart-team-mobile span {
+    width: 15rem;
 }
 
 
@@ -723,7 +729,6 @@ footer a:active {
 
     .subheader {
         padding: 0;
-        margin: 2rem;
         text-align: center;
         width: 100%;
     }
@@ -776,6 +781,21 @@ footer a:active {
         display: block;
     }
 
+    .access-box {
+        margin: auto;
+    }
+
+    .access-mobile-box {
+        width: 30rem;
+    }
+
+    .vaart-team-mobile {
+        display: block;
+    }
+
+    .vaart-team-container {
+        display: none;
+    }
 
 }
 
