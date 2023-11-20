@@ -838,6 +838,7 @@ footer a:active {
     color: white;
     text-align: center;
     padding: 2rem;
+    border-radius: 10px;
     background-color: #000008;
     /* Styling av h1 */
 }
@@ -848,6 +849,7 @@ footer a:active {
     font-size: 1.1rem;
     color: white;
     padding: 2rem;
+    border-radius: 10px;
     background-color: #000008;
     /* Styling av p */
 }
