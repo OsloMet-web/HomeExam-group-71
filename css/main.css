@@ -939,8 +939,7 @@ footer a:active {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    /* Sette/style bakgrunnsbilde for siden,
-    overflow: hidden for at scroll-snap align skal fungere */
+    /* Sette/style bakgrunnsbilde for siden */
 }
 
 .topical-body .border-radius {
@@ -954,8 +953,7 @@ footer a:active {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     height: 100vh;
-    /* Setter verdier for main i topical-siden
-    overflow-y: scroll for at scroll-snap align skal fungere */
+    /* Setter verdier for main i topical-siden */
 }
 
 .topical-body a {
@@ -986,7 +984,7 @@ footer a:active {
     padding: 2rem;
     border-radius: 10px;
     background-color: #000008;
-    /* Styling av h1 */
+    /* Styling av h1 på topical-siden */
 }
 
 .topical-article p {
@@ -997,7 +995,7 @@ footer a:active {
     padding: 2rem;
     border-radius: 10px;
     background-color: #000008;
-    /* Styling av p */
+    /* Styling av p på topical-siden */
 }
 
 #referanser h2 {
@@ -1008,7 +1006,7 @@ footer a:active {
     font-size: 3vh;
     color: #fff;
     background-color: initial;
-    /* Styling av h2, overskrift referanser */
+    /* Styling av h2 på topical-siden, overskrift referanser */
 }
 
 #referanser > ol {
