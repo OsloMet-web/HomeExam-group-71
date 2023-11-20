@@ -573,52 +573,11 @@ footer a:active {
     margin-bottom: 3rem;
 }
 
-.vaart-team {
-    width: 50%;
-    line-height: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-bottom: 4rem;
-}
-
-.vaart-team-line2 {
-    margin-top: 6rem;
-    margin-bottom: -3rem;
-}
-
-.vaart-team-img-container {
-    flex-direction: column;
-}
-
-.vaart-team .navn {
-    margin: 0;
-    font-weight: bold;
-}
-
-.vaart-team-container {
-    margin-bottom: 1rem;
-}
-
-.vaart-team-img {
-    height: 9rem;
-    margin: 0 2rem 4rem 2rem;
-    object-fit: cover;
-
-}
-
 .access-mobile-box {
     display: none;
     margin: auto;
 }
 
-.vaart-team-mobile {
-    display: none
-}
-
-.vaart-team-mobile span {
-    width: 15rem;
-
-}
 
 
 
@@ -800,20 +759,6 @@ footer a:active {
 
     .access-img {
         margin: auto;
-    }
-
-    .vaart-team-mobile {
-        display: block;
-    }
-
-    .vaart-team-container {
-        display: none;
-    }
-
-
-    .vaart-team-mobile span {
-        width: 12rem;
-
     }
 
 }
