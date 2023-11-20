@@ -1,14 +1,13 @@
 :root {
     --isabelline: #edede9ff;
     --timberwolf: #d6ccc2ff;
-    --main: rgb(245, 235, 224);
+    --main: #f5ebe0;
     --champagne-pink: #e3d5caff;
     --secondary: #d5bdafff;
     --text: #000;
-    --footer: rgb(251, 249, 244);
+    --footer: #FBF9F4;
     --menu-open: url("../img/icons/menu-open.svg");
     --menu-open-white: url("../img/icons/menu-open-white.svg");
-    --menu-close: url("../img/icons/menu-close.svg");
 }
 
 body {
@@ -68,7 +67,8 @@ a {
 .button {
     color: var(--secondary);
     background-color: var(--main);
-    border: solid var(--secondary);
+    border-style: solid;
+    border-color: var(--secondary);
     border-radius: 7px;
     height: 2.5rem;
     width: 7rem;
@@ -98,16 +98,23 @@ a {
 }
 
 .border {
-    border-bottom: solid var(--secondary) 3px;
-    margin: 3rem 0 3rem 0;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--secondary);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .border-right {
-    border-right: solid var(--text) 3px;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: var(--text);
 }
 
 .border-left {
-    border-left: solid var(--text) 3px;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: var(--text);
 }
 
 .info-container {
@@ -119,7 +126,8 @@ a {
 }
 
 /* Header */
-header > section {
+
+header>section {
     position: scroll;
 }
 
@@ -138,7 +146,7 @@ nav a {
     transition: all 0.5s;
 }
 
-nav > div {
+nav>div {
     max-width: 1300px;
     margin: auto;
 }
@@ -196,7 +204,6 @@ header a:hover {
     #drp-menu-toggle ~ .menu a {
         height: 0px;
         width: 0px;
-        visibility: hidden;
     }
 
     #drp-menu-toggle:checked ~ .menu {
@@ -206,32 +213,24 @@ header a:hover {
         margin-top: 31px;
         margin-left: 40px;
         background-color: var(--main);
-        border: 2px solid #000;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #000;
         border-radius: 10px;
         height: 7em;
         width: 7.5em;
         z-index: 1;
     }
 
-
-
     #drp-menu-toggle:checked ~ .menu a {
-        height: 1rem;
-        margin: 0px;
+        height: 1em;
+        margin-left: 0.5em;
+        font-size: smaller;
         padding-top: 0.7rem;
         padding-right: 8em;
         padding-left: .1em;
-        height: 1.4rem;
-        visibility: visible;
         transition: all .5s;
         z-index: 2;
-    }
-
-    #drp-menu-toggle:checked ~ .menu a {
-        margin-left: 0.5em;
-        overflow: hidden;
-        font-size: smaller;
-        height: 1em;
     }
 }
 
@@ -313,12 +312,20 @@ footer a:active {
 }
 
 .index-main {
-    margin: 2rem 10% 10% 10%;
+    margin-top: 2rem;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
 }
+
+/* Legger på en margin som endres etter hvor stor skjermen er */
 
 .index-h2 {
     width: 40rem;
-    padding: 0 6rem 0 0;
+    padding-top: 0;
+    padding-right: 6rem;
+    padding-bottom: 0;
+    padding-left: 0;
     margin-right: 6rem;
 }
 
@@ -336,7 +343,10 @@ footer a:active {
 }
 
 .p-veibeskrivelse {
-    padding: 0 1rem 0 1rem;
+    padding: 0;
+    padding-right: 1rem;
+    padding-bottom: 0;
+    padding-left: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -349,7 +359,10 @@ footer a:active {
 
 .mobile-logo {
     display: none;
-    margin: 3rem auto 12rem;
+    margin-top: 3rem;
+    margin-right: auto;
+    margin-bottom: 12rem;
+    margin-left: auto;
     width: 8rem;
 }
 
@@ -360,14 +373,18 @@ footer a:active {
     width: 100%;
     height: 33%;
     object-fit: cover;
-    border-bottom: solid black 3px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
 }
 
 /* canteen.html */
 .opening {
     background-color: var(--main);
     height: 20em;
-    border-bottom: solid black 5px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
     position: relative;
     justify-content: center;
     background-image: url("../img/canteen/kokk-høy-kvalitet.webp");
@@ -395,14 +412,12 @@ footer a:active {
     grid-template-rows: 1fr calc(2fr - 20rem) 1fr;
     row-gap: 5rem;
     max-width: 1150px;
-
     align-self: center;
 }
 
 .article-container {
     display: grid;
     grid-template-columns: 1fr 10rem 1fr;
-    height: auto;
     row-gap: 10rem;
     justify-items: center;
 }
@@ -429,7 +444,9 @@ footer a:active {
     justify-self: center;
     align-self: center;
     margin: auto;
-    border-right: 3px solid #000;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: #000;
     height: 100%;
     grid-column: 2;
 }
@@ -470,7 +487,6 @@ footer a:active {
 .box2 > h3,
 .box3 > h3,
 .box3 > p {
-
     text-align: center;
 }
 
@@ -531,25 +547,22 @@ footer a:active {
     text-transform: uppercase;
 }
 
-.access-subheader1 {
+.access-subheader {
     margin-top: 0;
-    margin-bottom: 23rem;
 }
 
-.access-subheader2 {
-    margin-top: 0;
-    margin-bottom: 8rem;
+.access-info1 {
+    height: 28rem;
 }
 
-.access-subheader3 {
-    margin-top: 0;
-    margin-bottom: 11rem;
+.access-info2 {
+    height: 12rem;
 }
 
-.access-subheader4 {
-    margin-top: 0;
-
+.access-info3 {
+    height: 15rem;
 }
+
 
 .access-box {
     width: 30rem;
@@ -579,42 +592,11 @@ footer a:active {
     margin-bottom: 3rem;
 }
 
-.vaart-team {
-    width: 50%;
-    line-height: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-bottom: 4rem;
-}
-
-.vaart-team-line2 {
-    margin-top: 6rem;
-    margin-bottom: -3rem;
-}
-
-.vaart-team-img-container {
-    flex-direction: column;
-}
-
-.vaart-team .navn {
-    margin: 0;
-    font-weight: bold;
-}
-
-.vaart-team-container {
-    margin-bottom: 1rem;
-}
-
-.vaart-team-img {
-    height: 9rem;
-    margin: 0 2rem 4rem 2rem;
-    object-fit: cover;
-
-}
-
 .access-mobile-box {
     display: none;
+    margin: auto;
 }
+
 
 
 
@@ -636,7 +618,7 @@ footer a:active {
         margin-right: 0;
     }
 
-    .toppics > img {
+    .toppics>img {
         height: 20rem;
         border-radius: 10px;
         margin-left: 1em;
@@ -736,7 +718,6 @@ footer a:active {
 
     .subheader {
         padding: 0;
-        margin: 2rem;
         text-align: center;
         width: 100%;
     }
@@ -747,6 +728,10 @@ footer a:active {
 
     .index-opening {
         display: none;
+    }
+
+    .index-h3 {
+        margin: auto;
     }
 
     .mobile-logo {
@@ -777,7 +762,8 @@ footer a:active {
     }
 
     .access-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        width: 100%;
     }
 
     .access-big-box {
@@ -786,12 +772,17 @@ footer a:active {
 
     .access-mobile-box {
         display: block;
+        width: 100%;
     }
 
-    .access-container {
+    .access-box {
+        margin: auto;
+        width: 100%;
+    }
+
+    .access-img {
         margin: auto;
     }
-
 
 }
 
@@ -870,7 +861,7 @@ footer a:active {
     background-color: initial;
 }
 
-#referanser > ol {
+#referanser>ol {
     background-color: rgb(0, 0, 0, 0.8);
     border-radius: 10px;
     padding-left: 2rem;
@@ -982,8 +973,12 @@ footer a:active {
 /* Opener */
 
 .opener {
-    margin: 11vw 4rem 20vw 0;
-    animation: opacity-none .3s;
+    margin-top: 11vw;
+    margin-right: 4rem;
+    margin-bottom: 20vw;
+    margin-left: 0;
+    animation-name: opacity-none;
+    animation-duration: .3s;
     animation-delay: 1.6s;
     animation-fill-mode: forwards;
 }
@@ -994,20 +989,28 @@ footer a:active {
     height: 54vw;
     position: absolute;
     top: 0;
-    animation: opacity 1s;
+    animation-name: opacity;
+    animation-duration: 1s;
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
     object-fit: cover;
 }
 
 .opener-left {
-    animation: slideDown .9s .6s 1 alternate forwards;
+    animation-name: slideDown;
+    animation-duration: .9s;
+    animation-delay: .6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     font-size: 7vw;
     margin: 0;
 }
 
 .opener-border {
-    margin: 1rem 1.6rem 1rem 1.6rem;
+    margin-top: 1rem;
+    margin-right: 1.6rem;
+    margin-bottom: 1rem;
+    margin-left: 1.6rem;
     width: 3px;
     background-color: black;
 }
@@ -1019,31 +1022,40 @@ footer a:active {
     margin: 0 auto;
     width: 32vw;
     opacity: 0;
-    animation: opacity .8s 2s alternate forwards, dragUp 1s 2.5s alternate forwards;
+    animation-name: opacity, dragUp;
+    animation-duration: .8s, 1s;
+    animation-delay: 2s, 2.5s;
+    animation-fill-mode: forwards;
 }
 
 .opener1 {
     opacity: 0;
-    animation: slideUp .3s, opacity .1s;
+    animation-name: slideUp, opacity;
+    animation-duration: .3s, .1s;
     animation-fill-mode: forwards;
 }
 
 .opener2 {
     opacity: 0;
-    animation: slideUp .3s, opacity .1s;
+    animation-name: slideUp, opacity;
+    animation-duration: .3s, .1s;
     animation-delay: .2s;
     animation-fill-mode: forwards;
 }
 
 .opener3 {
     opacity: 0;
-    animation: slideUp .3s, opacity .1s;
+    animation-name: slideUp, opacity;
+    animation-duration: .3s, .1s;
     animation-delay: .4s;
     animation-fill-mode: forwards;
 }
 
 .opener-li {
-    margin: 0 0 0 -2rem;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: -2rem;
     list-style-type: none;
     font-size: 7vw;
 }
