@@ -131,7 +131,7 @@ nav a {
     som default for vår side. */
 }
 
-nav > div {
+nav>div {
     max-width: 1300px;
     margin: auto;
     /* Setter største mulige verdi for div-en som har linkene i nav-baren for at nav-baren skal være
@@ -187,7 +187,7 @@ header a:hover {
         /* Øker størrelen til menyen for å indikere at man kan klikke på menyen */
     }
 
-    .menu > a {
+    .menu>a {
         margin-left: 0.5em;
         overflow: hidden;
         font-size: smaller;
@@ -196,13 +196,13 @@ header a:hover {
         /* Plasserer linkene i drop-down-menyen, overflow hidden for å skjule linkene når menyen er stengt */
     }
 
-    #drp-menu-toggle ~ .menu a {
+    #drp-menu-toggle~.menu a {
         height: 0px;
         width: 0px;
         /* Skjuler nav-baren før drop-menyen er aktiv */
     }
 
-    #drp-menu-toggle:checked ~ .menu {
+    #drp-menu-toggle:checked~.menu {
         flex-direction: column;
         position: absolute;
         justify-content: left;
@@ -219,7 +219,7 @@ header a:hover {
         /* Styler boksen som kommer opp når man klikker på burger-menyen */
     }
 
-    #drp-menu-toggle:checked ~ .menu a {
+    #drp-menu-toggle:checked~.menu a {
         height: 1em;
         margin-left: 0.5em;
         font-size: smaller;
@@ -306,7 +306,7 @@ footer a:active {
 
 /* Media-query for footer på skjermer under 850px */
 @media (max-width: 850px) {
-    footer > section {
+    footer>section {
         flex-direction: column;
         align-items: center;
         /* Justerer innholdet i footeren til kolonner 
@@ -447,20 +447,20 @@ footer a:active {
     /* Legger på en margin som endres etter hvor stor skjermen er */
 }
 
-.index-h2 {
+.index-h1 {
     width: 40rem;
     padding-top: 0;
     padding-right: 6rem;
     padding-bottom: 0;
     padding-left: 0;
     margin-right: 6rem;
-    /* styling av h2-elementet i indexen */
+    /* styling av h1-elementet i indexen */
 }
 
-.index-h3 {
+.index-h2 {
     padding-left: 6rem;
     margin-left: 6rem;
-    /* Styling av h3-elementet i indexen */
+    /* Styling av h2-elementet i indexen */
 }
 
 .info-container img {
@@ -526,14 +526,14 @@ footer a:active {
     /* Legger til bildet og tittel i header for å gi et inntrykk av hva siden handler om. */
 }
 
-.opening > h1 {
+.opening>h1 {
     align-self: center;
     text-transform: uppercase;
     font-size: 5rem;
     /* Styler tittelen i header */
 }
 
-.opening > img {
+.opening>img {
     position: absolute;
     align-self: center;
     left: 10vw;
@@ -570,7 +570,7 @@ footer a:active {
     /* Setter bildene øverst på sida for blikkfang */
 }
 
-.toppics > img {
+.toppics>img {
     height: 20rem;
     border-radius: 10px;
     /* Skalerer bildene under klassen "toppics" */
@@ -631,14 +631,14 @@ footer a:active {
     /* Sentrerer innholdet i gridden for å følge designet til nettsiden. */
 }
 
-.box2 > h3,
-.box3 > h3,
-.box3 > p {
+.box2>h3,
+.box3>h3,
+.box3>p {
     text-align: center;
     /* Sentrer teksten i boksene */
 }
 
-.box2 > p {
+.box2>p {
     align-self: center;
     justify-self: center;
     text-align: justify;
@@ -673,7 +673,7 @@ footer a:active {
 
 /* Media query for canteen-siden for skjermer under 1055 px */
 @media (max-width: 1055px) {
-    .opening > img {
+    .opening>img {
         display: none;
         /* Fjerner bilde under .opening for skjermer under 1055px */
     }
@@ -694,7 +694,7 @@ footer a:active {
         /* Fjerner margin for under .toppics for skjermer under 1055px */
     }
 
-    .toppics > img {
+    .toppics>img {
         height: 20rem;
         border-radius: 10px;
         margin-left: 1em;
@@ -709,7 +709,7 @@ footer a:active {
         .bottomtoppics for skjermer under 1055px */
     }
 
-    .bottompics > div {
+    .bottompics>div {
         margin-bottom: 1em;
         justify-content: center;
         /* Justerer margin og sentrerer innhold
@@ -719,7 +719,7 @@ footer a:active {
 
 /* Media query for canteen-siden for skjermer under 850px */
 @media (max-width: 850px) {
-    .opening > h1 {
+    .opening>h1 {
         text-align: center;
         /* Senterstille h1-tekst under .opening for skjermer under 850px */
     }
@@ -765,12 +765,12 @@ footer a:active {
         for skjermer under 850px */
     }
 
-    .toppics > img:nth-child(1) {
+    .toppics>img:nth-child(1) {
         display: none;
         /* Fjerner sidens første bilde for skjermer under 850px */
     }
 
-    .toppics > img:nth-child(3) {
+    .toppics>img:nth-child(3) {
         height: 15rem;
         margin-top: -2rem;
         position: absolute;
@@ -1015,7 +1015,7 @@ footer a:active {
     /* Styling av tekst i nav-bar */
 }
 
-.topical-body > main {
+.topical-body>main {
     margin: 0;
     margin-top: -26rem;
     overflow-y: scroll;
@@ -1034,7 +1034,7 @@ footer a:active {
     /* Styling for "hovering" av linker inne i main topical-siden */
 }
 
-.topical-article > section {
+.topical-article>section {
     height: 100vh;
     padding: 2rem;
     display: flex;
@@ -1077,7 +1077,7 @@ footer a:active {
     /* Styling av h2 på topicalsiden, overskrift referanser */
 }
 
-#referanser > ol {
+#referanser>ol {
     background-color: #000008;
     border-radius: 10px;
     padding-left: 2rem;
@@ -1118,12 +1118,12 @@ footer a:active {
         /* Media-query for dropdown meny */
     }
 
-    .topical-body #drp-menu-toggle:checked ~ .menu {
+    .topical-body #drp-menu-toggle:checked~.menu {
         background-color: #68d2f2;
         /* Styling av farge på tekst dropdown meny */
     }
 
-    .topical-body #drp-menu-toggle:checked ~ .menu a {
+    .topical-body #drp-menu-toggle:checked~.menu a {
         background-color: #68d2f2;
         /* Styling av farge på tekst dropdown meny */
     }
@@ -1145,6 +1145,7 @@ footer a:active {
     to {
         opacity: 1;
     }
+
     /* Animasjon som går fra helt gjennomsiktig og til synlig */
 }
 
@@ -1156,6 +1157,7 @@ footer a:active {
     to {
         opacity: 0;
     }
+
     /* Animasjon som gjør at ting går fra synlig, til usynlig */
 }
 
@@ -1167,6 +1169,7 @@ footer a:active {
     to {
         transform: translateY(0);
     }
+
     /* Animasjon som fører ett objekt 200px oppover i Y-retning*/
 }
 
@@ -1178,6 +1181,7 @@ footer a:active {
     100% {
         transform: translateY(16vw);
     }
+
     /* Animasjon som fører ett objekt nedover 16vw i Y-retning */
 }
 
@@ -1189,5 +1193,6 @@ footer a:active {
     to {
         transform: translateY(-8vw);
     }
+
     /* Animasjon som fører et objekt oppover 8vw i Y-retning*/
 }
