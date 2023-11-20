@@ -97,7 +97,7 @@ a {
 }
 
 /* Header */
-header > section {
+header>section {
     position: scroll;
 }
 
@@ -116,7 +116,7 @@ nav a {
     transition: all 0.5s;
 }
 
-nav > div {
+nav>div {
     max-width: 1300px;
     margin: auto;
 }
@@ -159,7 +159,7 @@ header a:hover {
         width: 42px;
     }
 
-    .menu > a {
+    .menu>a {
         margin-left: 0.5em;
         overflow: hidden;
         font-size: smaller;
@@ -167,12 +167,12 @@ header a:hover {
         transition: none;
     }
 
-    #drp-menu-toggle ~ .menu a {
+    #drp-menu-toggle~.menu a {
         height: 0px;
         width: 0px;
     }
 
-    #drp-menu-toggle:checked ~ .menu {
+    #drp-menu-toggle:checked~.menu {
         flex-direction: column;
         position: absolute;
         justify-content: left;
@@ -188,7 +188,7 @@ header a:hover {
         z-index: 1;
     }
 
-    #drp-menu-toggle:checked ~ .menu a {
+    #drp-menu-toggle:checked~.menu a {
         height: 1em;
         margin-left: 0.5em;
         font-size: smaller;
@@ -266,7 +266,7 @@ footer a:active {
 }
 
 @media (max-width: 850px) {
-    footer > section {
+    footer>section {
         flex-direction: column;
 
         align-items: center;
@@ -300,6 +300,7 @@ footer a:active {
     animation-duration: .3s;
     animation-delay: 1.6s;
     animation-fill-mode: forwards;
+    /* Styling av åpningsseksjonen, med en animasjon som fjerner alt av skrift etter 1.6 sekund */
 }
 
 .opener-background {
@@ -313,6 +314,7 @@ footer a:active {
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
     object-fit: cover;
+    /* Styling av hovedbakgrunnen, med animasjon som gjør at den blir synlig etter 2.5s*/
 }
 
 .opener-left {
@@ -323,6 +325,7 @@ footer a:active {
     animation-fill-mode: forwards;
     font-size: 7vw;
     margin: 0;
+    /* Styling av teskten "Oslo" i åpninsseksjonen, med animasjon om at den flytter seg nedover */
 }
 
 .opener-border {
@@ -332,6 +335,7 @@ footer a:active {
     margin-left: 1.6rem;
     width: 3px;
     background-color: #000;
+    /* Linjen som skiller "Oslo" fra resten av orda */
 }
 
 .opener-logo {
@@ -345,6 +349,7 @@ footer a:active {
     animation-duration: .8s, 1s;
     animation-delay: 2s, 2.5s;
     animation-fill-mode: forwards;
+    /* Logoen på hjemmesiden, med animasjon som gjør at den blir synlig, og at den beveger seg oppover */
 }
 
 .opener1 {
@@ -352,6 +357,7 @@ footer a:active {
     animation-name: slideUp, opacity;
     animation-duration: .3s, .1s;
     animation-fill-mode: forwards;
+    /* Styling av ordet "CITY" i åpningsseksjonen */
 }
 
 .opener2 {
@@ -360,6 +366,8 @@ footer a:active {
     animation-duration: .3s, .1s;
     animation-delay: .2s;
     animation-fill-mode: forwards;
+    /* Styling av ordet "TAXI" i åpningsseksjonen */
+
 }
 
 .opener3 {
@@ -368,6 +376,8 @@ footer a:active {
     animation-duration: .3s, .1s;
     animation-delay: .4s;
     animation-fill-mode: forwards;
+    /* Styling av ordet "MET" i åpningsseksjonen */
+
 }
 
 .opener-li {
@@ -377,6 +387,7 @@ footer a:active {
     margin-left: -2rem;
     list-style-type: none;
     font-size: 7vw;
+    /* Styling av listen med ordene "CITY", "TAXI og "MET" i åpningsseksjonen*/
 }
 
 .index-main {
@@ -394,19 +405,23 @@ footer a:active {
     padding-bottom: 0;
     padding-left: 0;
     margin-right: 6rem;
+    /* styling av h2-elementet i indexen */
 }
 
 .index-h3 {
     padding-left: 6rem;
     margin-left: 6rem;
+    /* Styling av h3-elementet i indexen */
 }
 
 .info-container img {
     height: 20vw;
+    /* Setter høyde på de tre bildene på rekke i indexen */
 }
 
 .info-left {
     flex-direction: row-reverse;
+    /* Setter flex direction slik at det siste elementet kommer først i rekka*/
 }
 
 .p-veibeskrivelse {
@@ -416,12 +431,14 @@ footer a:active {
     padding-left: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    /* Styling av ordet "BIL". Gjør slik at plasseringen blir som ønsket. */
 }
 
 .googlemaps {
     border: 0;
     width: 20vw;
     height: 20vw;
+    /* Styling av iframene slik at de får ønsket størrelse og null border */
 }
 
 .mobile-logo {
@@ -431,6 +448,7 @@ footer a:active {
     margin-bottom: 12rem;
     margin-left: auto;
     width: 8rem;
+    /* Styling av mobillogoen som gjør at den får ønsket størrelse og plassering når skjermen blir mindre enn 850px */
 }
 
 .mobile-opener-background {
@@ -443,6 +461,7 @@ footer a:active {
     border-bottom-color: #000;
     border-bottom-width: 3px;
     border-bottom-style: solid;
+    /* Styler backgrunnen på indexen som vises når skjermen er mindre enn 850px */
 }
 
 /* canteen.html */
@@ -458,13 +477,13 @@ footer a:active {
     background-size: cover;
 }
 
-.opening > h1 {
+.opening>h1 {
     align-self: center;
     text-transform: uppercase;
     font-size: 5rem;
 }
 
-.opening > img {
+.opening>img {
     position: absolute;
     align-self: center;
     left: 10vw;
@@ -497,7 +516,7 @@ footer a:active {
     justify-content: center;
 }
 
-.toppics > img {
+.toppics>img {
     height: 20rem;
     border-radius: 10px;
 }
@@ -550,13 +569,13 @@ footer a:active {
     align-self: center;
 }
 
-.box2 > h3,
-.box3 > h3,
-.box3 > p {
+.box2>h3,
+.box3>h3,
+.box3>p {
     text-align: center;
 }
 
-.box2 > p {
+.box2>p {
     align-self: center;
     justify-self: center;
     text-align: justify;
@@ -674,7 +693,7 @@ footer a:active {
 }
 
 @media (max-width: 1055px) {
-    .opening > img {
+    .opening>img {
         display: none;
     }
 
@@ -691,7 +710,7 @@ footer a:active {
         margin-right: 0;
     }
 
-    .toppics > img {
+    .toppics>img {
         height: 20rem;
         border-radius: 10px;
         margin-left: 1em;
@@ -702,7 +721,7 @@ footer a:active {
         flex-direction: column;
     }
 
-    .bottompics > div {
+    .bottompics>div {
         margin-bottom: 1em;
         justify-content: center;
     }
@@ -719,7 +738,7 @@ footer a:active {
         font-size: 9vw;
     }
 
-    .opening > h1 {
+    .opening>h1 {
         text-align: center;
     }
 
@@ -764,11 +783,11 @@ footer a:active {
         min-width: 15.313rem;
     }
 
-    .toppics > img:nth-child(1) {
+    .toppics>img:nth-child(1) {
         display: none;
     }
 
-    .toppics > img:nth-child(3) {
+    .toppics>img:nth-child(3) {
         height: 15rem;
         margin-top: -2rem;
         position: absolute;
@@ -869,6 +888,7 @@ footer a:active {
     .access-img {
         margin: auto;
     }
+
     /* Media-query for footer på skjermer under 850px */
 }
 
@@ -893,7 +913,7 @@ footer a:active {
     /* Styling av tekst i nav-bar */
 }
 
-.topical-body > main {
+.topical-body>main {
     margin: 0;
     margin-top: -26rem;
     overflow-y: scroll;
@@ -912,7 +932,7 @@ footer a:active {
     /* Styling for "hovering" av linker inne i main */
 }
 
-.topical-article > section {
+.topical-article>section {
     height: 100vh;
     padding: 2rem;
     display: flex;
@@ -954,7 +974,7 @@ footer a:active {
     /* Styling av p */
 }
 
-#referanser > ol {
+#referanser>ol {
     background-color: #000008;
     border-radius: 10px;
     padding-left: 2rem;
@@ -993,12 +1013,12 @@ footer a:active {
         /* Media-query for dropdown meny */
     }
 
-    .topical-body #drp-menu-toggle:checked ~ .menu {
+    .topical-body #drp-menu-toggle:checked~.menu {
         background-color: #68d2f2;
         /* Styling av farge på tekst dropdown meny */
     }
 
-    .topical-body #drp-menu-toggle:checked ~ .menu a {
+    .topical-body #drp-menu-toggle:checked~.menu a {
         background-color: #68d2f2;
         /* Styling av farge på tekst dropdown meny */
     }
@@ -1032,6 +1052,7 @@ footer a:active {
     to {
         opacity: 0;
     }
+
     /* Animasjon som gjør at ting går fra synlig, til usynlig*/
 }
 
@@ -1043,6 +1064,7 @@ footer a:active {
     to {
         transform: translateY(0);
     }
+
     /* Animasjon som fører ett objekt 200px oppover i Y-retning*/
 }
 
@@ -1054,6 +1076,7 @@ footer a:active {
     100% {
         transform: translateY(16vw);
     }
+
     /* Animasjon som fører ett objekt nedover 16vw i Y-retning */
 }
 
@@ -1065,5 +1088,6 @@ footer a:active {
     to {
         transform: translateY(-8vw);
     }
+
     /* Animasjon som fører et objekt oppover 8vw i Y-retning*/
 }
