@@ -1180,7 +1180,7 @@ footer a:active {
     }
 }
 
-/*  */
+/* Media query for wide-screen */
 @media (min-width: 1800px) {
     .topical-body .border-radius {
         background-color: #68d2f2;
