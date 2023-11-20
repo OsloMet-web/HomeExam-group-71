@@ -780,6 +780,7 @@ footer a:active {
     .access-img {
         margin: auto;
     }
+
     /* Media-query for footer på skjermer under 850px */
 }
 
@@ -789,7 +790,7 @@ footer a:active {
 }
 
 .topical-body {
-    background-image: url("/img/topical/joey-kyber-45FJgZMXCK8-unsplash-3.jpg");
+    background-image: url("../img/topical/joey-kyber-45FJgZMXCK8-unsplash-3.jpg");
     /* Bakgrunnsbilde hentet fra unsplash.com 
     https://unsplash.com/photos/timelapse-photo-of-highway-during-golden-hour-45FJgZMXCK8*/
     background-size: cover;
@@ -925,6 +926,8 @@ footer a:active {
     to {
         opacity: 1;
     }
+
+    /* Animasjon som går fra helt gjennomsiktig og til synlig */
 }
 
 @keyframes opacity-none {
@@ -935,17 +938,8 @@ footer a:active {
     to {
         opacity: 0;
     }
-}
 
-@keyframes slideIn {
-    from {
-        transform: translateX(-200px);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-
+    /* Animasjon som gjør at ting går fra synlig, til usynlig*/
 }
 
 @keyframes slideUp {
@@ -956,6 +950,8 @@ footer a:active {
     to {
         transform: translateY(0);
     }
+
+    /* Animasjon som fører ett objekt 200px oppover i Y-retning*/
 }
 
 @keyframes slideDown {
@@ -966,6 +962,8 @@ footer a:active {
     100% {
         transform: translateY(16vw);
     }
+
+    /* Animasjon som fører ett objekt nedover 16vw i Y-retning */
 }
 
 @keyframes dragUp {
@@ -976,6 +974,8 @@ footer a:active {
     to {
         transform: translateY(-8vw);
     }
+
+    /* Animasjon som fører et objekt oppover 8vw i Y-retning*/
 }
 
 
