@@ -587,9 +587,6 @@ footer a:active {
     margin: auto;
 }
 
-
-
-
 @media (max-width: 1055px) {
     .opening>img {
         display: none;
@@ -627,7 +624,7 @@ footer a:active {
     .access-logo {
         display: none;
     }
-
+    /* Media-query for footer på skjermer 1055px - 850px */
 }
 
 /* Ned til iphone 5 */
@@ -777,14 +774,13 @@ footer a:active {
     .access-img {
         margin: auto;
     }
-
+    /* Media-query for footer på skjermer 1055px - 850px */
 }
 
 /* Topical */
 .header-topical {
     height: 26rem;
 }
-
 
 .topical-body {
     background-image: url("/img/topical/joey-kyber-45FJgZMXCK8-unsplash-3.jpg");
