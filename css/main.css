@@ -919,7 +919,7 @@ footer a:active {
 @media (min-width: 1800px) {
     .topical-body .border-radius {
         background-color: #68d2f2;
-        /* Styling av tekst i nav-bar ved skjermer over 1500px */
+        /* Styling av tekst i nav-bar ved skjermer over 1800px */
     }
 }
 
