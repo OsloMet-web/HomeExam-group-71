@@ -644,7 +644,8 @@ footer a:active {
     }
 
     main {
-        margin: 0 2rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
 
     .main-container {
@@ -685,7 +686,6 @@ footer a:active {
 
     .toppics > img:nth-child(3) {
         height: 15rem;
-        margin: 0;
         margin-top: -2rem;
         position: absolute;
     }
