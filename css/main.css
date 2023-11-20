@@ -27,6 +27,15 @@ main {
     /* Fjerner standard margin fra main*/
 }
 
+/* Media query for å sette margin til små skjermer */
+@media(max-width: 850px) {
+    main {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        /* Justere margin for skjermer under 850px */
+    }
+}
+
 p {
     font-size: 1.3rem;
     /* Setter font-size for alle p-elementer */
@@ -146,7 +155,13 @@ header a:hover {
     /* Ikonet er skjult når nav-baren vises */
 }
 
+/* Media query for header */
 @media (max-width: 900px) {
+    header {
+        height: 20rem;
+        /* Justere høyde til header for skjermer under 850px */
+    }
+
     .drp-menu-toggle-container {
         display: flex;
         flex-direction: column;
@@ -289,9 +304,8 @@ footer a:active {
     /* Endrer utseende på aktiv lenke i footer */
 }
 
+/* Media-query for footer på skjermer under 850px */
 @media (max-width: 850px) {
-    /* Media-query for footer på skjermer under 850px */
-
     footer > section {
         flex-direction: column;
         align-items: center;
@@ -310,6 +324,12 @@ footer a:active {
     .footer-container {
         min-width: 15.131rem;
         /* Setter minumum bredde for footer */
+    }
+
+    .footer-container div {
+        flex-direction: row;
+        /* Strukturer innholdet i footeren i kolonne 
+        for skjermer under 850px */
     }
 
     .end-text {
@@ -495,7 +515,6 @@ footer a:active {
 
 /* canteen.html */
 .opening {
-    background-color: var(--main);
     height: 20em;
     border-bottom-width: 5px;
     border-bottom-style: solid;
@@ -652,11 +671,125 @@ footer a:active {
     /* Gjør at teksten holder seg litt unna bildet */
 }
 
+/* Media query for canteen-siden for skjermer under 1055 px */
+@media (max-width: 1055px) {
+    .opening > img {
+        display: none;
+        /* Fjerner bilde under .opening for skjermer under 1055px */
+    }
+
+    .middle-img {
+        display: none;
+        /* Fjerner bilde under .middle-img for skjermer under 1055px */
+    }
+
+    .line {
+        display: none;
+        /* Fjerner linje under .line for skjermer under 1055px */
+    }
+
+    .toppics {
+        margin-left: 0;
+        margin-right: 0;
+        /* Fjerner margin for under .toppics for skjermer under 1055px */
+    }
+
+    .toppics > img {
+        height: 20rem;
+        border-radius: 10px;
+        margin-left: 1em;
+        margin-right: 1em;
+        /* Fjerner høyde, border og margin for bilder 
+        under .toppics for skjermer under 1055px */
+    }
+
+    .bottompics {
+        flex-direction: column;
+        /* Setter innholdet til kolonner under
+        .bottomtoppics for skjermer under 1055px */
+    }
+
+    .bottompics > div {
+        margin-bottom: 1em;
+        justify-content: center;
+        /* Justerer margin og sentrerer innhold
+        under .toppics for skjermer under 1055px */
+    }
+}
+
+/* Media query for canteen-siden for skjermer under 850px */
+@media (max-width: 850px) {
+    .opening > h1 {
+        text-align: center;
+        /* Senterstille h1-tekst under .opening for skjermer under 850px */
+    }
+
+    .main-container {
+        row-gap: 1rem;
+        /* Justere avstand mellom rader for skjermer under 850px */
+    }
+
+    .article-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-top: 9rem;
+        /* Endrer struktur fra grid til flex for skjermer under 850px,
+        for å få innholdet i kolonne */
+    }
+
+    .box1 {
+        align-self: center;
+        /* Sentrerer .box1 for skjermer under 850px */
+    }
+
+    .box3 {
+        margin-bottom: 5rem;
+        /* Sette margin til .box3 for skjermer under 850px */
+    }
+
+    .box4 h2 {
+        margin-top: 2rem;
+        /* Sette margin til .box3 for skjermer under 850px */
+    }
+
+    .line {
+        display: none;
+        /* Sette margin til .box3 for skjermer under 850px */
+    }
+
+    .box2,
+    .box3 {
+        min-width: 15.313rem;
+        /* Sette minimum bredde for .box2 og .box3 
+        for skjermer under 850px */
+    }
+
+    .toppics > img:nth-child(1) {
+        display: none;
+        /* Fjerner sidens første bilde for skjermer under 850px */
+    }
+
+    .toppics > img:nth-child(3) {
+        height: 15rem;
+        margin-top: -2rem;
+        position: absolute;
+        /* Justerer størrelse og plassering for bilde nr. 3 
+        for skjermer under 850px */
+    }
+
+}
+
 /* accessibility */
 .access-header-background {
+    height: 20em;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
     background-image: url("../img/accessibility/world-wide-accessable.jpg");
     /* Bilde av nasa fra https: //unsplash.com/photos/photo-of-outer-space-Q1p7bh3SHj8 */
     background-size: cover;
+    /* Legger til bildet og tittel i header for å gi et inntrykk av hva siden handler om. */
 }
 
 .access-logo {
@@ -676,9 +809,6 @@ footer a:active {
     padding-right: 0;
     padding-bottom: 6rem;
     padding-left: 0;
-    border-bottom-style: solid;
-    border-bottom-color: #000;
-    border-bottom-width: 3px;
     margin-top: 0;
     margin-bottom: 0;
     color: #fff;
@@ -752,131 +882,20 @@ footer a:active {
     /* ingen display og gir margin: auto til "våre valg" boksene */
 }
 
+/* Media query for accessibility-siden for skjermer under 1055 px */
 @media (max-width: 1055px) {
-    .opening > img {
-        display: none;
-        /* Fjerner bilde under .opening for skjermer under 1055px */
-    }
-
-    .middle-img {
-        display: none;
-        /* Fjerner bilde under .middle-img for skjermer under 1055px */
-    }
-
-    .line {
-        display: none;
-        /* Fjerner linje under .line for skjermer under 1055px */
-    }
-
-    .toppics {
-        margin-left: 0;
-        margin-right: 0;
-        /* Fjerner margin for under .toppics for skjermer under 1055px */
-    }
-
-    .toppics > img {
-        height: 20rem;
-        border-radius: 10px;
-        margin-left: 1em;
-        margin-right: 1em;
-        /* Fjerner høyde, border og margin for bilder 
-        under .toppics for skjermer under 1055px */
-    }
-
-    .bottompics {
-        flex-direction: column;
-        /* Setter innholdet til kolonner under
-        .bottomtoppics for skjermer under 1055px */
-    }
-
-    .bottompics > div {
-        margin-bottom: 1em;
-        justify-content: center;
-        /* Justerer margin og sentrerer innhold
-        under .toppics for skjermer under 1055px */
-    }
-
     .access-logo {
         display: none;
         /* Skjuler logo under .access-logo for skjermer under 1055px */
     }
 }
 
+/* Media query for accessibility-siden for skjermer under 850px */
 @media (max-width: 850px) {
     .access-header {
         font-size: 9vw;
         /* Style tekst-størrelse på tekst under
         .accessheader for skjermer under 850px */
-    }
-
-    .opening > h1 {
-        text-align: center;
-        /* Senterstille h1-tekst under .opening for skjermer under 850px */
-    }
-
-    header {
-        height: 20rem;
-        /* Justere høyde til header for skjermer under 850px */
-    }
-
-    main {
-        margin-right: 2rem;
-        margin-left: 2rem;
-        /* Justere margin for skjermer under 850px */
-    }
-
-    .main-container {
-        row-gap: 1rem;
-        /* Justere avstand mellom rader for skjermer under 850px */
-    }
-
-    .article-container {
-        display: flex;
-        flex-direction: column;
-        row-gap: 1rem;
-        margin-top: 9rem;
-        /* Endrer struktur fra grid til flex for skjermer under 850px,
-        for å få innholdet i kolonne */
-    }
-
-    .box1 {
-        align-self: center;
-        /* Sentrerer .box1 for skjermer under 850px */
-    }
-
-    .box3 {
-        margin-bottom: 5rem;
-        /* Sette margin til .box3 for skjermer under 850px */
-    }
-
-    .box4 h2 {
-        margin-top: 2rem;
-        /* Sette margin til .box3 for skjermer under 850px */
-    }
-
-    .line {
-        display: none;
-        /* Sette margin til .box3 for skjermer under 850px */
-    }
-
-    .box2,
-    .box3 {
-        min-width: 15.313rem;
-        /* Sette minimum bredde for .box2 og .box3 
-        for skjermer under 850px */
-    }
-
-    .toppics > img:nth-child(1) {
-        display: none;
-        /* Fjerner sidens første bilde for skjermer under 850px */
-    }
-
-    .toppics > img:nth-child(3) {
-        height: 15rem;
-        margin-top: -2rem;
-        position: absolute;
-        /* Justerer størrelse og plassering for bilde nr. 3 
-        for skjermer under 850px */
     }
 
     .border-left {
@@ -887,12 +906,6 @@ footer a:active {
     .border-right {
         border: 0;
         /* Fjerner border-left for skjermer under 850px */
-    }
-
-    .footer-container div {
-        flex-direction: row;
-        /* Strukturer innholdet i footeren i kolonne 
-        for skjermer under 850px */
     }
 
     .info-container img {
@@ -1014,8 +1027,8 @@ footer a:active {
 }
 
 .topical-body a {
-    color: #fff
-        /* Styling av alle linker inne i main på topical-siden */
+    color: #fff;
+    /* Styling av alle linker inne i main på topical-siden */
 }
 
 .topical-body a:hover {
@@ -1031,7 +1044,7 @@ footer a:active {
     align-items: center;
     scroll-snap-align: start;
     /* Setter verdier for sections. Plassering av tekstboks 
-    Scroll-snap-align til start av hver section*/
+    Scroll-snap-align til start av hver section */
 }
 
 .topical-article h1 {
@@ -1040,7 +1053,7 @@ footer a:active {
     text-align: center;
     padding: 2rem;
     border-radius: 10px;
-    background-color: #000008;
+    background-color: #000008e6;
     /* Styling av h1 på topical-siden */
 }
 
@@ -1051,7 +1064,7 @@ footer a:active {
     color: white;
     padding: 2rem;
     border-radius: 10px;
-    background-color: #000008;
+    background-color: #000008e6;
     /* Styling av p på topicalsiden */
 }
 
@@ -1070,6 +1083,7 @@ footer a:active {
     background-color: #000008;
     border-radius: 10px;
     padding-left: 2rem;
+    padding-bottom: 3vh;
     /* Styling av referanse-liste */
 }
 
@@ -1090,6 +1104,7 @@ footer a:active {
     /* Styling av p i referanse-liste */
 }
 
+/* Media query for topical sida */
 @media (max-width: 900px) {
     .menu-icon-white {
         display: block;
