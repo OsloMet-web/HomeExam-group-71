@@ -54,7 +54,6 @@ a {
 
 .subheader {
     font-size: 2rem;
-
 }
 
 .end-text {
@@ -133,7 +132,6 @@ header a:hover {
         /* Styling av skrift ved "hover" i navigation bar */
 }
 
-
 /* Dropdown-menu */
 #drp-menu-toggle {
     display: none;
@@ -201,7 +199,6 @@ header a:hover {
         z-index: 2;
     }
 }
-
 
 /* Footer */
 footer {
@@ -459,7 +456,6 @@ footer a:active {
     align-self: center;
 }
 
-
 .box2 > h3,
 .box3 > h3,
 .box3 > p {
@@ -500,7 +496,6 @@ footer a:active {
     background-image: url("../img/accessibility/world-wide-accessable.jpg");
     /* Bilde av nasa fra https: //unsplash.com/photos/photo-of-outer-space-Q1p7bh3SHj8 */
     background-size: cover;
-
 }
 
 .access-logo {
@@ -625,7 +620,6 @@ footer a:active {
     /* Media-query for footer på skjermer 1055px - 850px */
 }
 
-/* Ned til iphone 5 */
 @media (max-width: 850px) {
     .access-header {
         font-size: 9vw;
@@ -776,7 +770,6 @@ footer a:active {
     .access-img {
         margin: auto;
     }
-
     /* Media-query for footer på skjermer under 850px */
 }
 
@@ -920,7 +913,6 @@ footer a:active {
 }
 
 /* Animasjoner */
-
 @keyframes opacity {
     from {
         opacity: 0;
@@ -941,7 +933,6 @@ footer a:active {
     to {
         opacity: 0;
     }
-
     /* Animasjon som gjør at ting går fra synlig, til usynlig*/
 }
 
@@ -953,7 +944,6 @@ footer a:active {
     to {
         transform: translateY(0);
     }
-
     /* Animasjon som fører ett objekt 200px oppover i Y-retning*/
 }
 
@@ -965,7 +955,6 @@ footer a:active {
     100% {
         transform: translateY(16vw);
     }
-
     /* Animasjon som fører ett objekt nedover 16vw i Y-retning */
 }
 
@@ -977,13 +966,10 @@ footer a:active {
     to {
         transform: translateY(-8vw);
     }
-
     /* Animasjon som fører et objekt oppover 8vw i Y-retning*/
 }
 
-
 /* Opener */
-
 .opener {
     margin-top: 11vw;
     margin-right: 4rem;
