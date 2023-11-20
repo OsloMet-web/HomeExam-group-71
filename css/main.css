@@ -214,7 +214,9 @@ footer {
     padding-right: 3rem;
     padding-bottom: 2rem;
     padding-left: 3rem;
-    border-top: solid #000 3px;
+    border-top-color: #000;
+    border-top-width: 3px;
+    border-top-style: solid;
     /* Styling av footer */
 }
 
@@ -256,7 +258,8 @@ footer section div p {
 }
 
 footer a {
-    transition: transform .25s ease;
+    transition: transform;
+    transition-duration: .25s;
 }
 
 footer a:hover {
@@ -704,7 +707,10 @@ footer a:active {
     }
 
     .info-container img {
-        margin: 0 auto 2rem auto;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        margin-left: auto;
         height: 65vw;
         width: 50%;
     }
@@ -740,10 +746,12 @@ footer a:active {
     }
 
     .googlemaps {
-        margin: auto;
         width: 10rem;
         height: 10rem;
-        margin: 2rem auto 0rem auto;
+        margin-top: 2rem;
+        margin-right: auto;
+        margin-bottom: 0rem;
+        margin-left: auto;
     }
 
     .subheader {
