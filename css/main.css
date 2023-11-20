@@ -517,13 +517,14 @@ footer a:active {
 .access-header {
     justify-self: center;
     align-self: center;
-    font-size: 7vw;
+    font-size: 5rem;
     padding: 6rem 0 6rem 0;
     border-bottom: solid #000 3px;
     margin-top: 0;
     margin-bottom: 0;
     color: #fff;
     text-transform: uppercase;
+    Styling av header på accesibilty-siden
 }
 
 .access-subheader {
