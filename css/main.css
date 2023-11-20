@@ -646,6 +646,7 @@ footer a:active {
     left: 10vw;
     height: 6rem;
     width: 6rem;
+     /* Justerer posisjon og størrelse til oslo-met logo*/
 }
 
 .access-header {
@@ -663,32 +664,32 @@ footer a:active {
     margin-bottom: 0;
     color: #fff;
     text-transform: uppercase;
-    /* Styling av header på accessibilty-siden */
+    /* justerer størrelse, posisjon og farge til header */
 }
 
 .access-subheader {
-    margin-top: 0;
+    margin-top: 0; /* subheader med 0 top-margin */
 }
 
 .access-info1 {
-    height: 28rem;
+    height: 28rem; /* Gir info1 gitt høyde ift tekstmengde */
 }
 
 .access-info2 {
-    height: 12rem;
+    height: 12rem; /* Gir info2 gitt høyde ift tekstmengde*/
 }
 
 .access-info3 {
-    height: 15rem;
+    height: 15rem; /* Gir info3 gitt høyde ift tekstmengde */
 }
 
 
 .access-box {
-    width: 30rem;
+    width: 30rem; /* Gir artikkelboksene til "våre valg" gitt bredde*/
 }
 
 .access-text {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; /* tilpasser marginen til teksten */
 }
 
 .access-border {
@@ -699,26 +700,31 @@ footer a:active {
     margin-right: 2rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
+    /* Designer og justerer borderen til "våre valg" artikkelen */
 }
 
 .access-img {
     width: 15rem;
     height: 15rem;
     margin-right: 4rem;
+    /* Justerer høyde og bredde til bilde for fargevalg og kontrast */
 }
 
 .access-box h5 {
     margin-top: 0;
     margin-bottom: 0;
+    /* Justerer margin til boksene i acc-test */
 }
 
 .access-container {
     margin-bottom: 3rem;
+    /* Justerer margin */
 }
 
 .access-mobile-box {
     display: none;
     margin: auto;
+    /* ingen display og gir margin: auto til "våre valg" boksene */
 }
 
 @media (max-width: 1055px) {
