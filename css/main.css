@@ -98,7 +98,7 @@ a {
 }
 
 /* Header */
-header>section {
+header > section {
     position: scroll;
 }
 
@@ -117,7 +117,7 @@ nav a {
     transition: all 0.5s;
 }
 
-nav>div {
+nav > div {
     max-width: 1300px;
     margin: auto;
 }
@@ -130,7 +130,7 @@ nav .active {
 header a:hover {
     font-weight: 700;
     color: var(--text)
-    /* Styling av skrift ved "hover" i navigation bar */
+        /* Styling av skrift ved "hover" i navigation bar */
 }
 
 
@@ -164,7 +164,7 @@ header a:hover {
         width: 42px;
     }
 
-    .menu>a {
+    .menu > a {
         margin-left: 0.5em;
         overflow: hidden;
         font-size: smaller;
@@ -172,12 +172,12 @@ header a:hover {
         transition: none;
     }
 
-    #drp-menu-toggle~.menu a {
+    #drp-menu-toggle ~ .menu a {
         height: 0px;
         width: 0px;
     }
 
-    #drp-menu-toggle:checked~.menu {
+    #drp-menu-toggle:checked ~ .menu {
         flex-direction: column;
         position: absolute;
         justify-content: left;
@@ -193,7 +193,7 @@ header a:hover {
         z-index: 1;
     }
 
-    #drp-menu-toggle:checked~.menu a {
+    #drp-menu-toggle:checked ~ .menu a {
         height: 1em;
         margin-left: 0.5em;
         font-size: smaller;
@@ -268,7 +268,7 @@ footer a:active {
 }
 
 @media (max-width: 850px) {
-    footer>section {
+    footer > section {
         flex-direction: column;
 
         align-items: center;
@@ -287,6 +287,7 @@ footer a:active {
     .end-text {
         text-align: center;
     }
+
     /* Media-query for footer på skjermer under 850px */
 }
 
@@ -370,13 +371,13 @@ footer a:active {
     background-size: cover;
 }
 
-.opening>h1 {
+.opening > h1 {
     align-self: center;
     text-transform: uppercase;
     font-size: 5rem;
 }
 
-.opening>img {
+.opening > img {
     position: absolute;
     align-self: center;
     left: 10vw;
@@ -409,7 +410,7 @@ footer a:active {
     justify-content: center;
 }
 
-.toppics>img {
+.toppics > img {
     height: 20rem;
     border-radius: 10px;
 }
@@ -463,13 +464,13 @@ footer a:active {
 }
 
 
-.box2>h3,
-.box3>h3,
-.box3>p {
+.box2 > h3,
+.box3 > h3,
+.box3 > p {
     text-align: center;
 }
 
-.box2>p {
+.box2 > p {
     align-self: center;
     justify-self: center;
     text-align: justify;
@@ -588,7 +589,7 @@ footer a:active {
 }
 
 @media (max-width: 1055px) {
-    .opening>img {
+    .opening > img {
         display: none;
     }
 
@@ -605,7 +606,7 @@ footer a:active {
         margin-right: 0;
     }
 
-    .toppics>img {
+    .toppics > img {
         height: 20rem;
         border-radius: 10px;
         margin-left: 1em;
@@ -616,7 +617,7 @@ footer a:active {
         flex-direction: column;
     }
 
-    .bottompics>div {
+    .bottompics > div {
         margin-bottom: 1em;
         justify-content: center;
     }
@@ -624,12 +625,17 @@ footer a:active {
     .access-logo {
         display: none;
     }
+
     /* Media-query for footer på skjermer 1055px - 850px */
 }
 
 /* Ned til iphone 5 */
 @media (max-width: 850px) {
-    .opening>h1 {
+    .access-header {
+        font-size: 9vw;
+    }
+
+    .opening > h1 {
         text-align: center;
     }
 
@@ -673,11 +679,11 @@ footer a:active {
         min-width: 15.313rem;
     }
 
-    .toppics>img:nth-child(1) {
+    .toppics > img:nth-child(1) {
         display: none;
     }
 
-    .toppics>img:nth-child(3) {
+    .toppics > img:nth-child(3) {
         height: 15rem;
         margin: 0;
         margin-top: -2rem;
@@ -774,6 +780,7 @@ footer a:active {
     .access-img {
         margin: auto;
     }
+
     /* Media-query for footer på skjermer 1055px - 850px */
 }
 
@@ -798,7 +805,7 @@ footer a:active {
     /* Styling av tekst i nav-bar */
 }
 
-.topical-body>main {
+.topical-body > main {
     margin: 0;
     margin-top: -26rem;
     overflow-y: scroll;
@@ -817,7 +824,7 @@ footer a:active {
     /* Styling for "hovering" av linker inne i main */
 }
 
-.topical-article>section {
+.topical-article > section {
     height: 100vh;
     padding: 2rem;
     display: flex;
@@ -857,7 +864,7 @@ footer a:active {
     /* Styling av p */
 }
 
-#referanser>ol {
+#referanser > ol {
     background-color: #000008;
     border-radius: 10px;
     padding-left: 2rem;
@@ -896,12 +903,12 @@ footer a:active {
         /* Media-query for dropdown meny */
     }
 
-    .topical-body #drp-menu-toggle:checked~.menu {
+    .topical-body #drp-menu-toggle:checked ~ .menu {
         background-color: rgb(104, 210, 242);
         /* Styling av farge på tekst dropdown meny */
     }
 
-    .topical-body #drp-menu-toggle:checked~.menu a {
+    .topical-body #drp-menu-toggle:checked ~ .menu a {
         background-color: rgb(104, 210, 242);
         /* Styling av farge på tekst dropdown meny */
     }
