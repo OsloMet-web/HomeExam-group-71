@@ -24,83 +24,87 @@ body {
 
 main {
     margin: 0;
+    /* Fjerner standard margin fra main*/
 }
 
 p {
     font-size: 1.3rem;
-}
-
-b {
-    font-size: 1.3rem;
+    /* Setter font-size for alle p-elementer */
 }
 
 a {
+    color: #000;
     text-decoration: none;
+    /* Setter standard textfarge og fjerner underline fra alle linker */
 }
 
 /* Generelle klasser */
 .flex {
     display: flex;
+    /* Klasse for flex som brukes flere ganger i html-filene */
 }
 
 .center-flex {
     display: flex;
     justify-content: center;
+    /* For å midtstille innhold */
 }
 
 .center-text {
     text-align: center;
+    /* Midtstiller tekst */
 }
 
 .subheader {
     font-size: 2rem;
+    /* Scaler headers som kaller på klassen */
 }
 
 .end-text {
     text-align: end;
+    /* Høyrestiller tekst */
 }
 
 .flex-space-between {
     justify-content: space-between;
-}
-
-.flex-space-around {
-    justify-content: space-around;
+    /* For white-space mellom innhold */
 }
 
 .border-radius {
     border-radius: 7px;
+    /* Brukes på "bokser" for å komplementere vårt design */
 }
 
 .box-shadow {
     box-shadow: rgba(0, 0, 0, 0.35) 5px 0px 15px;
+    /* Skygge bak bilder for å gi en dybde i nettsida */
 }
 
 .border-right {
     border-right-width: 3px;
     border-right-style: solid;
     border-right-color: var(--text);
+    /* Brukes for å sette streker i nettsida og dele opp */
 }
 
 .border-left {
     border-left-width: 3px;
     border-left-style: solid;
     border-left-color: var(--text);
+    /* Brukes for å sette streker i nettsida og dele opp */
 }
 
 .info-container {
     margin-bottom: 5rem;
+    /* Deler opp og gir space mellom innhold */
 }
 
 .text-justify {
     text-align: justify;
+    /* Gir nettsiden en avis-aktig følelse når den leses */
 }
 
 /* Header */
-header > section {
-    position: scroll;
-}
-
 nav a {
     font-size: 2rem;
     color: var(--text);
@@ -114,27 +118,32 @@ nav a {
     padding-top: .7rem;
     height: 3rem;
     transition: all 0.5s;
+    /* Setter verdiene for linkene i navbaren for at knappene skal være lik for alle sidene 
+    som default for vår side. */
 }
 
 nav > div {
     max-width: 1300px;
     margin: auto;
+    /* Setter største mulige verdi for div-en som har linkene i nav-baren for at nav-baren skal være
+    accessable på wide-screen displays */
 }
 
 nav .active {
     font-weight: 800;
-    /* Styling av skrift for active side i nav-bar */
+    /* Styling av skrift for active side i nav-bar for lett å se hvilken side man er på */
 }
 
 header a:hover {
     font-weight: 700;
-    color: var(--text)
-        /* Styling av skrift ved "hover" i navigation bar */
+    color: var(--text);
+    /* Styling av skrift ved "hover" i navigation bar, for tydelig å se at man kan klikke på linken */
 }
 
 /* Dropdown-menu */
 #drp-menu-toggle {
     display: none;
+    /* Ikonet er skjult når nav-baren vises */
 }
 
 @media (max-width: 900px) {
@@ -143,6 +152,7 @@ header a:hover {
         flex-direction: column;
         margin-left: 0;
         position: absolute;
+        /* Strukturer linkene nedover i drop-down-menyens container */
     }
 
     .menu-icon {
@@ -152,11 +162,14 @@ header a:hover {
         width: 40px;
         cursor: pointer;
         transition: all .5s;
+        /* Bytter ut "checkbox" ikonet med et bilde av en burgermeny,
+        transition all for å få en smooth opplevelse */
     }
 
     .menu-icon:hover {
         height: 42px;
         width: 42px;
+        /* Øker størrelen til menyen for å indikere at man kan klikke på menyen */
     }
 
     .menu > a {
@@ -165,11 +178,13 @@ header a:hover {
         font-size: smaller;
         background-color: var(--main);
         transition: none;
+        /* Plasserer linkene i drop-down-menyen, overflow hidden for å skjule linkene når menyen er stengt */
     }
 
     #drp-menu-toggle ~ .menu a {
         height: 0px;
         width: 0px;
+        /* Skjuler nav-baren før drop-menyen er aktiv */
     }
 
     #drp-menu-toggle:checked ~ .menu {
@@ -186,6 +201,7 @@ header a:hover {
         height: 7em;
         width: 7.5em;
         z-index: 1;
+        /* Styler boksen som kommer opp når man klikker på burger-menyen */
     }
 
     #drp-menu-toggle:checked ~ .menu a {
@@ -197,6 +213,7 @@ header a:hover {
         padding-left: .1em;
         transition: all .5s;
         z-index: 2;
+        /* Setter verdier for linkene som dukker opp inni boksen som dukker opp fra menyen.*/
     }
 }
 
@@ -251,11 +268,13 @@ footer section div p {
 }
 
 footer a {
-    transition: transform;
+    color: #000;
+    transition: all;
     transition-duration: .25s;
 }
 
 footer a:hover {
+    color: rgba(0, 0, 0, 0.35);
     transform: scale(1.2);
 }
 
@@ -298,6 +317,7 @@ footer a:active {
     animation-duration: .3s;
     animation-delay: 1.6s;
     animation-fill-mode: forwards;
+    /* Styling av åpningsseksjonen, med en animasjon som fjerner alt av skrift etter 1.6 sekund */
 }
 
 .opener-background {
@@ -311,6 +331,7 @@ footer a:active {
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
     object-fit: cover;
+    /* Styling av hovedbakgrunnen, med animasjon som gjør at den blir synlig etter 2.5s*/
 }
 
 .opener-left {
@@ -321,6 +342,7 @@ footer a:active {
     animation-fill-mode: forwards;
     font-size: 7vw;
     margin: 0;
+    /* Styling av teskten "Oslo" i åpninsseksjonen, med animasjon om at den flytter seg nedover */
 }
 
 .opener-border {
@@ -330,6 +352,7 @@ footer a:active {
     margin-left: 1.6rem;
     width: 3px;
     background-color: #000;
+    /* Linjen som skiller "Oslo" fra resten av orda */
 }
 
 .opener-logo {
@@ -343,6 +366,7 @@ footer a:active {
     animation-duration: .8s, 1s;
     animation-delay: 2s, 2.5s;
     animation-fill-mode: forwards;
+    /* Logoen på hjemmesiden, med animasjon som gjør at den blir synlig, og at den beveger seg oppover */
 }
 
 .opener1 {
@@ -350,6 +374,7 @@ footer a:active {
     animation-name: slideUp, opacity;
     animation-duration: .3s, .1s;
     animation-fill-mode: forwards;
+    /* Styling av ordet "CITY" i åpningsseksjonen */
 }
 
 .opener2 {
@@ -358,6 +383,8 @@ footer a:active {
     animation-duration: .3s, .1s;
     animation-delay: .2s;
     animation-fill-mode: forwards;
+    /* Styling av ordet "TAXI" i åpningsseksjonen */
+
 }
 
 .opener3 {
@@ -366,6 +393,8 @@ footer a:active {
     animation-duration: .3s, .1s;
     animation-delay: .4s;
     animation-fill-mode: forwards;
+    /* Styling av ordet "MET" i åpningsseksjonen */
+
 }
 
 .opener-li {
@@ -375,6 +404,7 @@ footer a:active {
     margin-left: -2rem;
     list-style-type: none;
     font-size: 7vw;
+    /* Styling av listen med ordene "CITY", "TAXI og "MET" i åpningsseksjonen*/
 }
 
 .index-main {
@@ -392,19 +422,23 @@ footer a:active {
     padding-bottom: 0;
     padding-left: 0;
     margin-right: 6rem;
+    /* styling av h2-elementet i indexen */
 }
 
 .index-h3 {
     padding-left: 6rem;
     margin-left: 6rem;
+    /* Styling av h3-elementet i indexen */
 }
 
 .info-container img {
     height: 20vw;
+    /* Setter høyde på de tre bildene på rekke i indexen */
 }
 
 .info-left {
     flex-direction: row-reverse;
+    /* Setter flex direction slik at det siste elementet kommer først i rekka*/
 }
 
 .p-veibeskrivelse {
@@ -414,12 +448,14 @@ footer a:active {
     padding-left: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    /* Styling av ordet "BIL". Gjør slik at plasseringen blir som ønsket. */
 }
 
 .googlemaps {
     border: 0;
     width: 20vw;
     height: 20vw;
+    /* Styling av iframene slik at de får ønsket størrelse og null border */
 }
 
 .mobile-logo {
@@ -429,6 +465,7 @@ footer a:active {
     margin-bottom: 12rem;
     margin-left: auto;
     width: 8rem;
+    /* Styling av mobillogoen som gjør at den får ønsket størrelse og plassering når skjermen blir mindre enn 850px */
 }
 
 .mobile-opener-background {
@@ -441,6 +478,7 @@ footer a:active {
     border-bottom-color: #000;
     border-bottom-width: 3px;
     border-bottom-style: solid;
+    /* Styler backgrunnen på indexen som vises når skjermen er mindre enn 850px */
 }
 
 /* canteen.html */
@@ -1050,6 +1088,7 @@ footer a:active {
     to {
         opacity: 0;
     }
+
     /* Animasjon som gjør at ting går fra synlig, til usynlig*/
 }
 
@@ -1061,6 +1100,7 @@ footer a:active {
     to {
         transform: translateY(0);
     }
+
     /* Animasjon som fører ett objekt 200px oppover i Y-retning*/
 }
 
@@ -1072,6 +1112,7 @@ footer a:active {
     100% {
         transform: translateY(16vw);
     }
+
     /* Animasjon som fører ett objekt nedover 16vw i Y-retning */
 }
 
@@ -1083,5 +1124,6 @@ footer a:active {
     to {
         transform: translateY(-8vw);
     }
+
     /* Animasjon som fører et objekt oppover 8vw i Y-retning*/
 }
