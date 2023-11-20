@@ -715,23 +715,28 @@ footer a:active {
 @media (max-width: 850px) {
     .access-header {
         font-size: 9vw;
+        /* Style tekst-størrelse for skjermer under 850px */
     }
 
     .opening > h1 {
         text-align: center;
+        /* Senterstille tekst for skjermer under 850px */
     }
 
     header {
         height: 20rem;
+        /* Justere høyde til header for skjermer under 850px */
     }
 
     main {
         margin-right: 2rem;
         margin-left: 2rem;
+        /* Justere margin for skjermer under 850px */
     }
 
     .main-container {
         row-gap: 1rem;
+        /* Justere avstand mellom rader for skjermer under 850px */
     }
 
     .article-container {
@@ -739,50 +744,64 @@ footer a:active {
         flex-direction: column;
         row-gap: 1rem;
         margin-top: 9rem;
+        /* Endrer struktur fra grid til flex for skjermer under 850px,
+        for å få innholdet i kolonne */
     }
 
     .box1 {
         align-self: center;
+        /* Sentrerer .box1 for skjermer under 850px */
     }
 
     .box3 {
         margin-bottom: 5rem;
+        /* Sette margin til .box3 for skjermer under 850px */
     }
 
     .box4 h2 {
-        margin: 2rem 0 0 0;
+        margin-top: 2rem;
+        /* Sette margin til .box3 for skjermer under 850px */
     }
 
     .line {
         display: none;
+        /* Sette margin til .box3 for skjermer under 850px */
     }
 
     .box2,
     .box3 {
         min-width: 15.313rem;
+        /* Sette minimum bredde for .box2 og .box3 
+        for skjermer under 850px */
     }
 
     .toppics > img:nth-child(1) {
         display: none;
+        /* Fjerner sidens første bilde for skjermer under 850px */
     }
 
     .toppics > img:nth-child(3) {
         height: 15rem;
         margin-top: -2rem;
         position: absolute;
+        /* Justerer størrelse og plassering for bilde nr. 3 
+        for skjermer under 850px */
     }
 
     .border-left {
         border: 0;
+        /* Fjerner border-left for skjermer under 850px */
     }
 
     .border-right {
         border: 0;
+        /* Fjerner border-left for skjermer under 850px */
     }
 
     .footer-container div {
         flex-direction: row;
-
+        /* Strukturer innholdet i footeren i kolonne 
+        for skjermer under 850px */
     }
 
     .info-container img {
@@ -792,36 +811,41 @@ footer a:active {
         margin-left: auto;
         height: 65vw;
         width: 50%;
+        /* Justerer størrelse og plassering på bildene under  
+        .info-container for skjermer under 850px */
     }
 
     .info-container {
         justify-content: center;
+        /* Senterer innholdet i .infocontainer for skjermer under 850px*/
     }
 
     .subheader {
         padding: 0;
         text-align: center;
         width: 100%;
+        font-size: 1.6rem;
+        /* Justererer plassering, tekststørrelse og størrelse for 
+        .subheader for skjermer under 850px */
     }
 
-    .index-bilde-2 {
+    .index-bilde-2, .index-opening, .mobile-cleanup,
+    .access-big-box {
         display: none;
+        /* Skjuler .index-bilde-2, . index-opening, .access-big-box
+        og .mobile.cleanup for skjermer under 850px */
     }
 
-    .index-opening {
-        display: none;
-    }
-
-    .index-h3 {
+    .index-h3, .access-img {
         margin: auto;
+        /* Justerer margin for .index-h3
+        og .access-img for skjermer under 850px */
     }
 
-    .mobile-logo {
+    .mobile-logo, .mobile-opener-background {
         display: block;
-    }
-
-    .mobile-cleanup {
-        display: none;
+        /* Justere posisjon for .mobile-logo og
+         .mobile-opener-background for skjermer under 850px */
     }
 
     .googlemaps {
@@ -831,48 +855,42 @@ footer a:active {
         margin-right: auto;
         margin-bottom: 0rem;
         margin-left: auto;
-    }
-
-    .subheader {
-        font-size: 1.6rem;
+        /* Setter størrelse og margin for 
+        .googlemaps for skjermer under 850px */
     }
 
     .mobile-flex-col {
         flex-direction: column;
-    }
-
-    .mobile-opener-background {
-        display: block;
+        /* Setter innholdet i .mobile-flex-col 
+        til kolonne for skjermer under 850px */
     }
 
     .access-container {
         flex-direction: column-reverse;
         width: 100%;
-    }
-
-    .access-big-box {
-        display: none;
+        /* Setter innholdet i .access-container 
+        til kolonne og justerer bredden for skjermer under 850px */
     }
 
     .access-mobile-box {
         display: block;
         width: 100%;
+        /* Justerer posisjon og bredde til .access-mobile-box 
+        for skjermer under 850px */
     }
 
     .access-box {
         margin: auto;
         width: 100%;
+        /* Justerer margin og bredde til .access-mobile-box 
+        for skjermer under 850px */
     }
-
-    .access-img {
-        margin: auto;
-    }
-    /* Media-query for footer på skjermer under 850px */
 }
 
 /* Topical */
 .header-topical {
     height: 26rem;
+    /* Sette høyde for header i topical-siden */
 }
 
 .topical-body {
@@ -883,7 +901,8 @@ footer a:active {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    /* Sette/style bakgrunnsbilde for siden */
+    /* Sette/style bakgrunnsbilde for siden,
+    overflow: hidden for at scroll-snap align skal fungere */
 }
 
 .topical-body .border-radius {
@@ -897,17 +916,18 @@ footer a:active {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     height: 100vh;
-    /* Setter verdier for main */
+    /* Setter verdier for main i topical-siden
+    overflow-y: scroll for at scroll-snap align skal fungere */
 }
 
 .topical-body a {
     color: #fff
-        /* Styling av alle linker inne i main */
+    /* Styling av alle linker inne i main på topical-siden */
 }
 
 .topical-body a:hover {
     color: #7bafd6;
-    /* Styling for "hovering" av linker inne i main */
+    /* Styling for "hovering" av linker inne i main topical-siden */
 }
 
 .topical-article > section {
@@ -917,7 +937,8 @@ footer a:active {
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
-    /* Setter verdier for sections */
+    /* Setter verdier for sections. Plassering av tekstboks 
+    Scroll-snap-align til start av hver section*/
 }
 
 .topical-article h1 {
@@ -949,7 +970,7 @@ footer a:active {
     font-size: 3vh;
     color: #fff;
     background-color: initial;
-    /* Styling av p */
+    /* Styling av h2, overskrift referanser */
 }
 
 #referanser > ol {
@@ -1018,7 +1039,6 @@ footer a:active {
     to {
         opacity: 1;
     }
-
     /* Animasjon som går fra helt gjennomsiktig og til synlig */
 }
 
