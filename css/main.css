@@ -867,20 +867,24 @@ footer a:active {
         .subheader for skjermer under 850px */
     }
 
-    .index-bilde-2, .index-opening, .mobile-cleanup,
+    .index-bilde-2,
+    .index-opening,
+    .mobile-cleanup,
     .access-big-box {
         display: none;
         /* Skjuler .index-bilde-2, . index-opening, .access-big-box
         og .mobile.cleanup for skjermer under 850px */
     }
 
-    .index-h3, .access-img {
+    .index-h3,
+    .access-img {
         margin: auto;
         /* Justerer margin for .index-h3
         og .access-img for skjermer under 850px */
     }
 
-    .mobile-logo, .mobile-opener-background {
+    .mobile-logo,
+    .mobile-opener-background {
         display: block;
         /* Justere posisjon for .mobile-logo og
          .mobile-opener-background for skjermer under 850px */
@@ -958,7 +962,7 @@ footer a:active {
 
 .topical-body a {
     color: #fff
-    /* Styling av alle linker inne i main på topical-siden */
+        /* Styling av alle linker inne i main på topical-siden */
 }
 
 .topical-body a:hover {
@@ -995,7 +999,7 @@ footer a:active {
     padding: 2rem;
     border-radius: 10px;
     background-color: #000008;
-    /* Styling av p på topical-siden */
+    /* Styling av p på topicalsiden */
 }
 
 #referanser h2 {
@@ -1006,7 +1010,7 @@ footer a:active {
     font-size: 3vh;
     color: #fff;
     background-color: initial;
-    /* Styling av h2 på topical-siden, overskrift referanser */
+    /* Styling av h2 på topicalsiden, overskrift referanser */
 }
 
 #referanser > ol {
@@ -1075,6 +1079,7 @@ footer a:active {
     to {
         opacity: 1;
     }
+
     /* Animasjon som går fra helt gjennomsiktig og til synlig */
 }
 
