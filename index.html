@@ -11,10 +11,16 @@
 
 <body>
     <header>
+        <!-- Siden åpnes med en åpningssekvens -->
         <img src="img/index/opener.webp" alt="OsloMet" class="mobile-opener-background" />
+        <!-- Av Benjamin Esteves fra https://unsplash.com/photos/city-high-rise-buildings-view-during-daytime-ojjVYMImcm8 -->
+        <!--Bildet over er bakgrunnsbildet av åpningssekvensen-->
         <img src="img/header-footer/oslomet-logo-black.svg" alt="Oslo-met-logo" class="mobile-logo" />
+        <!--Logoen over kommer inn på siden etter litt tid-->
         <section class="index-opening">
             <img src="img/index/opener.webp" alt="OsloMet" class="opener-background" />
+            <!-- Av Benjamin Esteves fra https://unsplash.com/photos/city-high-rise-buildings-view-during-daytime-ojjVYMImcm8 -->
+
             <img src="img/header-footer/oslomet-logo-black.svg" alt="Oslo-met-logo" class="opener-logo" />
             <div class="flex center-flex opener">
                 <p class="opener-left">
@@ -28,6 +34,7 @@
                 </ul>
             </div>
         </section>
+        <!--Navbar som blir til hamburgermeny når skjermen blir mindre-->
         <nav>
             <input id="drp-menu-toggle" type="checkbox">
             <label class="drp-menu-toggle-container" for="drp-menu-toggle">
@@ -42,6 +49,7 @@
             </div>
         </nav>
     </header>
+    <!--Main starter med flere bokser som inneholder en underoverskrift og et "p" element-->
     <main class="index-main">
         <article class="flex info-container mobile-flex-col">
             <h2 class="border-right index-h2 subheader">Om OsloMet</h2>
@@ -55,6 +63,7 @@
                 molestiae ducimus aliquam? Tempora, ut.</p>
         </article>
         <article class="flex info-container info-left mobile-flex-col">
+            <!--Har gjort denne til "row-reverse" for å kunne ha overskriften over paragrafen selv om overskriften er til høyre for paragrafen.-->
             <h3 class="border-left index-h3 subheader">Beliggenhet</h3>
             <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, repellendus
                 explicabo. Necessitatibus a aperiam mollitia voluptate veritatis, accusamus natus commodi nobis sapiente
@@ -66,13 +75,18 @@
                 ex adipisci quas sit vero hic praesentium est, magnam facilis pariatur officiis id excepturi
                 repellendus, provident reprehenderit mollitia!</p>
         </article>
+        <!--En boks med tre bilder på rekke-->
         <div class="flex info-container flex-space-between mobile-flex-col">
             <img src="img/index/phil-aicken-ry_yTIzNj-M-unsplash.jpg" alt="Bilde av Astrup Farnely museet"
                 class="border-radius box-shadow" />
+            <!-- Av Phil Aicken fra https://unsplash.com/photos/brown-and-gray-concrete-building-near-body-of-water-during-daytime-ry_yTIzNj-M -->
             <img src="img/index/oscar-daniel-rangel-rzcc40puU7Q-unsplash.jpg" alt="Bilde av Oslo by"
                 class="border-radius box-shadow index-bilde-2" />
+            <!-- Av Oscar Daniel Rangel fra https://unsplash.com/photos/city-buildings-under-white-clouds-and-blue-sky-during-daytime-rzcc40puU7Q -->
+
             <img src="img/index/marcus-chis-z1LZ4-19xb8-unsplash.jpg" alt="Bilde fra Aker Brygge"
                 class="border-radius box-shadow" />
+            <!-- Marcus Chis fra https://unsplash.com/photos/person-walking-on-street-during-daytime-z1LZ4-19xb8 -->
         </div>
         <h4 class="center-text subheader">Veibeskrivelse fra Jernbanetorget</h4>
         <article>
@@ -82,6 +96,7 @@
                 <p>GANGE</p>
             </div>
             <div class="info-container flex flex-space-between mobile-flex-col">
+                <!--Tre iframes som er hentet fra Google maps sin "Bygg inn et kart" funksjon.-->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7999.813183538247!2d10.732178083918916!3d59.91632245445941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x46416e89f8730f79%3A0x9b4b2949682b6e50!2sJernbanetorget%2C%200154%20Oslo!3m2!1d59.9110623!2d10.750142199999999!4m5!1s0x46416e7bfda9fef5%3A0x1999a7ebc1b332a3!2sOsloMet%20-%20Biblioteket%20P35%2C%20ELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2C%20Oslo!3m2!1d59.919548!2d10.7353733!5e0!3m2!1sno!2sno!4v1699298319569!5m2!1sno!2sno"
                     allowfullscreen="" loading="lazy" class="border-radius box-shadow googlemaps"
@@ -116,8 +131,7 @@
                     <a href="https://www.instagram.com/oslomet/?hl=nb"><img
                             src="img/header-footer/734395_instagram_media_online_photo_social_icon.png"
                             alt="instagram-logo" class="footer-social-logo" /></a>
-
-                    </nav>
+                </nav>
                 <p class="center-text footer-contact"><strong>Våre sosiale medier<br>KONTAKT OSS</strong><br>Tlf.: 67 23
                     50 00</p>
             </div>

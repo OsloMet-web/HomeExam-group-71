@@ -6,8 +6,11 @@
     --secondary: #d5bdafff;
     --text: #000;
     --footer: #FBF9F4;
+    /* Farger fra vår valgte fargepalett, 
+    som kan gjenbrukes av nåværende og fremtidige utviklere */
     --menu-open: url("../img/icons/menu-open.svg");
     --menu-open-white: url("../img/icons/menu-open-white.svg");
+    /* Bilde/symbol til dropdown-meny */
 }
 
 body {
@@ -16,6 +19,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    /* Felles egenskaper til body */
 }
 
 main {
@@ -50,6 +54,7 @@ a {
 
 .subheader {
     font-size: 2rem;
+
 }
 
 .end-text {
@@ -67,7 +72,8 @@ a {
 .button {
     color: var(--secondary);
     background-color: var(--main);
-    border: solid var(--secondary);
+    border-style: solid;
+    border-color: var(--secondary);
     border-radius: 7px;
     height: 2.5rem;
     width: 7rem;
@@ -97,16 +103,23 @@ a {
 }
 
 .border {
-    border-bottom: solid var(--secondary) 3px;
-    margin: 3rem 0 3rem 0;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--secondary);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .border-right {
-    border-right: solid var(--text) 3px;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: var(--text);
 }
 
 .border-left {
-    border-left: solid var(--text) 3px;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: var(--text);
 }
 
 .info-container {
@@ -145,11 +158,13 @@ nav>div {
 
 nav .active {
     font-weight: 800;
+    /* Styling av skrift for active side i nav-bar */
 }
 
 header a:hover {
     font-weight: 700;
     color: var(--text)
+        /* Styling av skrift ved "hover" i navigation bar */
 }
 
 
@@ -159,6 +174,8 @@ header a:hover {
 }
 
 @media (max-width: 900px) {
+
+
 
     .drp-menu-toggle-container {
         display: flex;
@@ -181,7 +198,7 @@ header a:hover {
         width: 42px;
     }
 
-    .menu > a {
+    .menu>a {
         margin-left: 0.5em;
         overflow: hidden;
         font-size: smaller;
@@ -189,45 +206,36 @@ header a:hover {
         transition: none;
     }
 
-    #drp-menu-toggle ~ .menu a {
+    #drp-menu-toggle~.menu a {
         height: 0px;
         width: 0px;
-        visibility: hidden;
     }
 
-    #drp-menu-toggle:checked ~ .menu {
+    #drp-menu-toggle:checked~.menu {
         flex-direction: column;
         position: absolute;
         justify-content: left;
         margin-top: 31px;
         margin-left: 40px;
         background-color: var(--main);
-        border: 2px solid #000;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #000;
         border-radius: 10px;
         height: 7em;
         width: 7.5em;
         z-index: 1;
     }
 
-
-
-    #drp-menu-toggle:checked ~ .menu a {
-        height: 1rem;
-        margin: 0px;
+    #drp-menu-toggle:checked~.menu a {
+        height: 1em;
+        margin-left: 0.5em;
+        font-size: smaller;
         padding-top: 0.7rem;
         padding-right: 8em;
         padding-left: .1em;
-        height: 1.4rem;
-        visibility: visible;
         transition: all .5s;
         z-index: 2;
-    }
-
-    #drp-menu-toggle:checked ~ .menu a {
-        margin-left: 0.5em;
-        overflow: hidden;
-        font-size: smaller;
-        height: 1em;
     }
 }
 
@@ -282,7 +290,7 @@ footer a:active {
 }
 
 @media (max-width: 850px) {
-    footer > section {
+    footer>section {
         flex-direction: column;
 
         align-items: center;
@@ -309,12 +317,20 @@ footer a:active {
 }
 
 .index-main {
-    margin: 2rem 10% 10% 10%;
+    margin-top: 2rem;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
 }
+
+/* Legger på en margin som endres etter hvor stor skjermen er */
 
 .index-h2 {
     width: 40rem;
-    padding: 0 6rem 0 0;
+    padding-top: 0;
+    padding-right: 6rem;
+    padding-bottom: 0;
+    padding-left: 0;
     margin-right: 6rem;
 }
 
@@ -332,7 +348,10 @@ footer a:active {
 }
 
 .p-veibeskrivelse {
-    padding: 0 1rem 0 1rem;
+    padding: 0;
+    padding-right: 1rem;
+    padding-bottom: 0;
+    padding-left: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -345,7 +364,10 @@ footer a:active {
 
 .mobile-logo {
     display: none;
-    margin: 3rem auto 12rem;
+    margin-top: 3rem;
+    margin-right: auto;
+    margin-bottom: 12rem;
+    margin-left: auto;
     width: 8rem;
 }
 
@@ -354,29 +376,33 @@ footer a:active {
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 33%;
+    height: 19.5rem;
     object-fit: cover;
-    border-bottom: solid black 3px;
+    border-bottom-color: black;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
 }
 
 /* canteen.html */
 .opening {
     background-color: var(--main);
     height: 20em;
-    border-bottom: solid black 5px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
     position: relative;
     justify-content: center;
     background-image: url("../img/canteen/kokk-høy-kvalitet.webp");
     background-size: cover;
 }
 
-.opening > h1 {
+.opening>h1 {
     align-self: center;
     text-transform: uppercase;
     font-size: 5rem;
 }
 
-.opening > img {
+.opening>img {
     position: absolute;
     align-self: center;
     left: 10vw;
@@ -391,14 +417,12 @@ footer a:active {
     grid-template-rows: 1fr calc(2fr - 20rem) 1fr;
     row-gap: 5rem;
     max-width: 1150px;
-
     align-self: center;
 }
 
 .article-container {
     display: grid;
     grid-template-columns: 1fr 10rem 1fr;
-    height: auto;
     row-gap: 10rem;
     justify-items: center;
 }
@@ -411,7 +435,7 @@ footer a:active {
     justify-content: center;
 }
 
-.toppics > img {
+.toppics>img {
     height: 20rem;
     border-radius: 10px;
 }
@@ -425,7 +449,9 @@ footer a:active {
     justify-self: center;
     align-self: center;
     margin: auto;
-    border-right: 3px solid #000;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: #000;
     height: 100%;
     grid-column: 2;
 }
@@ -463,14 +489,13 @@ footer a:active {
 }
 
 
-.box2 > h3,
-.box3 > h3,
-.box3 > p {
-
+.box2>h3,
+.box3>h3,
+.box3>p {
     text-align: center;
 }
 
-.box2 > p {
+.box2>p {
     align-self: center;
     justify-self: center;
     text-align: justify;
@@ -581,7 +606,7 @@ footer a:active {
 
 
 @media (max-width: 1055px) {
-    .opening > img {
+    .opening>img {
         display: none;
     }
 
@@ -609,7 +634,7 @@ footer a:active {
         flex-direction: column;
     }
 
-    .bottompics > div {
+    .bottompics>div {
         margin-bottom: 1em;
         justify-content: center;
     }
@@ -622,8 +647,12 @@ footer a:active {
 
 /* Ned til iphone 5 */
 @media (max-width: 850px) {
-    .opening > h1 {
+    .opening>h1 {
         text-align: center;
+    }
+
+    header {
+        height: 20rem;
     }
 
     main {
@@ -662,11 +691,11 @@ footer a:active {
         min-width: 15.313rem;
     }
 
-    .toppics > img:nth-child(1) {
+    .toppics>img:nth-child(1) {
         display: none;
     }
 
-    .toppics > img:nth-child(3) {
+    .toppics>img:nth-child(3) {
         height: 15rem;
         margin: 0;
         margin-top: -2rem;
@@ -708,6 +737,10 @@ footer a:active {
 
     .index-opening {
         display: none;
+    }
+
+    .index-h3 {
+        margin: auto;
     }
 
     .mobile-logo {
@@ -767,6 +800,7 @@ footer a:active {
     height: 26rem;
 }
 
+
 .topical-body {
     background-image: url("/img/topical/joey-kyber-45FJgZMXCK8-unsplash-3.jpg");
     /* Bakgrunnsbilde hentet fra unsplash.com 
@@ -775,27 +809,41 @@ footer a:active {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+    /* Sette/style bakgrunnsbilde for siden */
 }
 
 .topical-body .border-radius {
     color: white;
+    /* Styling av tekst i nav-bar */
 }
 
-.topical-body > main {
+.topical-body>main {
     margin: 0;
-    margin-top: -25rem;
+    margin-top: -26rem;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     height: 100vh;
+    /* Setter verdier for main */
 }
 
-.topical-article > section {
+.topical-body a {
+    color: #fff
+        /* Styling av alle linker inne i main */
+}
+
+.topical-body a:hover {
+    color: #7bafd6;
+    /* Styling for "hovering" av linker inne i main */
+}
+
+.topical-article>section {
     height: 100vh;
     padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
+    /* Setter verdier for sections */
 }
 
 .topical-article h1 {
@@ -803,68 +851,53 @@ footer a:active {
     color: white;
     text-align: center;
     padding: 2rem;
-    border-radius: 10px;
-    background-color: rgb(0, 0, 0, 0.8);
-    /* Styling av h1*/
-}
-
-.topical-article h2 {
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    border-radius: 10px;
-    background-color: rgb(0, 0, 0, 0.8);
-    /* Styling av h2*/
+    background-color: #000008;
+    /* Styling av h1 */
 }
 
 .topical-article p {
     display: auto;
-    font-size: 2.5vh;
+    max-width: 90vh;
+    font-size: 1.1rem;
     color: white;
     padding: 2rem;
-    border-radius: 10px;
-    background-color: rgb(0, 0, 0, 0.8);
-    /* Styling av tekst*/
-}
-
-#referanser {
-    size: inherit;
+    background-color: #000008;
+    /* Styling av p */
 }
 
 #referanser h2 {
     margin: 0;
-    padding: 0;
     padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: left;
-    font-size: 2rem;
+    font-size: 3vh;
+    color: #fff;
     background-color: initial;
+    /* Styling av p */
 }
 
 #referanser>ol {
-    background-color: rgb(0, 0, 0, 0.8);
+    background-color: #000008;
     border-radius: 10px;
-    padding-left: 3rem;
+    padding-left: 2rem;
+    /* Styling av referanse-liste */
 }
 
 #referanser li {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2vh;
     padding: 0;
+    /* Styling av tall i referanse-liste */
 }
 
 #referanser p {
-    font-size: 1.5vh;
+    font-size: 1.8vh;
     background-color: initial;
-    padding: 2vh;
-}
-
-#referanser a {
-    color: #fff;
-}
-
-#referanser a:hover {
-    color: #7bafd6;
+    padding: 0;
+    margin: 0;
+    margin-right: 2vw;
+    padding-bottom: 4vh;
+    /* Styling av p i referanse-liste */
 }
 
 @media (max-width: 900px) {
@@ -879,18 +912,19 @@ footer a:active {
         width: 40px;
         cursor: pointer;
         transition: all .5s;
+        /* Media-query for dropdown meny */
     }
 
-    .topical-body #drp-menu-toggle:checked ~ .menu {
+    .topical-body #drp-menu-toggle:checked~.menu {
         background-color: rgb(104, 210, 242);
+        /* Styling av farge på tekst dropdown meny */
     }
 
-    .topical-body #drp-menu-toggle:checked ~ .menu a {
+    .topical-body #drp-menu-toggle:checked~.menu a {
         background-color: rgb(104, 210, 242);
+        /* Styling av farge på tekst dropdown meny */
     }
 }
-
-
 
 /* Animasjoner */
 
@@ -959,8 +993,12 @@ footer a:active {
 /* Opener */
 
 .opener {
-    margin: 11vw 4rem 20vw 0;
-    animation: opacity-none .3s;
+    margin-top: 11vw;
+    margin-right: 4rem;
+    margin-bottom: 20vw;
+    margin-left: 0;
+    animation-name: opacity-none;
+    animation-duration: .3s;
     animation-delay: 1.6s;
     animation-fill-mode: forwards;
 }
@@ -971,20 +1009,28 @@ footer a:active {
     height: 54vw;
     position: absolute;
     top: 0;
-    animation: opacity 1s;
+    animation-name: opacity;
+    animation-duration: 1s;
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
     object-fit: cover;
 }
 
 .opener-left {
-    animation: slideDown .9s .6s 1 alternate forwards;
+    animation-name: slideDown;
+    animation-duration: .9s;
+    animation-delay: .6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     font-size: 7vw;
     margin: 0;
 }
 
 .opener-border {
-    margin: 1rem 1.6rem 1rem 1.6rem;
+    margin-top: 1rem;
+    margin-right: 1.6rem;
+    margin-bottom: 1rem;
+    margin-left: 1.6rem;
     width: 3px;
     background-color: black;
 }
@@ -996,31 +1042,40 @@ footer a:active {
     margin: 0 auto;
     width: 32vw;
     opacity: 0;
-    animation: opacity .8s 2s alternate forwards, dragUp 1s 2.5s alternate forwards;
+    animation-name: opacity, dragUp;
+    animation-duration: .8s, 1s;
+    animation-delay: 2s, 2.5s;
+    animation-fill-mode: forwards;
 }
 
 .opener1 {
     opacity: 0;
-    animation: slideUp .3s, opacity .1s;
+    animation-name: slideUp, opacity;
+    animation-duration: .3s, .1s;
     animation-fill-mode: forwards;
 }
 
 .opener2 {
     opacity: 0;
-    animation: slideUp .3s, opacity .1s;
+    animation-name: slideUp, opacity;
+    animation-duration: .3s, .1s;
     animation-delay: .2s;
     animation-fill-mode: forwards;
 }
 
 .opener3 {
     opacity: 0;
-    animation: slideUp .3s, opacity .1s;
+    animation-name: slideUp, opacity;
+    animation-duration: .3s, .1s;
     animation-delay: .4s;
     animation-fill-mode: forwards;
 }
 
 .opener-li {
-    margin: 0 0 0 -2rem;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: -2rem;
     list-style-type: none;
     font-size: 7vw;
 }
