@@ -24,76 +24,84 @@ body {
 
 main {
     margin: 0;
+    /* Fjerner standard margin fra main*/
 }
 
 p {
     font-size: 1.3rem;
-}
-
-b {
-    font-size: 1.3rem;
+    /* Setter font-size for alle p-elementer */
 }
 
 a {
+    color: #000;
     text-decoration: none;
+    /* Setter standard textfarge og fjerner underline fra alle linker */
 }
 
 /* Generelle klasser */
 .flex {
     display: flex;
+    /* Klasse for flex som brukes flere ganger i html-filene */
 }
 
 .center-flex {
     display: flex;
     justify-content: center;
+    /* For å midtstille innhold */
 }
 
 .center-text {
     text-align: center;
+    /* Midtstiller tekst */
 }
 
 .subheader {
     font-size: 2rem;
+    /* Scaler headers som kaller på klassen */
 }
 
 .end-text {
     text-align: end;
+    /* Høyrestiller tekst */
 }
 
 .flex-space-between {
     justify-content: space-between;
-}
-
-.flex-space-around {
-    justify-content: space-around;
+    /* For white-space mellom innhold */
 }
 
 .border-radius {
     border-radius: 7px;
+    /* Brukes på "bokser" for å komplementere vårt design */
 }
 
 .box-shadow {
     box-shadow: rgba(0, 0, 0, 0.35) 5px 0px 15px;
+    /* Skygge bak bilder for å gi en dybde i nettsida */
 }
 
 .border-right {
     border-right-width: 3px;
     border-right-style: solid;
     border-right-color: var(--text);
+    /* Brukes for å sette streker i nettsida og dele opp */
 }
 
 .border-left {
     border-left-width: 3px;
     border-left-style: solid;
     border-left-color: var(--text);
+    /* Brukes for å sette streker i nettsida og dele opp */
 }
 
 .info-container {
     margin-bottom: 5rem;
+    /* Deler opp og gir space mellom innhold */
 }
 
 .text-justify {
     text-align: justify;
+    /* Gir nettsiden en avis-aktig følelse når den leses */
 }
 
 /* Header */
@@ -869,6 +877,7 @@ footer a:active {
     .access-img {
         margin: auto;
     }
+
     /* Media-query for footer på skjermer under 850px */
 }
 
@@ -1032,6 +1041,7 @@ footer a:active {
     to {
         opacity: 0;
     }
+
     /* Animasjon som gjør at ting går fra synlig, til usynlig*/
 }
 
@@ -1043,6 +1053,7 @@ footer a:active {
     to {
         transform: translateY(0);
     }
+
     /* Animasjon som fører ett objekt 200px oppover i Y-retning*/
 }
 
@@ -1054,6 +1065,7 @@ footer a:active {
     100% {
         transform: translateY(16vw);
     }
+
     /* Animasjon som fører ett objekt nedover 16vw i Y-retning */
 }
 
@@ -1065,5 +1077,6 @@ footer a:active {
     to {
         transform: translateY(-8vw);
     }
+
     /* Animasjon som fører et objekt oppover 8vw i Y-retning*/
 }
