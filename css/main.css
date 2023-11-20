@@ -839,6 +839,7 @@ footer a:active {
     color: white;
     text-align: center;
     padding: 2rem;
+    border-radius: 10px;
     background-color: #000008;
     /* Styling av h1 */
 }
@@ -849,6 +850,7 @@ footer a:active {
     font-size: 1.1rem;
     color: white;
     padding: 2rem;
+    border-radius: 10px;
     background-color: #000008;
     /* Styling av p */
 }
@@ -904,13 +906,20 @@ footer a:active {
     }
 
     .topical-body #drp-menu-toggle:checked ~ .menu {
-        background-color: rgb(104, 210, 242);
+        background-color: #68d2f2;
         /* Styling av farge på tekst dropdown meny */
     }
 
     .topical-body #drp-menu-toggle:checked ~ .menu a {
-        background-color: rgb(104, 210, 242);
+        background-color: #68d2f2;
         /* Styling av farge på tekst dropdown meny */
+    }
+}
+
+@media (min-width: 1800px) {
+    .topical-body .border-radius {
+        background-color: #68d2f2;
+        /* Styling av tekst i nav-bar ved skjermer over 1500px */
     }
 }
 
