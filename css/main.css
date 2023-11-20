@@ -120,7 +120,7 @@ a {
 
 /* Header */
 
-header > section {
+header>section {
     position: scroll;
 }
 
@@ -139,7 +139,7 @@ nav a {
     transition: all 0.5s;
 }
 
-nav > div {
+nav>div {
     max-width: 1300px;
     margin: auto;
 }
@@ -617,6 +617,7 @@ footer a:active {
 
 .vaart-team-mobile span {
     width: 15rem;
+
 }
 
 
@@ -639,7 +640,7 @@ footer a:active {
         margin-right: 0;
     }
 
-    .toppics > img {
+    .toppics>img {
         height: 20rem;
         border-radius: 10px;
         margin-left: 1em;
@@ -789,14 +790,16 @@ footer a:active {
 
     .access-mobile-box {
         display: block;
+        width: 100%;
     }
 
     .access-box {
         margin: auto;
+        width: 100%;
     }
 
-    .access-mobile-box {
-        width: 30rem;
+    .access-img {
+        margin: auto;
     }
 
     .vaart-team-mobile {
@@ -805,6 +808,12 @@ footer a:active {
 
     .vaart-team-container {
         display: none;
+    }
+
+
+    .vaart-team-mobile span {
+        width: 12rem;
+
     }
 
 }
@@ -888,7 +897,7 @@ footer a:active {
     background-color: initial;
 }
 
-#referanser > ol {
+#referanser>ol {
     background-color: rgb(0, 0, 0, 0.8);
     border-radius: 10px;
     padding-left: 3rem;
