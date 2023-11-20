@@ -379,7 +379,7 @@ footer a:active {
 .opening > img {
     position: absolute;
     align-self: center;
-    left: 10rem;
+    left: 10vw;
     height: 100px;
     width: 100px;
 }
@@ -510,7 +510,6 @@ footer a:active {
 .access-logo {
     position: absolute;
     align-self: center;
-    margin-top: auto;
     left: 10vw;
     height: 100px;
     width: 100px;
