@@ -252,58 +252,70 @@ footer {
 
 .footer-contact {
     margin-top: .5rem;
+    /* Justere til margin for kontakt-oss tekst i footer */
 }
 
 .footer-adress {
     line-height: 2.6rem;
     margin: -0.09rem;
+    /* Justere til margin og linje-høyde for adresse-tekst i footer */
 }
 
 .footer-container {
     width: 30%;
+    /* Justere bredde i footer */
 }
 
 footer section div p {
     line-height: 2.4rem;
+    /* Justere linje høyde for tekst i footer */
 }
 
 footer a {
     color: #000;
     transition: all;
     transition-duration: .25s;
+    /* Justere farge og transition for lenker i footer */
 }
 
 footer a:hover {
     color: rgba(0, 0, 0, 0.35);
     transform: scale(1.2);
+    /* Endrer farge ved "hover" over lenkene i footer */
 }
 
 footer a:active {
     transform: scale(1);
+    /* Endrer utseende på aktiv lenke i footer */
 }
 
 @media (max-width: 850px) {
+    /* Media-query for footer på skjermer under 850px */
+
     footer > section {
         flex-direction: column;
-
         align-items: center;
+        /* Justerer innholdet i footeren til kolonner 
+        og sentrer for skjermer under 850px */
     }
 
     .footer-logo {
         height: 10rem;
         width: 10rem;
         margin-bottom: 40px;
+        /* Justerer størrelse og margin på logo
+        i footer for skjermer under 850px */
     }
 
     .footer-container {
         min-width: 15.131rem;
+        /* Setter minumum bredde for footer */
     }
 
     .end-text {
         text-align: center;
+        /* sentrer tekst innenfor .end-text for skjermer under 850px */
     }
-
-    /* Media-query for footer på skjermer under 850px */
 }
 
 /* index.html */
@@ -712,6 +724,7 @@ footer a:active {
 @media (max-width: 1055px) {
     .opening > img {
         display: none;
+        /* på skjermer 1055px - 850px */
     }
 
     .middle-img {
