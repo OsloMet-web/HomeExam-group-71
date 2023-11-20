@@ -254,11 +254,13 @@ footer section div p {
 }
 
 footer a {
-    transition: transform;
+    color: #000;
+    transition: all;
     transition-duration: .25s;
 }
 
 footer a:hover {
+    color: rgba(0, 0, 0, 0.35);
     transform: scale(1.2);
 }
 
