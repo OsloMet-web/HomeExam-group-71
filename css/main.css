@@ -67,7 +67,8 @@ a {
 .button {
     color: var(--secondary);
     background-color: var(--main);
-    border: solid var(--secondary);
+    border-style: solid;
+    border-color: var(--secondary);
     border-radius: 7px;
     height: 2.5rem;
     width: 7rem;
@@ -97,16 +98,23 @@ a {
 }
 
 .border {
-    border-bottom: solid var(--secondary) 3px;
-    margin: 3rem 0 3rem 0;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--secondary);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .border-right {
-    border-right: solid var(--text) 3px;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: var(--text);
 }
 
 .border-left {
-    border-left: solid var(--text) 3px;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: var(--text);
 }
 
 .info-container {
@@ -159,7 +167,6 @@ header a:hover {
 }
 
 @media (max-width: 900px) {
-
     .drp-menu-toggle-container {
         display: flex;
         flex-direction: column;
@@ -192,7 +199,6 @@ header a:hover {
     #drp-menu-toggle ~ .menu a {
         height: 0px;
         width: 0px;
-        visibility: hidden;
     }
 
     #drp-menu-toggle:checked ~ .menu {
@@ -202,7 +208,9 @@ header a:hover {
         margin-top: 31px;
         margin-left: 40px;
         background-color: var(--main);
-        border: 2px solid #000;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #000;
         border-radius: 10px;
         height: 7em;
         width: 7.5em;
