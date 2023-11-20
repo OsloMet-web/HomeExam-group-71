@@ -518,13 +518,18 @@ footer a:active {
     justify-self: center;
     align-self: center;
     font-size: 5rem;
-    padding: 6rem 0 6rem 0;
-    border-bottom: solid #000 3px;
+    padding-top: 6rem;
+    padding-right: 0;
+    padding-bottom: 6rem;
+    padding-left: 0;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+    border-bottom-width: 3px;
     margin-top: 0;
     margin-bottom: 0;
     color: #fff;
     text-transform: uppercase;
-    Styling av header på accesibilty-siden
+    /* Styling av header på accessibilty-siden */
 }
 
 .access-subheader {
@@ -549,12 +554,17 @@ footer a:active {
 }
 
 .access-text {
-    margin: 0 0 2rem 0;
+    margin-bottom: 2rem;
 }
 
 .access-border {
-    border: solid #000 2px;
-    margin: 5px 2rem 1rem 2rem;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+    border-bottom-width: 2px;
+    margin-top: 0.3rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
 }
 
 .access-img {
