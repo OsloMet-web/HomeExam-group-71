@@ -118,6 +118,7 @@ a {
 }
 
 /* Header */
+
 header > section {
     position: scroll;
 }
@@ -180,7 +181,7 @@ header a:hover {
         width: 42px;
     }
 
-    .menu > a {
+    .menu>a {
         margin-left: 0.5em;
         overflow: hidden;
         font-size: smaller;
@@ -188,13 +189,13 @@ header a:hover {
         transition: none;
     }
 
-    #drp-menu-toggle ~ .menu a {
+    #drp-menu-toggle~.menu a {
         height: 0px;
         width: 0px;
         visibility: hidden;
     }
 
-    #drp-menu-toggle:checked ~ .menu {
+    #drp-menu-toggle:checked~.menu {
         flex-direction: column;
         position: absolute;
         justify-content: left;
@@ -210,7 +211,7 @@ header a:hover {
 
 
 
-    #drp-menu-toggle:checked ~ .menu a {
+    #drp-menu-toggle:checked~.menu a {
         height: 1rem;
         margin: 0px;
         padding-top: 0.7rem;
@@ -222,7 +223,7 @@ header a:hover {
         z-index: 2;
     }
 
-    #drp-menu-toggle:checked ~ .menu a {
+    #drp-menu-toggle:checked~.menu a {
         margin-left: 0.5em;
         overflow: hidden;
         font-size: smaller;
@@ -281,7 +282,7 @@ footer a:active {
 }
 
 @media (max-width: 850px) {
-    footer > section {
+    footer>section {
         flex-direction: column;
 
         align-items: center;
@@ -369,13 +370,13 @@ footer a:active {
     background-size: cover;
 }
 
-.opening > h1 {
+.opening>h1 {
     align-self: center;
     text-transform: uppercase;
     font-size: 5rem;
 }
 
-.opening > img {
+.opening>img {
     position: absolute;
     align-self: center;
     left: 10vw;
@@ -410,7 +411,7 @@ footer a:active {
     justify-content: center;
 }
 
-.toppics > img {
+.toppics>img {
     height: 20rem;
     border-radius: 10px;
 }
@@ -462,14 +463,14 @@ footer a:active {
 }
 
 
-.box2 > h3,
-.box3 > h3,
-.box3 > p {
+.box2>h3,
+.box3>h3,
+.box3>p {
 
     text-align: center;
 }
 
-.box2 > p {
+.box2>p {
     align-self: center;
     justify-self: center;
     text-align: justify;
@@ -526,25 +527,22 @@ footer a:active {
     text-transform: uppercase;
 }
 
-.access-subheader1 {
+.access-subheader {
     margin-top: 0;
-    margin-bottom: 23rem;
 }
 
-.access-subheader2 {
-    margin-top: 0;
-    margin-bottom: 8rem;
+.access-info1 {
+    height: 28rem;
 }
 
-.access-subheader3 {
-    margin-top: 0;
-    margin-bottom: 11rem;
+.access-info2 {
+    height: 12rem;
 }
 
-.access-subheader4 {
-    margin-top: 0;
-
+.access-info3 {
+    height: 15rem;
 }
+
 
 .access-box {
     width: 30rem;
@@ -609,12 +607,21 @@ footer a:active {
 
 .access-mobile-box {
     display: none;
+    margin: auto;
+}
+
+.vaart-team-mobile {
+    display: none
+}
+
+.vaart-team-mobile span {
+    width: 15rem;
 }
 
 
 
 @media (max-width: 1055px) {
-    .opening > img {
+    .opening>img {
         display: none;
     }
 
@@ -642,7 +649,7 @@ footer a:active {
         flex-direction: column;
     }
 
-    .bottompics > div {
+    .bottompics>div {
         margin-bottom: 1em;
         justify-content: center;
     }
@@ -655,7 +662,7 @@ footer a:active {
 
 /* Ned til iphone 5 */
 @media (max-width: 850px) {
-    .opening > h1 {
+    .opening>h1 {
         text-align: center;
     }
 
@@ -695,11 +702,11 @@ footer a:active {
         min-width: 15.313rem;
     }
 
-    .toppics > img:nth-child(1) {
+    .toppics>img:nth-child(1) {
         display: none;
     }
 
-    .toppics > img:nth-child(3) {
+    .toppics>img:nth-child(3) {
         height: 15rem;
         margin: 0;
         margin-top: -2rem;
@@ -731,7 +738,6 @@ footer a:active {
 
     .subheader {
         padding: 0;
-        margin: 2rem;
         text-align: center;
         width: 100%;
     }
@@ -772,7 +778,8 @@ footer a:active {
     }
 
     .access-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        width: 100%;
     }
 
     .access-big-box {
@@ -783,10 +790,21 @@ footer a:active {
         display: block;
     }
 
-    .access-container {
+    .access-box {
         margin: auto;
     }
 
+    .access-mobile-box {
+        width: 30rem;
+    }
+
+    .vaart-team-mobile {
+        display: block;
+    }
+
+    .vaart-team-container {
+        display: none;
+    }
 
 }
 
@@ -809,7 +827,7 @@ footer a:active {
     color: white;
 }
 
-.topical-body > main {
+.topical-body>main {
     margin: 0;
     margin-top: -25rem;
     overflow-y: scroll;
@@ -817,7 +835,7 @@ footer a:active {
     height: 100vh;
 }
 
-.topical-article > section {
+.topical-article>section {
     height: 100vh;
     padding: 2rem;
     display: flex;
@@ -848,7 +866,7 @@ footer a:active {
 
 .topical-article p {
     display: auto;
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: white;
     padding: 2rem;
     border-radius: 10px;
@@ -872,7 +890,7 @@ footer a:active {
 #referanser > ol {
     background-color: rgb(0, 0, 0, 0.8);
     border-radius: 10px;
-    padding-left: 5rem;
+    padding-left: 3rem;
 }
 
 #referanser li {
@@ -882,8 +900,9 @@ footer a:active {
 }
 
 #referanser p {
-    font-size: small;
+    font-size: 1.5vh;
     background-color: initial;
+    padding: 2vh;
 }
 
 #referanser a {
@@ -908,11 +927,11 @@ footer a:active {
         transition: all .5s;
     }
 
-    .topical-body #drp-menu-toggle:checked ~ .menu {
+    .topical-body #drp-menu-toggle:checked~.menu {
         background-color: rgb(104, 210, 242);
     }
 
-    .topical-body #drp-menu-toggle:checked ~ .menu a {
+    .topical-body #drp-menu-toggle:checked~.menu a {
         background-color: rgb(104, 210, 242);
     }
 }
