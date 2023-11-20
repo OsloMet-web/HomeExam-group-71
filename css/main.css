@@ -160,6 +160,10 @@ header a:hover {
 
 @media (max-width: 900px) {
 
+    header{
+        height: 20rem;
+    }
+
     .drp-menu-toggle-container {
         display: flex;
         flex-direction: column;
@@ -796,6 +800,7 @@ footer a:active {
     height: 26rem;
 }
 
+
 .topical-body {
     background-image: url("/img/topical/joey-kyber-45FJgZMXCK8-unsplash-3.jpg");
     /* Bakgrunnsbilde hentet fra unsplash.com 
@@ -812,10 +817,18 @@ footer a:active {
 
 .topical-body > main {
     margin: 0;
-    margin-top: -25rem;
+    margin-top: -26rem;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     height: 100vh;
+}
+
+.topical-body a {
+    color: #fff
+}
+
+.topical-body a:hover {
+    color: #7bafd6;
 }
 
 .topical-article > section {
@@ -837,19 +850,9 @@ footer a:active {
     /* Styling av h1*/
 }
 
-.topical-article h2 {
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    border-radius: 10px;
-    background-color: rgb(0, 0, 0, 0.8);
-    /* Styling av h2*/
-}
-
 .topical-article p {
     display: auto;
-    font-size: 2.5vh;
+    font-size: 1.1rem;
     color: white;
     padding: 2rem;
     border-radius: 10px;
@@ -857,43 +860,35 @@ footer a:active {
     /* Styling av tekst*/
 }
 
-#referanser {
-    size: inherit;
-}
-
 #referanser h2 {
     margin: 0;
-    padding: 0;
     padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: left;
-    font-size: 2rem;
+    font-size: 3vh;
+    color: #fff;
     background-color: initial;
 }
 
 #referanser > ol {
     background-color: rgb(0, 0, 0, 0.8);
     border-radius: 10px;
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
 
 #referanser li {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2vh;
     padding: 0;
 }
 
 #referanser p {
-    font-size: 1.5vh;
+    font-size: 1.8vh;
     background-color: initial;
-    padding: 2vh;
-}
-
-#referanser a {
-    color: #fff;
-}
-
-#referanser a:hover {
-    color: #7bafd6;
+    padding: 0;
+    margin: 0;
+    margin-right: 2vw;
+    padding-bottom: 4vh;
 }
 
 @media (max-width: 900px) {
@@ -918,7 +913,6 @@ footer a:active {
         background-color: rgb(104, 210, 242);
     }
 }
-
 
 
 /* Animasjoner */
