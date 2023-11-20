@@ -217,25 +217,15 @@ header a:hover {
         z-index: 1;
     }
 
-
-
     #drp-menu-toggle:checked ~ .menu a {
-        height: 1rem;
-        margin: 0px;
+        height: 1em;
+        margin-left: 0.5em;
+        font-size: smaller;
         padding-top: 0.7rem;
         padding-right: 8em;
         padding-left: .1em;
-        height: 1.4rem;
-        visibility: visible;
         transition: all .5s;
         z-index: 2;
-    }
-
-    #drp-menu-toggle:checked ~ .menu a {
-        margin-left: 0.5em;
-        overflow: hidden;
-        font-size: smaller;
-        height: 1em;
     }
 }
 
