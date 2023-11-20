@@ -518,9 +518,9 @@ footer a:active {
     position: absolute;
     align-self: center;
     left: 10vw;
-    height: 100px;
-    width: 100px;
-    /* Plasserer oslomet-logoen */
+    height: 6rem;
+    width: 6rem;
+    /* Plasserer oslomet-logoen og setter størrelsen. Lik som på accessibility-sida. */
 }
 
 .main-container {
@@ -531,6 +531,7 @@ footer a:active {
     row-gap: 5rem;
     max-width: 1150px;
     align-self: center;
+    /* Grid-container i main for å sette opp innholde over hverandre. Lager struktur på sida */
 }
 
 .article-container {
@@ -538,24 +539,28 @@ footer a:active {
     grid-template-columns: 1fr 10rem 1fr;
     row-gap: 10rem;
     justify-items: center;
+    /* Ny grid-container som har tekst-innholdet til sida.  */
 }
 
 .toppics {
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
     grid-row: 1;
     margin-top: 25rem;
     margin-bottom: 5rem;
     justify-content: center;
+    /* Setter bildene øverst på sida for blikkfang */
 }
 
 .toppics > img {
     height: 20rem;
     border-radius: 10px;
+    /* Skalerer bildene under klassen "toppics" */
 }
 
 .middle-img {
     margin-left: 2em;
     margin-right: 2em;
+    /* Setter margin på bildet i midten for å gi litt space mellom bildene */
 }
 
 .line {
@@ -567,6 +572,7 @@ footer a:active {
     border-right-color: #000;
     height: 100%;
     grid-column: 2;
+    /* Linje som deler opp nettsiden på midten for å gjøre den mer leselig */
 }
 
 .box1 {
@@ -575,12 +581,14 @@ footer a:active {
     max-width: 21rem;
     min-width: 15.5rem;
     justify-content: center;
+    /* Plasering av innhold i article-container */
 }
 
 .box2 {
     grid-column: 3;
     max-width: 21rem;
     min-width: 15.5rem;
+    /* Plasering av innhold i article-container */
 }
 
 .box3 {
@@ -588,52 +596,60 @@ footer a:active {
     grid-row: 2;
     max-width: 21rem;
     min-width: 15.5rem;
+    /* Plasering av innhold i article-container */
 }
 
 .box4 {
     grid-column: 3;
     grid-row: 2;
+    /* Plasering av innhold i article-container */
 }
 
 .box2,
 .box3 {
     flex-direction: column;
     align-self: center;
+    /* Sentrerer innholdet i gridden for å følge designet til nettsiden. */
 }
 
 .box2 > h3,
 .box3 > h3,
 .box3 > p {
     text-align: center;
+    /* Sentrer teksten i boksene */
 }
 
 .box2 > p {
     align-self: center;
     justify-self: center;
     text-align: justify;
+    /* Senterer og gjør paragrafene lignende avisartikkel */
 }
 
 .crew {
     grid-column: 1 / 3;
     grid-row: 3;
-
+    /* Container for bildene og teksten nederst i main */
 }
 
 .bottompics {
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
     grid-row: 4;
     margin-top: 3em;
     margin-bottom: 3em;
+    /* Plasserer bildene nederst og gir space fra tittelen og footer */
 }
 
 .bottompics img {
     box-shadow: rgba(0, 0, 0, 0.35) 5px 0px 15px;
     height: 7rem;
     border-radius: 10px;
+    /* Skalerer bildene under bottompics og gir skygge. */
 }
 
 .bottompics p {
     padding-left: 1em;
+    /* Gjør at teksten holder seg litt unna bildet */
 }
 
 /* accessibility */
