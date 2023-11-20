@@ -774,7 +774,7 @@ footer a:active {
     .access-img {
         margin: auto;
     }
-    /* Media-query for footer på skjermer 1055px - 850px */
+    /* Media-query for footer på skjermer under 850px */
 }
 
 /* Topical */
