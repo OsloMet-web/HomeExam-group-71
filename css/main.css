@@ -50,6 +50,7 @@ a {
 
 .subheader {
     font-size: 2rem;
+
 }
 
 .end-text {
@@ -112,9 +113,9 @@ a {
 }
 
 .border-left {
-    border-right-width: 3px;
-    border-right-style: solid;
-    border-right-color: var(--text);
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: var(--text);
 }
 
 .info-container {
@@ -127,7 +128,7 @@ a {
 
 /* Header */
 
-header>section {
+header > section {
     position: scroll;
 }
 
@@ -146,7 +147,7 @@ nav a {
     transition: all 0.5s;
 }
 
-nav>div {
+nav > div {
     max-width: 1300px;
     margin: auto;
 }
@@ -168,7 +169,7 @@ header a:hover {
 
 @media (max-width: 900px) {
 
-    header{
+    header {
         height: 20rem;
     }
 
@@ -618,7 +619,7 @@ footer a:active {
         margin-right: 0;
     }
 
-    .toppics>img {
+    .toppics > img {
         height: 20rem;
         border-radius: 10px;
         margin-left: 1em;
@@ -861,7 +862,7 @@ footer a:active {
     background-color: initial;
 }
 
-#referanser>ol {
+#referanser > ol {
     background-color: rgb(0, 0, 0, 0.8);
     border-radius: 10px;
     padding-left: 2rem;
