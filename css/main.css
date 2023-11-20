@@ -724,20 +724,23 @@ footer a:active {
 @media (max-width: 1055px) {
     .opening > img {
         display: none;
-        /* på skjermer 1055px - 850px */
+        /* Fjerner bilde under .opening for skjermer under 1055px */
     }
 
     .middle-img {
         display: none;
+        /* Fjerner bilde under .middle-img for skjermer under 1055px */
     }
 
     .line {
         display: none;
+        /* Fjerner linje under .line for skjermer under 1055px */
     }
 
     .toppics {
         margin-left: 0;
         margin-right: 0;
+        /* Fjerner margin for under .toppics for skjermer under 1055px */
     }
 
     .toppics > img {
@@ -745,33 +748,39 @@ footer a:active {
         border-radius: 10px;
         margin-left: 1em;
         margin-right: 1em;
+        /* Fjerner høyde, border og margin for bilder 
+        under .toppics for skjermer under 1055px */
     }
 
     .bottompics {
         flex-direction: column;
+        /* Setter innholdet til kolonner under
+        .bottomtoppics for skjermer under 1055px */
     }
 
     .bottompics > div {
         margin-bottom: 1em;
         justify-content: center;
+        /* Justerer margin og sentrerer innhold
+        under .toppics for skjermer under 1055px */
     }
 
     .access-logo {
         display: none;
+        /* Skjuler logo under .access-logo for skjermer under 1055px */
     }
-
-    /* Media-query for footer på skjermer 1055px - 850px */
 }
 
 @media (max-width: 850px) {
     .access-header {
         font-size: 9vw;
-        /* Style tekst-størrelse for skjermer under 850px */
+        /* Style tekst-størrelse på tekst under
+        .accessheader for skjermer under 850px */
     }
 
     .opening > h1 {
         text-align: center;
-        /* Senterstille tekst for skjermer under 850px */
+        /* Senterstille h1-tekst under .opening for skjermer under 850px */
     }
 
     header {
