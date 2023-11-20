@@ -24,7 +24,7 @@ body {
 
 main {
     margin: 0;
-    /* Fjerner standard margin fra main*/
+    /* Fjerner standard margin fra main */
 }
 
 /* Media query for å sette margin til små skjermer */
@@ -363,7 +363,7 @@ footer a:active {
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
     object-fit: cover;
-    /* Styling av hovedbakgrunnen, med animasjon som gjør at den blir synlig etter 2.5s*/
+    /* Styling av hovedbakgrunnen, med animasjon som gjør at den blir synlig etter 2.5s */
 }
 
 .opener-left {
@@ -436,7 +436,7 @@ footer a:active {
     margin-left: -2rem;
     list-style-type: none;
     font-size: 7vw;
-    /* Styling av listen med ordene "CITY", "TAXI og "MET" i åpningsseksjonen*/
+    /* Styling av listen med ordene "CITY", "TAXI og "MET" i åpningsseksjonen */
 }
 
 .index-main {
@@ -470,7 +470,7 @@ footer a:active {
 
 .info-left {
     flex-direction: row-reverse;
-    /* Setter flex direction slik at det siste elementet kommer først i rekka*/
+    /* Setter flex direction slik at det siste elementet kommer først i rekka */
 }
 
 .p-veibeskrivelse {
@@ -558,7 +558,7 @@ footer a:active {
     grid-template-columns: 1fr 10rem 1fr;
     row-gap: 10rem;
     justify-items: center;
-    /* Ny grid-container som har tekst-innholdet til sida.  */
+    /* Ny grid-container som har tekst-innholdet til sida. */
 }
 
 .toppics {
@@ -777,7 +777,6 @@ footer a:active {
         /* Justerer størrelse og plassering for bilde nr. 3 
         for skjermer under 850px */
     }
-
 }
 
 /* accessibility */
@@ -798,7 +797,7 @@ footer a:active {
     left: 10vw;
     height: 6rem;
     width: 6rem;
-    /* Justerer posisjon og størrelse til oslo-met logo*/
+    /* Justerer posisjon og størrelse til oslo-met logo */
 }
 
 .access-header {
@@ -828,7 +827,7 @@ footer a:active {
 
 .access-info2 {
     height: 12rem;
-    /* Gir info2 gitt høyde ift tekstmengde*/
+    /* Gir info2 gitt høyde ift tekstmengde */
 }
 
 .access-info3 {
@@ -836,10 +835,9 @@ footer a:active {
     /* Gir info3 gitt høyde ift tekstmengde */
 }
 
-
 .access-box {
     width: 30rem;
-    /* Gir artikkelboksene til "våre valg" gitt bredde*/
+    /* Gir artikkelboksene til "våre valg" gitt bredde */
 }
 
 .access-text {
@@ -921,7 +919,7 @@ footer a:active {
 
     .info-container {
         justify-content: center;
-        /* Senterer innholdet i .infocontainer for skjermer under 850px*/
+        /* Senterer innholdet i .infocontainer for skjermer under 850px */
     }
 
     .subheader {
@@ -1147,7 +1145,6 @@ footer a:active {
     to {
         opacity: 1;
     }
-
     /* Animasjon som går fra helt gjennomsiktig og til synlig */
 }
 
@@ -1159,8 +1156,7 @@ footer a:active {
     to {
         opacity: 0;
     }
-
-    /* Animasjon som gjør at ting går fra synlig, til usynlig*/
+    /* Animasjon som gjør at ting går fra synlig, til usynlig */
 }
 
 @keyframes slideUp {
@@ -1171,7 +1167,6 @@ footer a:active {
     to {
         transform: translateY(0);
     }
-
     /* Animasjon som fører ett objekt 200px oppover i Y-retning*/
 }
 
@@ -1183,7 +1178,6 @@ footer a:active {
     100% {
         transform: translateY(16vw);
     }
-
     /* Animasjon som fører ett objekt nedover 16vw i Y-retning */
 }
 
@@ -1195,6 +1189,5 @@ footer a:active {
     to {
         transform: translateY(-8vw);
     }
-
     /* Animasjon som fører et objekt oppover 8vw i Y-retning*/
 }
